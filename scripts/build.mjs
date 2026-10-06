@@ -136,6 +136,7 @@ for(const g of GROUPS){
   const nOff = entries.filter(function(e){return e.sub==='official';}).length;
   const nFolk = entries.filter(function(e){return e.sub==='folk';}).length;
   let empRaw = '', powRaw = '', tlRaw = '', mapMeta = '', mapFile = '';
+  let realMaps = [];
   try{ empRaw = fs.readFileSync(path.join(gd,'emperors.yaml'),'utf8'); }catch(e){}
   try{ powRaw = fs.readFileSync(path.join(gd,'power-holders.yaml'),'utf8'); }catch(e){}
   try{ tlRaw = fs.readFileSync(path.join(gd,'timeline.yaml'),'utf8'); }catch(e){}
@@ -152,12 +153,15 @@ for(const g of GROUPS){
     const md = path.join(gd,'maps');
     if(fs.existsSync(md)){
       const files = fs.readdirSync(md);
+      for(const f of files){ if(/\.(jpg|jpeg|png)$/i.test(f)) realMaps.push(f); }
+      realMaps.sort();
       if(files.includes('territory.svg')) mapFile = 'territory.svg';
       else { for(const f of files){ if(f.endsWith('.svg') && !mapFile) mapFile = f; } }
       if(fs.existsSync(path.join(md,'meta.yaml'))) mapMeta = fs.readFileSync(path.join(md,'meta.yaml'),'utf8');
-      if(mapFile){
+      if(mapFile || realMaps.length){
         fs.mkdirSync(path.join(DIST,'maps'), { recursive:true });
-        fs.copyFileSync(path.join(md,mapFile), path.join(DIST,'maps',gid+'-territory.svg'));
+        for(const f of realMaps){ fs.copyFileSync(path.join(md,f), path.join(DIST,'maps',gid+'-'+f)); }
+        if(mapFile) fs.copyFileSync(path.join(md,mapFile), path.join(DIST,'maps',gid+'-territory.svg'));
       }
     }
   }catch(e){}
@@ -179,7 +183,9 @@ for(const g of GROUPS){
   const zhBlock = '<article class="entry" id="zh-block">' + mdBody(dynBody) + '</article>';
   const enBlock = '<article class="entry" id="en-block" style="display:none">' + mdBody(enBody) + '</article>';
   const langScript = '<script>function showLang(l){var z=document.getElementById(\'zh-block\');var e=document.getElementById(\'en-block\');var bz=document.getElementById(\'btnZh\');var be=document.getElementById(\'btnEn\');if(l===\'en\'){z.style.display=\'none\';e.style.display=\'block\';bz.className=\'\';be.className=\'on\';}else{e.style.display=\'none\';z.style.display=\'block\';be.className=\'\';bz.className=\'on\';}}</script>';
-  const mapHtml = '<h2>疆域示意图(图片)</h2>' + (mapFile ? '<figure class="map-fig"><img src="maps/'+gid+'-territory.svg" alt="'+esc(gname)+'疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure>' : '<p>暂缺图片，见文字描述</p>') + '<details><summary>疆域图来源与许可(meta.yaml)</summary><pre>' + esc(mapMeta) + '</pre></details>';
+  let realHtml = '';
+  for(const f of realMaps){ realHtml += '<figure class="map-fig"><img src="maps/'+gid+'-'+f+'" loading="lazy"><figcaption>'+f+'</figcaption></figure>'; }
+  const mapHtml = '<h2>疆域图(真实地图图片)</h2>' + (realHtml ? realHtml : (mapFile ? '<figure class="map-fig"><img src="maps/'+gid+'-territory.svg" loading="lazy"></figure>' : '<p>暂缺图片</p>')) + '<details><summary>疆域图来源与许可(meta.yaml)</summary><pre>' + esc(mapMeta) + '</pre></details>';
   const dhtml = page(gname+' · '+grange, '<a href="index.html">首页</a> / 国内',
     '<h2>政权综述 · 中文 / English 独立切换</h2>' + langSwitch + zhBlock + enBlock + langScript +
     mmBlock('emperors_mindmap','皇帝传承思维导图') + '<details><summary>帝系表明细(emperors.yaml)</summary><pre>' + esc(empRaw) + '</pre></details>' +
@@ -189,12 +195,14 @@ for(const g of GROUPS){
     '<h2>史料条目(官 '+nOff+' / 民 '+nFolk+')</h2><ul>' + listHtml + '</ul>' +
     '<p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p>');
   fs.writeFileSync(path.join(DIST,'dynasty-'+gid+'.html'), dhtml, 'utf8');
-  dynCards.push({ gid:gid, gname:gname, grange:grange, nOff:nOff, nFolk:nFolk });
+  let thumb = 'territory.svg';
+  try{ const mdf = fs.readdirSync(path.join(gd,'maps')); const jp = mdf.filter(function(f){ return /\.(jpg|jpeg|png)$/i.test(f); }).sort(); if(jp.length) thumb = jp[0]; }catch(e){}
+  dynCards.push({ gid:gid, gname:gname, grange:grange, nOff:nOff, nFolk:nFolk, thumb:thumb });
   index.push({ gid:gid, gname:gname, tl:tlRaw });
 }
 let cards = '';
 for(const c of dynCards){
-  cards += '<div class="card"><div class="map-thumb"><img src="maps/'+c.gid+'-territory.svg" alt="'+esc(c.gname)+'疆域图" loading="lazy"></div><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>';
+  cards += '<div class="card"><div class="map-thumb"><img src="maps/'+c.gid+'-'+(c.thumb||'territory.svg')+'" alt="'+esc(c.gname)+'疆域图" loading="lazy"></div><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>';
 }
 const homeBody = '<p class="lang-note">全站中英文独立切换：各朝代页顶部设 中文 / English 按钮，中英分开展示不混排。英文版为综述译介，史料原文以中文页为准。</p>' + '<nav class="filters">' +
   '<select id="fGroup"><option value="">全部朝代</option>' + dynCards.map(function(c){ return '<option value="'+c.gid+'">'+esc(c.gname)+'</option>'; }).join('') + '</select>' +

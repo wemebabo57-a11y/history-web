@@ -10,3 +10,8 @@ dispute: 北界尼布楚/恰克图一线文字分歧、西界新疆界线、南�
 compat: maps/qing-territory.svg 为旧版文字框示意，保留兼容；maps/territory.svg 为本次重绘正式示意图
 source_note: 据《清史稿·地理志》（传世本，具体版本待考）大势转述，页码待核，未能联网核验
 note: 需与qing/dynasty.md疆域文字描述配合使用
+real_maps:
+  - file: maps/qing-quantu-1.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用

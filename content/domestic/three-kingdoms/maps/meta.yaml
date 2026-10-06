@@ -4,3 +4,8 @@ maps:
 license: CC0
 dispute: 边界数字史料不一,不作精确声称;不套用现代行政边界
 note: 需与dynasty.md疆域文字描述配合使用;territory.svg为疆域示意主体,旧svg保留兼容
+real_maps:
+  - file: maps/sanguo-quantu.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用

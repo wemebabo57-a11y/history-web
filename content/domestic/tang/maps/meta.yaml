@@ -7,3 +7,8 @@ precision: 640x460示意多边形不声称精确疆界河流海岸线省略
 source: 基于旧唐书地理志与通典文字描述绘制示意,传世本,具体版本待考,页码待核,未能联网核验.
 disclaimer: 仅示意不声称精确疆界,安西安东安南羁縻区虚线方向禁套用,极盛与中晚期差异大,存疑待考.
 note: 旧maps/map.svg保留兼容,新maps/territory.svg为CC0疆域示意,争议禁套.
+real_maps:
+  - file: maps/tang-quantu-1.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用

@@ -10,3 +10,11 @@ dispute: 西汉/新莽/东汉三段疆域进退不一，史料���字分歧
 compat: maps/han-sketch.svg 与 maps/territory.svg 内容一致，保留旧文件名兼容
 source_note: 未能联网核验，页码待核
 note: 需与han/dynasty.md疆域文字描述配合使用
+real_maps:
+  - file: maps/han-donghan-quantu.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+  - file: maps/han-xihan-quantu.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用

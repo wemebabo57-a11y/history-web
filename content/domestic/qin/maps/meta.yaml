@@ -9,3 +9,8 @@ license: CC0（自绘示意）
 dispute: 四至数字史料不一，学界对秦郡数与边界有争议；本图不套用现代行政边界，不声称精确
 compat: maps/qin-221-bc.svg 与 maps/territory.svg 内容一致，保留旧文件名兼容
 note: 需与qin/dynasty.md疆域文字描述配合使用；页码待核，未能联网核验
+real_maps:
+  - file: maps/qin-quantu.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用

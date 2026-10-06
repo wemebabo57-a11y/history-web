@@ -2,3 +2,11 @@
 maps:
   - {file: western-xia-territory.svg, coverage: 西夏极盛时期, claim: 文字示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 宋夏金边界犬牙交错，此图不裁决争议, modern_boundary: 禁套现代国界省界}
   - {file: territory.svg, coverage: 西夏极盛时期单组, claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}
+real_maps:
+  - file: maps/liaobeisong-quantu.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+  - file: maps/xixia.jpg
+    origin: 用户本地地图包 E:/000开发/history/中国历代地图（zip内全图/分省图扫描页）
+    license: 未声明（用户自备，仅本��展示，勿再分发；待补制图者/原书信息）
+note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用
