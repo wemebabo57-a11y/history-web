@@ -184,7 +184,9 @@ for(const g of GROUPS){
   const enBlock = '<article class="entry" id="en-block" style="display:none">' + mdBody(enBody) + '</article>';
   const langScript = '<script>function showLang(l){var z=document.getElementById(\'zh-block\');var e=document.getElementById(\'en-block\');var bz=document.getElementById(\'btnZh\');var be=document.getElementById(\'btnEn\');if(l===\'en\'){z.style.display=\'none\';e.style.display=\'block\';bz.className=\'\';be.className=\'on\';}else{e.style.display=\'none\';z.style.display=\'block\';be.className=\'\';bz.className=\'on\';}}</script>';
   let realHtml = '';
-  for(const f of realMaps){ realHtml += '<figure class="map-fig"><img src="maps/'+gid+'-'+f+'" loading="lazy"><figcaption>'+f+'</figcaption></figure>'; }
+  const CAP = { 'ming-quantu-1.jpg': '图1 · 土木堡之变前巅峰（约1435年前后，疆域极盛）', 'ming-quantu-2.jpg': '图2 · 土木堡之变后（收缩态势，1449年后）' };
+  for(const f of realMaps){ const cap = CAP[f] || f; realHtml += '<figure class="map-fig"><img src="maps/'+gid+'-'+f+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'; }
+  realHtml += '<p class="map-src">地图图片来源：<a href="https://gitcode.com/open-source-toolkit/2fba6">gitcode.com/open-source-toolkit/2fba6</a>（用户提供下载地址；原包未声明制图者/原书/许可，仅本地展示，勿再分发）</p>';
   const mapHtml = '<h2>疆域图(真实地图图片)</h2>' + (realHtml ? realHtml : (mapFile ? '<figure class="map-fig"><img src="maps/'+gid+'-territory.svg" loading="lazy"></figure>' : '<p>暂缺图片</p>')) + '<details><summary>疆域图来源与许可(meta.yaml)</summary><pre>' + esc(mapMeta) + '</pre></details>';
   const dhtml = page(gname+' · '+grange, '<a href="index.html">首页</a> / 国内',
     '<h2>政权综述 · 中文 / English 独立切换</h2>' + langSwitch + zhBlock + enBlock + langScript +
