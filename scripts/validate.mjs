@@ -47,6 +47,11 @@ function walk(d, group) {
     if (!r) { errors.push(rel + ': 缺 frontmatter'); continue; }
     const fm = r.fm;
     for (const k of REQ) { if (!(k in fm) || String(fm[k]) === '') errors.push(rel + ': 缺字段 ' + k); }
+    if ('period_id' in fm && rel.startsWith('content/foreign/')) {
+      const pv0 = String(fm.period_id);
+      if (/[,\[\]]/.test(pv0)) errors.push(rel + ': period_id 必须单值: ' + pv0);
+      else if (!/^foreign-/.test(pv0)) errors.push(rel + ': 国外 period_id 须 foreign- 前缀: ' + pv0);
+    }
     if ('period_id' in fm) {
       const pv = String(fm.period_id);
       if (/[,\[\]]/.test(pv)) errors.push(rel + ': period_id 必须单值: ' + pv);
@@ -73,8 +78,29 @@ for (const g of Object.keys(GROUPS)) {
   const maps = path.join(gd, 'maps');
   if (!fs.existsSync(maps)) warns.push(g + ': 缺 maps/');
 }
+const FOREIGN_PERIODS = {
+  'egypt': ['foreign-egypt-old'],
+  'mesopotamia': ['foreign-mesopotamia'],
+  'greece-rome': ['foreign-greece-rome'],
+  'india': ['foreign-india'],
+  'islamic': ['foreign-islamic'],
+  'europe-medieval': ['foreign-europe-medieval'],
+  'modern': ['foreign-modern']
+};
 const fw = path.join(ROOT, 'content', 'foreign', '_framework.md');
 if (!fs.existsSync(fw)) warns.push('缺国外框架占位 foreign/_framework.md');
+const FOR = path.join(ROOT, 'content', 'foreign');
+for (const fg of Object.keys(FOREIGN_PERIODS)) {
+  const gd = path.join(FOR, fg);
+  if (!fs.existsSync(gd)) { warns.push('国外缺分组目录: ' + fg + ' (待子代理交稿)'); continue; }
+  walk(gd, null);
+  for (const need of ['overview.md','timeline.yaml','mindmap.yaml']) {
+    if (!fs.existsSync(path.join(gd, need))) warns.push('国外 ' + fg + ': 缺 ' + need);
+  }
+  for (const sub of ['official','folk']) {
+    if (!fs.existsSync(path.join(gd, sub))) warns.push('国外 ' + fg + ': 缺 ' + sub + '/');
+  }
+}
 const lines = ['# 校验报告','', '扫描 md: ' + files + '，错误 ' + errors.length + '，警告 ' + warns.length, '', '## 错误', ''];
 for (const e of errors) lines.push('- ' + e);
 lines.push('', '## 警告', '');

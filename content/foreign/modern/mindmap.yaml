@@ -1,0 +1,73 @@
+group: foreign-modern
+title: "近代世界思维导图"
+emperors_mindmap:
+  root: "近代世界·统治者世系（时间顺序）"
+  branches:
+    - label: 大航海时代
+      nodes:
+        - label: 伊莎贝拉一世
+          reign: 约1474—1504（存疑）
+          note: 资助哥伦布首航｜存疑
+        - label: 万历皇帝
+          reign: 约1572—1620（存疑）
+          note: 利玛窦在华时期｜存疑
+    - label: 通商冲突时代
+      nodes:
+        - label: 乾隆
+          reign: 约1735—1796（存疑）
+          note: 接见马戛尔尼使团｜存疑
+        - label: 维多利亚女王
+          reign: 约1837—1901（存疑）
+          note: 鸦片战争时期｜存疑
+    - label: 变革与大战时代
+      nodes:
+        - label: 明治天皇
+          reign: 约1867—1912（存疑）
+          note: 明治维新｜存疑
+        - label: 光绪皇帝
+          reign: 约1875—1908（存疑）
+          note: 义和团与辛丑条约时期｜存疑
+power_mindmap:
+  root: "近代世界·权臣实力人物（时间顺序）"
+  branches:
+    - label: 航海与传教
+      nodes:
+        - label: 哥伦布
+          reign: 约1451—1506（存疑）
+          note: 首航美洲｜存疑
+        - label: 利玛窦
+          reign: 约1552—1610（存疑）
+          note: 坤舆万国全图｜存疑
+    - label: 交涉与战争
+      nodes:
+        - label: 马戛尔尼
+          year: 1793年
+          note: 访华特使｜存疑
+        - label: 林则徐
+          reign: 约1785—1850（存疑）
+          note: 虎门销烟｜存疑
+timeline_mindmap:
+  root: "近代世界·大事时间线"
+  branches:
+    - label: 前期
+      nodes:
+        - label: 哥伦布首航
+          year: 1492年
+        - label: 麦哲伦船队环航
+          year: 1519—1522年
+        - label: 利玛窦在华
+          year: 1582—1610年
+    - label: 中期
+      nodes:
+        - label: 马戛尔尼使团访华
+          year: 1793年
+        - label: 鸦片战争
+          year: 1840年
+        - label: 日本明治维新
+          year: 1868年
+    - label: 后期
+      nodes:
+        - label: 义和团与辛丑条约
+          year: 1900年
+        - label: 二战结束
+          year: 1945年

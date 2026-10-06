@@ -1,0 +1,79 @@
+group: foreign-greece-rome
+title: "希腊罗马思维导图"
+emperors_mindmap:
+  root: "希腊罗马·统治者世系（时间顺序）"
+  branches:
+    - label: "希腊僭主与盟主"
+      nodes:
+        - label: "庇西特拉图"
+          reign: "约前561—约前527，存疑"
+          note: "雅典僭主｜节庆营造传世称"
+        - label: "伯里克利（实际领袖，非王）"
+          reign: "约前495—前429，存疑"
+          note: "雅典黄金时代领袖｜公民大会时代，无王号"
+    - label: "马其顿至希腊化"
+      nodes:
+        - label: "亚历山大三世"
+          reign: "前336—前323"
+          note: "东征至印度河流域｜早逝后帝国分裂"
+        - label: "托勒密一世（埃及 分支）"
+          reign: "前305—前283"
+          note: "希腊化埃及开创者｜另见egypt组托勒密分期"
+    - label: "罗马共和至帝国"
+      nodes:
+        - label: "凯撒（独裁官）"
+          reign: "前49—前44，遇刺三月十五日"
+          note: "集独裁官诸权｜共和终结关键人物"
+        - label: "屋大维·奥古斯都"
+          reign: "前27—14年"
+          note: "元首制确立者｜罗马帝国始"
+        - label: "君士坦丁一世"
+          reign: "306—337年"
+          note: "米兰敕令与迁都拜占庭｜东西分治前史"
+        - label: "罗慕路斯·奥古斯都鲁斯"
+          reign: "475—476年"
+          note: "传世称末代西罗马皇帝｜东部帝国延续见europe-medieval组"
+power_mindmap:
+  root: "希腊罗马·权臣与实力人物（时间顺序）"
+  branches:
+    - label: "希波战争"
+      nodes:
+        - label: "米太亚德"
+          reign: "约前550—约前489，存疑"
+          note: "马拉松主将｜兵力数字争议"
+        - label: "地米斯托克利"
+          reign: "约前524—约前459，存疑"
+          note: "萨拉米斯谋主｜诈降诱敌系轶事，存疑"
+    - label: "共和末期"
+      nodes:
+        - label: "布鲁图"
+          year: "前44年"
+          note: "刺杀凯撒主谋之一｜动机共和理想或私怨，争议"
+        - label: "安东尼"
+          reign: "约前83—前30，存疑"
+          note: "后三头之一｜与屋大维争权，败亡"
+timeline_mindmap:
+  root: "希腊罗马·大事分期（时间顺序）"
+  branches:
+    - label: "前期"
+      nodes:
+        - label: "传世称首届奥运会"
+          year: "前776年"
+        - label: "马拉松之战"
+          year: "前490年"
+        - label: "萨拉米斯海战"
+          year: "前480年"
+    - label: "中期"
+      nodes:
+        - label: "秦统一（东西互见）"
+          year: "前221年"
+        - label: "凯撒遇刺"
+          year: "前44年"
+        - label: "元首制确立"
+          year: "前27年"
+    - label: "后期"
+      nodes:
+        - label: "米兰敕令"
+          year: "313年"
+        - label: "西罗马亡（东部延续见europe-medieval组）"
+          year: "476年"

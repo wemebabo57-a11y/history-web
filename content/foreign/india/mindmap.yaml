@@ -1,0 +1,49 @@
+# 印度思维导图数据（传世谱系称，存疑保留，未能联网核验）
+group: foreign-india
+title: "印度思维导图"
+emperors_mindmap:
+  root: "印度·统治者世系（时间顺序）"
+  branches:
+    - label: "孔雀王朝"
+      nodes:
+        - {label: "旃陀罗笈多", reign: "约前321—约前298（约数）", note: "传世称开国｜存疑"}
+        - {label: "阿育王", reign: "约前268—约前232（约数）", note: "诏书刻石宣示仁政｜约数存疑"}
+    - label: "德里苏丹国"
+      nodes:
+        - {label: "库特布·艾巴克", reign: "约1206—约1210（约数）", note: "传世称奴隶王朝开端｜存疑"}
+        - {label: "阿拉乌德丁·卡尔吉", reign: "约1296—约1316（约数）", note: "传世称南征扩张｜存疑"}
+    - label: "莫卧儿王朝"
+      nodes:
+        - {label: "巴布尔", reign: "约1526—约1530（约数）", note: "传世称开国｜存疑"}
+        - {label: "阿克巴", reign: "约1556—约1605（约数）", note: "传世称鼎盛｜存疑"}
+        - {label: "末代皇帝巴哈杜尔·沙二世", reign: "约1837—1858（传世称）", note: "传世称一八五八年被废｜存疑"}
+power_mindmap:
+  root: "印度·权臣实力人物（时间顺序）"
+  branches:
+    - label: "孔雀王朝时期"
+      nodes:
+        - {label: "考底利耶（传世称阿育王师辈谋臣）", reign: "约前4世纪（约数）", note: "传世称《政事论》作者｜存疑"}
+    - label: "求法时代高僧"
+      nodes:
+        - {label: "法显", reign: "约337—约422（约数）", note: "西行求法撰《佛国记》｜存疑"}
+        - {label: "玄奘", reign: "约602—约664（约数）", note: "西行求法撰《大唐西域记》｜存疑"}
+    - label: "莫卧儿时期"
+      nodes:
+        - {label: "拜拉姆汗", reign: "约1556—约1560（约数）", note: "传世称摄政｜存疑"}
+timeline_mindmap:
+  root: "印度·大事分期"
+  branches:
+    - label: "前期"
+      nodes:
+        - {label: "吠陀传世称开端", year: "约前1500年"}
+        - {label: "佛陀生年传世称（众说存疑）", year: "约前563年"}
+        - {label: "阿育王即位（约数）", year: "约前268年"}
+    - label: "中期"
+      nodes:
+        - {label: "法显西行", year: "399—412年"}
+        - {label: "玄奘西行", year: "629—645年"}
+        - {label: "德里苏丹国建立（传世称）", year: "1206年"}
+    - label: "后期"
+      nodes:
+        - {label: "莫卧儿王朝建立（传世称）", year: "1526年"}
+        - {label: "莫卧儿王朝终结（传世称）", year: "1858年"}

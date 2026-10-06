@@ -1,0 +1,81 @@
+group: foreign-europe-medieval
+title: "欧洲中世纪思维导图"
+emperors_mindmap:
+  root: "欧洲中世纪·统治者世系（时间顺序）"
+  branches:
+    - label: 罗马晚期
+      nodes:
+        - label: 君士坦丁大帝
+          reign: 约306—337（存疑）
+          note: 迁都君士坦丁堡｜年代存疑
+        - label: 末代西罗马皇帝
+          reign: 约475—476（存疑）
+          note: 政权倾覆，传世称｜存疑
+    - label: 法兰克时代
+      nodes:
+        - label: 查理曼
+          reign: 约768—814（存疑）
+          note: 罗马加冕称帝｜存疑
+        - label: 奥托一世
+          reign: 约936—973（存疑）
+          note: 重建帝国法统｜存疑
+    - label: 十字军时代
+      nodes:
+        - label: 乌尔班二世
+          reign: 约1088—1099（存疑）
+          note: 号召东征｜存疑
+        - label: 腓特烈二世
+          reign: 约1212—1250（存疑）
+          note: 以谈判收复圣城｜存疑
+    - label: 晚期中世纪
+      nodes:
+        - label: 查理四世
+          reign: 约1346—1378（存疑）
+          note: 金玺诏书｜存疑
+        - label: 君士坦丁十一世
+          reign: 约1449—1453（存疑）
+          note: 君士坦丁堡陷落
+power_mindmap:
+  root: "欧洲中世纪·权臣实力人物（时间顺序）"
+  branches:
+    - label: 教廷
+      nodes:
+        - label: 利奥三世
+          reign: 约795—816（存疑）
+          note: 为查理曼加冕｜存疑
+        - label: 额我略七世
+          reign: 约1073—1085（存疑）
+          note: 主教叙任权之争｜存疑
+    - label: 骑士与贵族
+      nodes:
+        - label: 狮心王理查
+          reign: 约1189—1199（存疑）
+          note: 第三次东征统帅｜存疑
+        - label: 亚历山大·涅夫斯基
+          reign: 约1236—1263（存疑）
+          note: 抗击北方骑士团｜存疑
+timeline_mindmap:
+  root: "欧洲中世纪·大事时间线"
+  branches:
+    - label: 前期
+      nodes:
+        - label: 君士坦丁堡建都
+          year: 330年
+        - label: 西罗马政权倾覆
+          year: 476年
+        - label: 查理曼加冕
+          year: 800年
+    - label: 中期
+      nodes:
+        - label: 第一次十字军东征
+          year: 1096年
+        - label: 大宪章颁布
+          year: 1215年
+        - label: 罗斯抗蒙古西进
+          year: 1241—1242年
+    - label: 后期
+      nodes:
+        - label: 君士坦丁堡陷落
+          year: 1453年
+        - label: 古登堡印刷术渐广
+          year: 约1455年

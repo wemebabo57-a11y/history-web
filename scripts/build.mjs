@@ -264,11 +264,91 @@ const homeBody = '<p class="lang-note">全站中英文独立切换：各朝代�
 fs.writeFileSync(path.join(DIST,'index.html'), page('历史全集 · 首页筛选','国内 / 国外', homeBody), 'utf8');
 let tlAll = '';
 for(const it of index){ tlAll += '<h2 id="'+it.gid+'">' + esc(it.gid) + '</h2><pre>' + esc(it.tl) + '</pre>'; }
-fs.writeFileSync(path.join(DIST,'timelines.html'), page('全局时间线(按朝代分组聚合展示)','<a href="index.html">首页</a> / 时间线', '<p>各朝代时间线独立成段,仅聚合展示,不混写正文。</p>'+tlAll), 'utf8');
+/* timelines deferred until foreign tlAll merged */
+const FOR = path.join(ROOT, 'content', 'foreign');
+const FGROUPS = [
+  ['egypt','古埃及','-3100~642'],
+  ['mesopotamia','美索不达米亚','-3500~-539'],
+  ['greece-rome','希腊罗马','-776~476'],
+  ['india','印度','-1500~1858'],
+  ['islamic','伊斯兰世界','622~1924'],
+  ['europe-medieval','欧洲中世纪','476~1492'],
+  ['modern','近代世界','1492~1945']
+];
+function readForeignEntries(gid){
+  const out = [];
+  for(const sub of ['official','folk']){
+    const d = path.join(FOR, gid, sub);
+    if(!fs.existsSync(d)) continue;
+    for(const f of fs.readdirSync(d)){
+      if(!f.endsWith('.md')) continue;
+      const t = fs.readFileSync(path.join(d,f), 'utf8');
+      const r = parseFM(t);
+      out.push({ file:f, sub:sub, fm:r.fm, body:r.body });
+    }
+  }
+  return out;
+}
+const fCards = [];
+for(const fg of FGROUPS){
+  const gid = fg[0], gname = fg[1], grange = fg[2];
+  const gd = path.join(FOR, gid);
+  if(!fs.existsSync(gd)) continue;
+  let ovFM = {}, ovBody = '综述缺失';
+  try{ const r = parseFM(fs.readFileSync(path.join(gd,'overview.md'),'utf8')); ovFM = r.fm; ovBody = r.body; }catch(e){}
+  let fempRaw = '', fpowRaw = '', ftlRaw = '', fmmRaw = '';
+  try{ fempRaw = fs.readFileSync(path.join(gd,'emperors.yaml'),'utf8'); }catch(e){}
+  try{ fpowRaw = fs.readFileSync(path.join(gd,'power-holders.yaml'),'utf8'); }catch(e){}
+  try{ ftlRaw = fs.readFileSync(path.join(gd,'timeline.yaml'),'utf8'); }catch(e){}
+  try{ fmmRaw = fs.readFileSync(path.join(gd,'mindmap.yaml'),'utf8'); }catch(e){}
+  const fmm = fmmRaw ? parseMindmap(fmmRaw) : {};
+  function fmmBlock(key, title){
+    const sec = fmm[key];
+    if(!sec || !sec.branches || !sec.branches.length) return '<h2>' + title + '</h2><p>思维导图数据缺失，见下方yaml明细。</p>';
+    let code = key==='emperors_mindmap' ? mmEmpFlow(sec.root||title, sec.branches) : key==='timeline_mindmap' ? mmTlFlow(sec.root||title, sec.branches) : mmMermaid(sec.root || title, sec.branches);
+    const hint = key==='emperors_mindmap' ? '<p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p>' : key==='timeline_mindmap' ? '<p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p>' : '';
+    return '<h2>' + title + '</h2>' + hint + '<div class="mm-wrap"><pre class="mermaid">' + esc(code) + '</pre></div>';
+  }
+  const fentries = readForeignEntries(gid);
+  const fnOff = fentries.filter(function(e){return e.sub==='official';}).length;
+  const fnFolk = fentries.filter(function(e){return e.sub==='folk';}).length;
+  let flistHtml = '';
+  for(const e of fentries){
+    const eid = e.fm.id || ('foreign-'+gid+'-'+e.file.replace(/\.md$/,''));
+    const et = e.fm.title || e.file;
+    const st = e.fm.source_type || e.sub;
+    flistHtml += '<li><a href="entry-' + eid + '.html">' + esc(et) + '</a> <span class="badge">' + esc(st) + '</span> <span class="badge">' + esc(e.fm.period_id||'') + '</span></li>';
+    searchIdx.push({ id:eid, title:et, group:'foreign-'+gid, gname:gname, stype:st, period:String(e.fm.period_id||''), year:String(e.fm.start_year||''), text:(et+' '+ovBody+' '+e.body).slice(0,600) });
+    const ehtml = page(et, '<a href="index.html">首页</a> / <a href="foreign.html">国外</a> / <a href="dynasty-foreign-'+gid+'.html">'+esc(gname)+'</a> / 条目',
+      '<article class="entry">' + mdBody(e.body) + '</article>' +
+      '<h2>来源与定位</h2><table><tr><th>字段</th><th>值</th></tr>' +
+      ['id','period_id','source_type','source_title','source_author','source_version','source_locator','start_year','end_year','confidence'].map(function(k){ return '<tr><td>'+k+'</td><td>'+esc(e.fm[k]||'')+'</td></tr>'; }).join('') + '</table>' +
+      '<p><a href="dynasty-foreign-'+gid+'.html">返回'+esc(gname)+'</a> · <a href="foreign.html">国外</a> · <a href="index.html">首页</a></p>');
+    fs.writeFileSync(path.join(DIST,'entry-'+eid+'.html'), ehtml, 'utf8');
+  }
+  const fdhtml = page(gname+' · '+grange, '<a href="index.html">首页</a> / <a href="foreign.html">国外</a> / '+esc(gname),
+    '<p class="map-src">国外组无疆域图，仅文字记载与思维导图。</p>' +
+    '<h2>综述</h2><article class="entry">' + mdBody(ovBody) + '</article>' +
+    fmmBlock('emperors_mindmap','统治者传承思维导图') +
+    fmmBlock('power_mindmap','实力人物思维导图') +
+    fmmBlock('timeline_mindmap','独立时间线思维导图(本组隔离展示)') + '<details><summary>时间线明细(timeline.yaml)</summary><pre>' + esc(ftlRaw) + '</pre></details>' +
+    '<h2>史料条目(官 '+fnOff+' / 民 '+fnFolk+')</h2><ul>' + flistHtml + '</ul>' +
+    '<p><a href="foreign.html">国外总览</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p>');
+  fs.writeFileSync(path.join(DIST,'dynasty-foreign-'+gid+'.html'), fdhtml, 'utf8');
+  tlAll += '<h2 id="foreign-'+gid+'">' + esc(gname) + ' · 国外</h2><pre>' + esc(ftlRaw) + '</pre>';
+  fCards.push({ gid:gid, gname:gname, grange:grange, nOff:fnOff, nFolk:fnFolk });
+}
 const fef = path.join(ROOT,'content','foreign','_framework.md');
 let feb = '国外部分待确认,不填充史料。';
 try{ feb = parseFM(fs.readFileSync(fef,'utf8')).body; }catch(e){}
-fs.writeFileSync(path.join(DIST,'foreign.html'), page('国外 · 占位框架','<a href="index.html">首页</a> / 国外', '<article class="entry">'+mdBody(feb)+'</article>'), 'utf8');
+let fhub = '<article class="entry">'+mdBody(feb)+'</article>';
+if(fCards.length){
+  fhub += '<h2>国外七组</h2><div class="grid">';
+  for(const c of fCards){ fhub += '<div class="card"><h3><a href="dynasty-foreign-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-foreign-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>'; }
+  fhub += '</div>';
+} else { fhub += '<p>国外七组内容补齐中（埃及/两河/希腊罗马/印度/伊斯兰/中���纪/近代），待子代理交稿后展示。</p>'; }
+fs.writeFileSync(path.join(DIST,'foreign.html'), page('国外 · 总览','<a href="index.html">首页</a> / 国外', fhub), 'utf8');
+fs.writeFileSync(path.join(DIST,'timelines.html'), page('全局时间线(按朝代分组聚合展示)','<a href="index.html">首页</a> / 时间线', '<p>各朝代时间线独立成段,仅聚合展示,不混写正文；国外七组附后。</p>'+tlAll), 'utf8');
 fs.writeFileSync(path.join(DIST,'search-index.json'), JSON.stringify(searchIdx, null, 1), 'utf8');
 const sbody = '<input id="q" placeholder="输入关键词" style="width:260px;padding:8px"> <div id="r"></div>' +
   '<script>fetch(\'search-index.json\').then(function(x){return x.json();}).then(function(IDX){' +

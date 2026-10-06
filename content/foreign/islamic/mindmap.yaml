@@ -1,0 +1,48 @@
+# 伊斯兰世界思维导图数据（传世谱系称，存疑保留，未能联网核验）
+group: foreign-islamic
+title: "伊斯兰世界思维导图"
+emperors_mindmap:
+  root: "伊斯兰世界·统治者世系（时间顺序）"
+  branches:
+    - label: "正统哈里发"
+      nodes:
+        - {label: "阿布·伯克尔", reign: "约632—约634（约数）", note: "传世称首任｜存疑"}
+        - {label: "欧麦尔", reign: "约634—约644（约数）", note: "传世称扩张｜存疑"}
+        - {label: "奥斯曼", reign: "约644—约656（约数）", note: "传世称定本｜存疑"}
+        - {label: "阿里", reign: "约656—约661（约数）", note: "传世称内战｜存疑"}
+    - label: "伍麦叶与阿拔斯"
+      nodes:
+        - {label: "穆阿维叶", reign: "约661—约680（约数）", note: "传世称伍麦叶开国｜存疑"}
+        - {label: "阿拔斯开国哈里发萨法赫", reign: "约750—约754（约数）", note: "传世称革命建国｜存疑"}
+        - {label: "哈伦·拉希德", reign: "约786—约809（约数）", note: "传世称鼎盛｜演绎须区分｜存疑"}
+    - label: "奥斯曼"
+      nodes:
+        - {label: "穆罕默德二世", reign: "约1451—约1481（约数）", note: "传世称陷君士坦丁堡｜存疑"}
+        - {label: "末代哈里发阿卜杜勒·迈吉德二世", reign: "约1922—1924（传世称）", note: "传世称制度终结｜存疑"}
+power_mindmap:
+  root: "伊斯兰世界·权臣实力人物（时间顺序）"
+  branches:
+    - label: "阿拔斯时期"
+      nodes:
+        - {label: "塔巴里", reign: "约839—约923（约数）", note: "追述早期史｜存疑"}
+    - label: "游历时代见闻者"
+      nodes:
+        - {label: "马可·波罗", reign: "约1254—约1324（约数）", note: "东来口述笔录存疑｜存疑"}
+        - {label: "伊本·白图泰", reign: "约1304—约1369（约数）", note: "游历亚非笔录存疑｜存疑"}
+timeline_mindmap:
+  root: "伊斯兰世界·大事分期"
+  branches:
+    - label: "前期"
+      nodes:
+        - {label: "希吉拉", year: "622年"}
+        - {label: "伍麦叶建国（传世称）", year: "661年"}
+        - {label: "阿拔斯革命", year: "750年"}
+    - label: "中期"
+      nodes:
+        - {label: "蒙古陷巴格达", year: "1258年"}
+        - {label: "马可·波罗东来（口述存疑）", year: "1271—1295年"}
+        - {label: "白图泰游历", year: "1325—1354年"}
+    - label: "后期"
+      nodes:
+        - {label: "奥斯曼陷君士坦丁堡", year: "1453年"}
+        - {label: "哈里发制度终结", year: "1924年"}

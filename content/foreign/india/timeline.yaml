@@ -1,0 +1,9 @@
+# 印度大事年表（传世谱系称，未能联网核验）
+- {year_label: 约前1500年, year: -1500, period_id: foreign-india, title: 吠陀传世称开端，雅利安赞歌结集传说, confidence: low, source: 吠陀传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 约前563年（传世称，众说存疑）, year: -563, period_id: foreign-india, title: 佛陀生年传世称，众说存疑，另有约前480年说, confidence: disputed, source: 佛典传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 约前268年（约数）, year: -268, period_id: foreign-india, title: 阿育王即位（约数），孔雀王朝鼎盛之始, confidence: medium, source: 石柱诏书铭文拓本传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 399-412年, year: 399, period_id: foreign-india, title: 法显西行求法，归国撰《佛国记》, confidence: medium, source: 《佛国记》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 629-645年, year: 629, period_id: foreign-india, title: 玄奘西行求法，归国撰《大唐西域记》, confidence: medium, source: 《大唐西域记》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1206年（传世称）, year: 1206, period_id: foreign-india, title: 德里苏丹国建立（传世称），突厥系奴隶王朝开端, confidence: medium, source: 后世王朝史传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1526年（传世称）, year: 1526, period_id: foreign-india, title: 第一次帕尼帕特之战，莫卧儿王朝建立（传世称）, confidence: medium, source: 后世王朝史传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1858年（传世称）, year: 1858, period_id: foreign-india, title: 莫卧儿王朝终结（传世称），末帝被废, confidence: high, source: 近代史传世记述（版本待考，页码待核，未能联网核验）}

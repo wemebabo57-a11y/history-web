@@ -1,0 +1,75 @@
+group: foreign-egypt-old
+title: "古埃及思维导图"
+emperors_mindmap:
+  root: "古埃及·统治者世系（时间顺序）"
+  branches:
+    - label: "早王国至古王国"
+      nodes:
+        - label: "美尼斯（传世称统一者）"
+          reign: "约前3100年，存疑"
+          note: "传世王表系为首王｜是否实有其人待考"
+        - label: "胡夫"
+          reign: "约前2589—约前2566，约数存疑"
+          note: "大金字塔营造所系法老｜工期与劳工数字争议"
+    - label: "新王国"
+      nodes:
+        - label: "图特摩斯三世"
+          reign: "约前1479—约前1425，约数存疑"
+          note: "版图扩张｜年代系年存疑"
+        - label: "拉美西斯二世"
+          reign: "约前1279—约前1213，约数存疑"
+          note: "卡迭石会战与庞大营造｜功业多有夸饰，存疑"
+        - label: "图坦卡蒙"
+          reign: "约前1332—约前1323，存疑"
+          note: "早夭少年法老｜墓葬完整出土，诅咒系后世演绎"
+    - label: "托勒密王朝"
+      nodes:
+        - label: "托勒密五世"
+          reign: "约前204—约前180，存疑"
+          note: "罗塞塔敕令所颂法老｜约前196年刊石"
+        - label: "克娄巴特拉七世"
+          reign: "前51—前30"
+          note: "末代女王｜前30年埃及并于罗马"
+power_mindmap:
+  root: "古埃及·权臣与实力人物（时间顺序）"
+  branches:
+    - label: "古王国至中王国"
+      nodes:
+        - label: "印和阗（传说中的营造者）"
+          reign: "约前27世纪，存疑"
+          note: "传世系为左塞尔金字塔设计者｜半神化人物，待考"
+    - label: "新王国"
+      nodes:
+        - label: "哈特谢普苏特"
+          reign: "约前1479—约前1458，约数存疑"
+          note: "女法老摄政称制｜与图特摩斯三世关系记载分歧"
+    - label: "托勒密至罗马"
+      nodes:
+        - label: "祭司会议（孟斐斯）"
+          year: "约前196年"
+          note: "罗塞塔敕令颁布者，政教合议体制见证"
+timeline_mindmap:
+  root: "古埃及·大事分期（时间顺序）"
+  branches:
+    - label: "前期"
+      nodes:
+        - label: "传世称美尼斯统一"
+          year: "约前3100年"
+        - label: "大金字塔营造（约数存疑）"
+          year: "约前2560年"
+    - label: "中期"
+      nodes:
+        - label: "拉美西斯二世即位（约数存疑）"
+          year: "约前1279年"
+        - label: "波斯征服埃及"
+          year: "前525年"
+        - label: "亚历山大入埃及"
+          year: "前332年"
+    - label: "后期"
+      nodes:
+        - label: "罗塞塔石碑刊刻"
+          year: "前196年"
+        - label: "罗马并托勒密埃及"
+          year: "前30年"
+        - label: "阿拉伯征服埃及"
+          year: "642年"

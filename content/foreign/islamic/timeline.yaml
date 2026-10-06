@@ -1,0 +1,9 @@
+# 伊斯兰世界大事年表（传世谱系称，未能联网核验）
+- {year_label: 622年, year: 622, period_id: foreign-islamic, title: 希吉拉，穆罕默德迁徙麦地那，纪元开端, confidence: high, source: 《历代先知与帝王史》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 661年（传世称）, year: 661, period_id: foreign-islamic, title: 伍麦叶王朝建国（传世称），都大马士革, confidence: medium, source: 《历代先知与帝王史》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 750年, year: 750, period_id: foreign-islamic, title: 阿拔斯革命，大食改朝，都巴格达, confidence: high, source: 《历代先知与帝王史》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1258年, year: 1258, period_id: foreign-islamic, title: 蒙古陷巴格达，阿拔斯王朝终结（关联国内yuan条）, confidence: high, source: 《历代先知与帝王史》续编与《元史》对照传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1271-1295年（口述存疑）, year: 1271, period_id: foreign-islamic, title: 马可·波罗东来，元朝见闻口述笔录存疑（关联国内yuan条）, confidence: low, source: 《马可·波罗游记》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1325-1354年, year: 1325, period_id: foreign-islamic, title: 伊本·白图泰游历亚非，归国笔录成书, confidence: medium, source: 《伊本·白图泰游记》传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1453年, year: 1453, period_id: foreign-islamic, title: 奥斯曼陷君士坦丁堡，改名伊斯坦布尔, confidence: high, source: 奥斯曼史传世本（版本待考，页码待核，未能联网核验）}
+- {year_label: 1924年, year: 1924, period_id: foreign-islamic, title: 哈里发制度终结（传世称）, confidence: high, source: 近代史传世记述（版本待考，页码待核，未能联网核验）}

@@ -24,6 +24,18 @@ for(const g of GROUPS){
 L.push('', '合计: 官方条目 ' + totOff + ' / 民间条目 ' + totFolk, '', '## TODO(增量扩展,不追求一次穷尽)', '');
 for(const t of TODO) L.push(t);
 L.push('', '## 史料清单与方法', '', '- 正史: 史记/汉书/后汉书/三国志/晋书/宋书/魏书/隋书/旧唐书/新唐书/旧五代史/新五代史/资治通鉴/宋史/辽史/金史/元史/明史/清实录(传世本,具体版本待考,页码待核,未能联网核验)', '- 民间: 野史笔记/口头传说/碑刻诗话等,凡演绎一律标folk/low后世演绎,不作史料', '- 图片: 自绘文字示意SVG(CC0),不下载外网图,不套现代边界', '- 时间线隔离: 每文件单period_id;全局页仅分组聚合展示', '');
+L.push('', '## 国外七组', '', '| 分组 | 综述 | 时间线 | mindmap | 官方条目 | 民间条目 | 状态 |', '|---|---|---|---|---|---|---|');
+const FOREIGN = ['egypt','mesopotamia','greece-rome','india','islamic','europe-medieval','modern'];
+let fOff=0, fFolk=0;
+for(const g of FOREIGN){
+  const gd = path.join(ROOT,'content','foreign',g);
+  const hasF = function(f){ return fs.existsSync(path.join(gd,f)) ? 'Y' : '-'; };
+  const cc = fs.existsSync(gd) ? countMd(path.join(ROOT,'content','foreign',g)) : { n:0, off:0, folk:0 };
+  fOff += cc.off; fFolk += cc.folk;
+  const okF = (hasF('overview.md')==='Y' && hasF('timeline.yaml')==='Y' && hasF('mindmap.yaml')==='Y' && cc.off>=2 && cc.folk>=1);
+  L.push('| ' + g + ' | ' + hasF('overview.md') + ' | ' + hasF('timeline.yaml') + ' | ' + hasF('mindmap.yaml') + ' | ' + cc.off + ' | ' + cc.folk + ' | ' + (okF?'达标':'待交稿') + ' |');
+}
+L.push('', '国外合计: 官方条目 ' + fOff + ' / 民间条目 ' + fFolk, '');
 fs.mkdirSync(path.join(ROOT,'data'), { recursive:true });
 fs.writeFileSync(path.join(ROOT,'data','coverage-report.md'), L.join('\n'), 'utf8');
 console.log('coverage: official=' + totOff + ' folk=' + totFolk);

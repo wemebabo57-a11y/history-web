@@ -1,0 +1,75 @@
+group: foreign-mesopotamia
+title: "美索不达米亚思维导图"
+emperors_mindmap:
+  root: "美索不达米亚·统治者世系（时间顺序）"
+  branches:
+    - label: "苏美尔至阿卡德"
+      nodes:
+        - label: "吉尔伽美什（传说之王）"
+          reign: "约前27世纪，是否实有待考"
+          note: "乌鲁克传说之王｜史诗不作信史"
+        - label: "萨尔贡"
+          reign: "约前2334—约前2279，约数存疑"
+          note: "建阿卡德王朝｜统一两河，年代存疑"
+    - label: "乌尔至古巴比伦"
+      nodes:
+        - label: "乌尔纳姆"
+          reign: "约前2112—约前2095，约数存疑"
+          note: "乌尔第三王朝复兴者｜法典残篇所系"
+        - label: "汉谟拉比"
+          reign: "约前1792—约前1750，约数存疑"
+          note: "颁布法典约前1754｜卢浮宫藏石柱确知"
+    - label: "亚述至新巴比伦"
+      nodes:
+        - label: "提格拉特帕拉沙尔三世"
+          reign: "前744—前727"
+          note: "亚述中兴｜年代据编年史，存疑"
+        - label: "尼布甲尼撒二世"
+          reign: "前604—前562"
+          note: "新巴比伦极盛｜巴比伦之囚传世称，存疑"
+        - label: "拿波尼度"
+          reign: "前556—前539"
+          note: "末代巴比伦王｜前539年波斯灭新巴比伦"
+power_mindmap:
+  root: "美索不达米亚·权臣与实力人物（时间顺序）"
+  branches:
+    - label: "阿卡德至古巴比伦"
+      nodes:
+        - label: "恩赫杜安娜"
+          reign: "约前23世纪，存疑"
+          note: "萨尔贡之女｜乌尔大祭司，文学作者传世称"
+    - label: "亚述帝国"
+      nodes:
+        - label: "辛那赫里布之书记官僚"
+          year: "前704—前681"
+          note: "尼尼微营建与书信行政｜集体建制，非一人"
+    - label: "新巴比伦至波斯"
+      nodes:
+        - label: "居鲁士"
+          year: "前539年"
+          note: "波斯灭新巴比伦者｜圆柱铭文自述宽容，立场书写存疑"
+timeline_mindmap:
+  root: "美索不达米亚·大事分期（时间顺序）"
+  branches:
+    - label: "前期"
+      nodes:
+        - label: "楔形文字萌芽（约数存疑）"
+          year: "约前3500年"
+        - label: "阿卡德统一"
+          year: "约前2334年"
+        - label: "乌尔第三王朝"
+          year: "约前2112年"
+    - label: "中期"
+      nodes:
+        - label: "汉谟拉比法典"
+          year: "约前1754年"
+        - label: "尼尼微陷落"
+          year: "前612年"
+    - label: "后期"
+      nodes:
+        - label: "传世称巴比伦之囚"
+          year: "前586年"
+        - label: "波斯灭新巴比伦"
+          year: "前539年"
+        - label: "亚历山大取巴比伦"
+          year: "前330年"
