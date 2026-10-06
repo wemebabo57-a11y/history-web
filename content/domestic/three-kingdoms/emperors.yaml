@@ -1,0 +1,12 @@
+# 曹魏5帝 + 蜀汉2帝 + 孙吴4帝(生卒多存疑,标约/存疑)
+- {name: 曹丕, temple: 高祖/文帝, polity: 曹魏, period_id: wei, reign: "220-226", birth_death: "约187—226,存疑", confidence: high, note: 代汉建魏}
+- {name: 曹叡, temple: 烈祖/明帝, polity: 曹魏, period_id: wei, reign: "226-239", birth_death: "约204—239,存疑", confidence: high, note: 青龙年间守成}
+- {name: 曹芳, temple: 无/少帝, polity: 曹魏, period_id: wei, reign: "239-254", birth_death: "约231—274,存疑", confidence: medium, note: 为司马师所废}
+- {name: 曹髦, temple: 无/高贵乡公, polity: 曹魏, period_id: wei, reign: "254-260", birth_death: "约241—260,存疑", confidence: medium, note: 甘露之变被杀,存疑细节}
+- {name: 曹奂, temple: 无/元帝, polity: 曹魏, period_id: wei, reign: "260-265", birth_death: "约246—302,存疑", confidence: medium, note: 禅让于司马炎}
+- {name: 刘备, temple: 烈祖/昭烈帝, polity: 蜀汉, period_id: shu, reign: "221-223", birth_death: "约161—223,存疑", confidence: high, note: 章武建国,夷陵后托孤}
+- {name: 刘禅, temple: 无/后主, polity: 蜀汉, period_id: shu, reign: "223-263", birth_death: "约207—271,存疑", confidence: high, note: 诸葛亮辅政,263降魏}
+- {name: 孙权, temple: 太祖/大帝, polity: 孙吴, period_id: wu, reign: "229-252", birth_death: "约182—252,存疑", confidence: high, note: 黄武称帝,都建业}
+- {name: 孙亮, temple: 无/少帝, polity: 孙吴, period_id: wu, reign: "252-258", birth_death: "约243—260,存疑", confidence: medium, note: 为孙綝所废}
+- {name: 孙休, temple: 无/景帝, polity: 孙吴, period_id: wu, reign: "258-264", birth_death: "约235—264,存疑", confidence: medium, note: 诛孙綝亲政}
+- {name: 孙皓, temple: 无/末帝, polity: 孙吴, period_id: wu, reign: "264-280", birth_death: "约242—284,存疑", confidence: medium, note: 280降晋}

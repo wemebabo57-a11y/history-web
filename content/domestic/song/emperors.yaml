@@ -1,0 +1,21 @@
+# 宋朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
+northern_song:
+  - {name: 宋太祖赵匡胤, reign: '960-976', birth_death: 约927—976存疑, note: 陈桥建国}
+  - {name: 宋太宗赵光义, reign: '976-997', birth_death: 约939—997存疑, note: 统一北汉，雍熙北伐失利}
+  - {name: 宋真宗赵恒, reign: '997-1022', birth_death: 约968—1022存疑, note: 澶渊之盟}
+  - {name: 宋仁宗赵祯, reign: '1022-1063', birth_death: 约1010—1063存疑, note: 庆历新政；刘太后垂帘前期}
+  - {name: 宋英宗赵曙, reign: '1063-1067', birth_death: 约1032—1067存疑, note: 濮议之争}
+  - {name: 宋神宗赵顼, reign: '1067-1085', birth_death: 约1048—1085存疑, note: 熙宁变法}
+  - {name: 宋哲宗赵煦, reign: '1085-1100', birth_death: 约1077—1100存疑, note: 高太后垂帘前期，新旧党反复}
+  - {name: 宋徽宗赵佶, reign: '1100-1126', birth_death: 约1082—1135存疑, note: 花石纲；靖康被俘}
+  - {name: 宋钦宗赵桓, reign: '1126-1127', birth_death: 约1100—约1156存疑, note: 靖康被俘北迁}
+southern_song:
+  - {name: 宋高宗赵构, reign: '1127-1162', birth_death: '1107-1187', note: 南渡定都临安；绍兴和议}
+  - {name: 宋孝宗赵昚, reign: '1162-1189', birth_death: 约1127—1194存疑, note: 隆兴北伐}
+  - {name: 宋光宗赵惇, reign: '1189-1194', birth_death: 约1147—1200存疑, note: 内禅}
+  - {name: 宋宁宗赵扩, reign: '1194-1224', birth_death: 约1168—1224存疑, note: 开禧北伐；史弥远专权}
+  - {name: 宋理宗赵昀, reign: '1224-1264', birth_death: 约1205—1264存疑, note: 端平入洛；联蒙灭金}
+  - {name: 宋度宗赵禥, reign: '1264-1274', birth_death: 约1240—1274存疑, note: 贾似道专权}
+  - {name: 宋恭帝赵㬎, reign: '1274-1276', birth_death: 约1271—约1323存疑, note: 临安陷落}
+  - {name: 宋端宗赵昰, reign: '1276-1278', birth_death: 约1269—1278存疑, note: 海上行朝}
+  - {name: 宋卫王赵昺, reign: '1278-1279', birth_death: 约1271—1279存疑, note: 崖山投海}

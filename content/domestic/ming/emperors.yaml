@@ -1,0 +1,22 @@
+# 明朝皇帝系表(十六帝,建文附注,南明附注存疑)
+period_id: ming
+dynasty: 明朝
+source_note: 主据《明史·本纪》(张廷玉等,传世本,具体版本待考;页码待核,未能联网核验)
+emperors:
+  - { temple: 太祖, name: 朱元璋, reign: 1368-1398, note: 洪武建国 }
+  - { temple: 惠宗, name: 朱允炆, reign: 1399-1402, note: 建文年号;下落存疑,诸说并存,见folk条目 }
+  - { temple: 成祖, name: 朱棣, reign: 1403-1424, note: 永乐迁都北京,郑和下西洋 }
+  - { temple: 仁宗, name: 朱高炽, reign: 1424-1425, note: 洪熙,在位不足一年 }
+  - { temple: 宣宗, name: 朱瞻基, reign: 1426-1435, note: 仁宣之治 }
+  - { temple: 英宗, name: 朱祁镇, reign: 1436-1449/1457-1464, note: 土木堡被俘,夺门复辟,前后两朝 }
+  - { temple: 代宗, name: 朱祁钰, reign: 1450-1457, note: 景泰,北京保卫战在于谦辅佐下进行 }
+  - { temple: 宪宗, name: 朱见深, reign: 1465-1487, note: 成化 }
+  - { temple: 孝宗, name: 朱佑樘, reign: 1488-1505, note: 弘治中兴之说,评价有争议 }
+  - { temple: 武宗, name: 朱厚照, reign: 1506-1521, note: 正德,豹房嬉游等记载多带谥法笔法,存疑 }
+  - { temple: 世宗, name: 朱厚熜, reign: 1522-1566, note: 嘉靖,大礼议 }
+  - { temple: 穆宗, name: 朱载垕, reign: 1567-1572, note: 隆庆,隆庆开关之说 }
+  - { temple: 神宗, name: 朱翊钧, reign: 1573-1620, note: 万历,张居正改革、援朝、怠政争议 }
+  - { temple: 光宗, name: 朱常洛, reign: 1620, note: 泰昌,在位一月,红丸案说法并存 }
+  - { temple: 熹宗, name: 朱由校, reign: 1621-1627, note: 天启,魏忠贤专权 }
+  - { temple: 思宗, name: 朱由检, reign: 1628-1644, note: 崇祯,煤山结局见folk条目,传说成分标存疑 }
+south_note: 南明弘光、隆武、永历等政权附注存疑,不计入十六帝,世系与正统性各家说法不一,此处不下结论。

@@ -1,0 +1,10 @@
+- {date: 208, event: 赤壁之战, period_id: wei, polity: 魏/吴/刘备联军, confidence: high, source: "陈寿《三国志》,裴注引《江表传》,传世本待考"}
+- {date: 220, event: 曹丕代汉建魏, period_id: wei, polity: 曹魏, confidence: high, source: "陈寿《三国志·文帝纪》"}
+- {date: 221, event: 刘备建蜀汉, period_id: shu, polity: 蜀汉, confidence: high, source: "陈寿《三国志·先主传》"}
+- {date: 222, event: 夷陵之战, period_id: wu, polity: 吴胜蜀, confidence: high, source: "陈寿《三国志·吴主传》《先主传》"}
+- {date: 229, event: 孙权建吴,三国鼎立成形, period_id: wu, polity: 孙吴, confidence: high, source: "陈���《三国志·吴主传》"}
+- {date: 234, event: 五丈原之战/诸葛亮卒, period_id: shu, polity: 蜀魏, confidence: high, source: "陈寿《三国志·诸葛亮传》"}
+- {date: 249, event: 高平陵之变, period_id: wei, polity: 曹魏/司马氏, confidence: high, source: "房玄龄等《晋书·宣帝纪》;《三国志》注"}
+- {date: 263, event: 魏灭蜀, period_id: shu, polity: 魏/蜀, confidence: high, source: "陈寿《三国志·后主传》;《晋书》"}
+- {date: 265, event: 司马炎代魏建晋, period_id: wei, polity: 西晋, confidence: high, source: "房玄龄等《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴,三国归晋, period_id: wu, polity: 西晋/吴, confidence: high, source: "房玄龄等《晋书·武帝纪》《吴志》注"}

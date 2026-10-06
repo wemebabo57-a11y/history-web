@@ -1,0 +1,35 @@
+# 隋朝权臣与实力人物.
+period_id: sui
+power_holders:
+  - name: 高熲
+    birth_death: 生年待考至607
+    role: 开皇宰相
+    note: 佐文帝统一与定律令,后被炀帝杀,细节存疑.
+  - name: 杨素
+    birth_death: 生年待考至606
+    role: 宰相行军元帅
+    note: 灭陈统军之一,营仁寿宫,炀帝朝病卒.
+  - name: 苏威
+    birth_death: 约541至623,生年存疑
+    role: 宰相参定章程
+    note: 开皇制度参与者,后仕唐.
+  - name: 宇文述
+    birth_death: 生年待考至616
+    role: 重臣将领
+    note: 从征辽东,炀帝亲信,病卒途中.
+  - name: 宇文化及
+    birth_death: 生年待考至619
+    role: 骁果军将领
+    note: 江都之变弑炀帝,立秦王浩,旋败死.
+  - name: 来护儿
+    birth_death: 生年待考至618
+    role: 水军将领
+    note: 征辽东平杨玄感,江都随炀帝遇难.
+  - name: 杨玄感
+    birth_death: 生年待考至613
+    role: 反隋首领
+    note: 612年趁征辽起兵黎阳,败死,隋末先声.
+  - name: 李渊
+    birth_death: 约566-635,生年存疑
+    role: 唐国公太原留守
+    note: 617年太原起兵,入长安立恭帝,次年建唐.

@@ -1,0 +1,5 @@
+# 西夏权臣与摄政简表（年份为传世纪年，未能联网核验）
+# period_id: western-xia
+- {nominal_lord: 李谅祚（毅宗）, holder: 没藏太后与没藏讹庞, role: 垂帘与国相专权, start_year: 1048, end_year: 1056, basis: 传世谱系称没藏氏专政, event: 没藏氏之乱, source: 《宋史》传世本卷四百八十五·夏国传（具体版本待考，页码待核）, dispute: 谅祚卒因与年龄记载矛盾存疑}
+- {nominal_lord: 李秉常（惠宗）, holder: 梁太后与梁乙埋, role: 垂帘与国相专权, start_year: 1068, end_year: 1094, basis: 传世谱系称梁氏秉政屡犯宋, event: 永乐城之战, source: 《宋史》传世本卷四百八十五·夏国传（具体版本待考，页码待核）, dispute: 永乐城宋军覆没数字悬殊存疑}
+- {nominal_lord: 李乾顺（崇宗）, holder: 晋王察哥, role: 统军经略横山, start_year: 1098, end_year: 1103, basis: 传世谱系称平夏城好水川用兵, event: 宋夏横山拉锯, source: 《宋史》传世本夏国传及种师道相关记述（具体版本待考，页码待核）, dispute: 战役归属与地名考订争议}

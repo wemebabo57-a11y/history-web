@@ -1,0 +1,5 @@
+- {name: 曹操, polity: 曹魏奠基, period_id: wei, role: 丞相/魏王, dates: "约155—220,存疑", confidence: high, source: "陈寿《三国志·魏书·武帝纪》,传世本,具体版本待考,页码待核,未能联网核验", note: 统一北方,赤壁后成三足之势}
+- {name: 司马懿, polity: 曹魏→晋奠基, period_id: wei, role: 太尉/托孤大臣, dates: "约179—251,存疑", confidence: high, source: "房玄龄等《晋书·宣帝纪》,传世本,具体版本待考,页码待核", note: 高平陵之变掌权}
+- {name: 诸葛亮, polity: 蜀汉, period_id: shu, role: 丞相, dates: "约181—234,存疑", confidence: high, source: "陈寿《三国志·蜀书·诸葛亮传》裴注,传世本,具体版本待考", note: 隆中对策、北伐、五丈原}
+- {name: 孙氏宗室与顾陆朱张, polity: 孙吴, period_id: wu, role: 宗室/江东士族共治, dates: "东汉末—280", confidence: medium, source: "陈寿《三国志·吴书》,裴注引江表传等,传世本待考", note: 周瑜/鲁肃/吕蒙/陆逊等前后辅政}
+- {name: 周瑜, polity: 孙吴, period_id: wu, role: 都督, dates: "约175—210,存疑", confidence: high, source: "陈寿《三国志·吴书·周瑜传》,传世本待考", note: 赤壁前线指挥之一}

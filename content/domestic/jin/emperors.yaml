@@ -1,0 +1,16 @@
+# 西晋4帝 + 东晋11帝(生卒存疑)
+- {name: 司马炎, temple: 世祖/武帝, polity: 西晋, period_id: jin-western, reign: "265-290", birth_death: "约236—290,存疑", confidence: high}
+- {name: 司马衷, temple: 无/惠帝, polity: 西晋, period_id: jin-western, reign: "290-307", birth_death: "约259—307,存疑", confidence: high}
+- {name: 司马炽, temple: 无/怀帝, polity: 西晋, period_id: jin-western, reign: "307-313", birth_death: "约284—313,存疑", confidence: medium}
+- {name: 司马邺, temple: 无/愍帝, polity: 西晋, period_id: jin-western, reign: "313-316", birth_death: "约300—318,存疑", confidence: medium}
+- {name: 司马睿, temple: 中宗/元帝, polity: 东晋, period_id: jin-eastern, reign: "317/318-323", birth_death: "约276—323,存疑", confidence: high}
+- {name: 司马绍, temple: 肃祖/明帝, polity: 东晋, period_id: jin-eastern, reign: "323-325", birth_death: "约299—325,存疑", confidence: high}
+- {name: 司马衍, temple: 显宗/成帝, polity: 东晋, period_id: jin-eastern, reign: "325-342", birth_death: "约321—342,存疑", confidence: medium}
+- {name: 司马岳, temple: 康帝, polity: 东晋, period_id: jin-eastern, reign: "342-344", birth_death: "约322—344,存疑", confidence: medium}
+- {name: 司马聃, temple: 孝宗/穆帝, polity: 东晋, period_id: jin-eastern, reign: "344-361", birth_death: "约343—361,存疑", confidence: medium}
+- {name: 司马丕, temple: 无/哀帝, polity: 东晋, period_id: jin-eastern, reign: "361-365", birth_death: "约341—365,存疑", confidence: medium}
+- {name: 司马奕, temple: 无/废帝, polity: 东晋, period_id: jin-eastern, reign: "365-371", birth_death: "约342—386,存疑", confidence: medium}
+- {name: 司马昱, temple: 太宗/简文帝, polity: 东晋, period_id: jin-eastern, reign: "371-372", birth_death: "约320—372,存疑", confidence: medium}
+- {name: 司马曜, temple: 烈宗/孝武帝, polity: 东晋, period_id: jin-eastern, reign: "372-396", birth_death: "约362—396,存疑", confidence: medium}
+- {name: 司马德宗, temple: 无/安帝, polity: 东晋, period_id: jin-eastern, reign: "396-419", birth_death: "约382—419,存疑", confidence: medium}
+- {name: 司马德文, temple: 无/恭帝, polity: 东晋, period_id: jin-eastern, reign: "419-420", birth_death: "约386—421,存疑", confidence: medium}

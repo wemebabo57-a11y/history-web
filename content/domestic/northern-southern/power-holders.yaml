@@ -1,0 +1,6 @@
+- {name: 刘裕, polity: 东晋→刘宋, period_id: northern-southern, role: 权臣/开国君主, dates: "约363—422,存疑", confidence: high, source: "沈约《宋书·武帝纪》,传世本待考", note: 北伐灭南燕后秦,420代晋}
+- {name: ��文帝改革集团(冯��后/孝文帝), polity: 北魏, period_id: northern-southern, role: 改革, dates: "约467—499,存疑", confidence: high, source: "魏收《魏书·高祖纪》,传世本待考", note: 迁都改制}
+- {name: 尔朱荣, polity: 北魏末, period_id: northern-southern, role: 权臣, dates: "约493—530,存疑", confidence: medium, source: "魏收《魏书》;《北史》,传世本待考", note: 河阴之变,北魏分裂前因}
+- {name: 高欢, polity: 东魏/北齐奠基, period_id: northern-southern, role: 权臣, dates: "约496—547,存疑", confidence: medium, source: "李百药《北齐书·神武纪》,传世本待考", note: 与宇文泰对峙}
+- {name: 宇文泰, polity: 西魏/北周奠基, period_id: northern-southern, role: 权臣/府兵, dates: "约507—556,存疑", confidence: medium, source: "令狐德棻等《周书·文帝纪》,传世本待考", note: 府兵制奠基}
+- {name: 侯景, polity: 梁末, period_id: northern-southern, role: 叛将, dates: "约503—552,存疑", confidence: medium, source: "姚思廉《梁书》;《南史》,传世本待考", note: 侯景之乱}

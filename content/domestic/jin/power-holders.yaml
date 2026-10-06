@@ -1,0 +1,5 @@
+- {name: 贾南风, polity: 西晋, period_id: jin-western, role: 皇后/乱政, dates: "约257—300,存疑", confidence: high, source: "房玄龄等《晋书·后妃传》,传世本待考", note: 八王之乱导火}
+- {name: 八王(汝南王亮等八王统称), polity: 西晋, period_id: jin-western, role: 宗王相残, dates: "291-306", confidence: medium, source: "房玄龄等《晋书·八王传》,传世本待考", note: 内耗致永嘉之乱}
+- {name: 王导, polity: 东晋, period_id: jin-eastern, role: 丞相/门阀领袖, dates: "约276—339,存疑", confidence: high, source: "房玄龄等《晋书·王导传》,传世本待考", note: 王与马共天下}
+- {name: 桓温, polity: 东晋, period_id: jin-eastern, role: 权臣/北伐, dates: "约312—373,存疑", confidence: high, source: "房玄龄等《晋书·桓温传》,传世本待考", note: 三次北伐,废立之权}
+- {name: 谢安, polity: 东晋, period_id: jin-eastern, role: 宰辅/淝水, dates: "约320—385,存疑", confidence: high, source: "房玄龄等《晋书·谢安传》,传世本待考", note: 淝水之���前后}

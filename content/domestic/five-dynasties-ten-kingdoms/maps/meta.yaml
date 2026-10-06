@@ -1,0 +1,16 @@
+# 五代十国示意地图元数据
+id: five-ten-sketch-meta
+title: 五代十国文字示意地图元数据
+period_id: five-dynasties
+map_files:
+  - maps/five-ten-sketch.svg
+  - maps/map.svg
+license: CC0自绘示意
+precision: 仅文字示意不声称精确疆界方框仅示相对方位
+source_title: 旧五代史新五代史资治通鉴宋史
+source_author: 薛居正等欧阳修司马光脱脱等
+source_version: 传世本具体版本待考
+source_locator: 梁唐晋汉周本纪十国世家后梁至后周纪吴越南唐世家页码待核未能联网核验
+confidence: low
+disclaimer: 仅文字示意不声称精确疆界十国名目与北汉归属争议存疑待考
+note: 本目录示意图共用元数据ten-kingdoms方位见official十国条目period_id按文件单值计本meta归five-dynasties

@@ -1,0 +1,28 @@
+period_id: five-dynasties
+# 五代十四主及十国代表君主表
+# 约表示生年存疑,非正统标注追尊或割据,来源卷次页码待核未能联网核验
+# 来源:旧五代史薛居正等传世辑本待考,新五代史欧阳修传世本待考,资治通鉴司马光传世本待考,宋史脱脱等传世本待考
+- {name: 朱温, temple: 太祖, polity: 后梁, reign: 907-912, birth_death: 约852-912生年存疑, legitimacy: 五代正统相承之一据旧史, source: 旧五代史梁太祖纪页码待核}
+- {name: 朱友珪, temple: 无追废, polity: 后梁, reign: 912-913, birth_death: 生卒年均存疑, legitimacy: 非正统篡立被杀, source: 旧五代史梁末帝纪附载页码待核}
+- {name: 朱友贞, temple: 末帝, polity: 后梁, reign: 913-923, birth_death: 约888-923生年存疑, legitimacy: 五代相承梁末主, source: 旧五代史梁末帝纪页码待核}
+- {name: 李存勖, temple: 庄宗, polity: 后唐, reign: 923-926, birth_death: 约885-926生年存疑, legitimacy: 五代正统相承之一, source: 新五代史唐庄宗纪页码待核}
+- {name: 李嗣源, temple: 明宗, polity: 后唐, reign: 926-933, birth_death: 约867-933生年存疑, legitimacy: 五代相承, source: 新五代史唐明宗纪页码待核}
+- {name: 李从厚, temple: 闵帝, polity: 后唐, reign: 933-934, birth_death: 约914-934生年存疑, legitimacy: 五代相承被废, source: 新五代史唐闵帝纪页码待核}
+- {name: 李从珂, temple: 末帝, polity: 后唐, reign: 934-936, birth_death: 约885-937生年存疑, legitimacy: 五代相承唐末主, source: 新五代史唐末帝纪页码待核}
+- {name: 石敬瑭, temple: 高祖, polity: 后晋, reign: 936-942, birth_death: 约892-942生年存疑, legitimacy: 五代相承评价争议割燕云, source: 旧五代史晋高祖纪页码待核}
+- {name: 石重贵, temple: 出帝, polity: 后晋, reign: 942-947, birth_death: 约914-974卒年存疑, legitimacy: 五代相承晋末主, source: 旧五代史晋少帝纪页码待核}
+- {name: 刘知远, temple: 高祖, polity: 后汉, reign: 947-948, birth_death: 约895-948生年存疑, legitimacy: 五代相承, source: 旧五代史汉高祖纪页码待核}
+- {name: 刘承祐, temple: 隐帝, polity: 后汉, reign: 948-951, birth_death: 约931-951生年存疑, legitimacy: 五代相承汉末主, source: 旧五代史汉隐帝纪页码待核}
+- {name: 郭威, temple: 太祖, polity: 后周, reign: 951-954, birth_death: 约904-954生年存疑, legitimacy: 五代相承, source: 旧五代史周太祖纪页码待核}
+- {name: 柴荣, temple: 世宗, polity: 后周, reign: 954-959, birth_death: 约921-959生年存疑, legitimacy: 五代相承奠基统一, source: 新五代史周世宗纪页码待核}
+- {name: 柴宗训, temple: 恭帝, polity: 后周, reign: 959-960, birth_death: 约953-973卒年存疑, legitimacy: 五代相承周末主禅宋, source: 新五代史周恭帝纪页码待核}
+- {name: 杨行密, temple: 太祖追尊非正统, polity: 吴, reign: 追尊实际据淮南892-905, birth_death: 约852-905生年存疑, legitimacy: 非正统十国吴追尊, source: 新五代史吴世家页码待核}
+- {name: 李昪, temple: 烈祖, polity: 南唐, reign: 937-943, birth_death: 约888-943生年存疑, legitimacy: 非正统十国南唐开国, source: 新五代史南唐世家页码待核}
+- {name: 钱镠, temple: 太祖, polity: 吴越, reign: 907-932, birth_death: 约852-932生年存疑, legitimacy: 非正统十国吴越开国, source: 宋史吴越世家页码待核}
+- {name: 王建, temple: 高祖, polity: 前蜀, reign: 907-918, birth_death: 约847-918生年存疑, legitimacy: 非正统十国前蜀开国, source: 新五代史前蜀世家页码待核}
+- {name: 孟知祥, temple: 高祖, polity: 后蜀, reign: 934-934, birth_death: 约874-934生年存疑, legitimacy: 非正统十国后蜀开国, source: 新五代史后蜀世家页码待核}
+- {name: 王审知, temple: 太祖追尊非正统, polity: 闽, reign: 追尊实际据闽893-925, birth_death: 约862-925生年存疑, legitimacy: 非正统十国闽追尊, source: 新五代史闽世家页码待核}
+- {name: 马殷, temple: 武穆王非帝号, polity: 楚, reign: 907-930, birth_death: 约852-930生年存疑, legitimacy: 非正统十国楚开国, source: 新五代史楚世家页码待核}
+- {name: 刘䶮, temple: 高祖, polity: 南汉, reign: 917-942, birth_death: 约889-942生年存疑, legitimacy: 非正统十国南汉开国, source: 新五代史南汉世家页码待核}
+- {name: 高季兴, temple: 武信王非帝号, polity: 荆南, reign: 907-929, birth_death: 约858-929生年存疑, legitimacy: 非正统十国荆南开国, source: 新五代史荆南世家页码待核}
+- {name: 刘崇, temple: 世祖, polity: 北汉, reign: 951-954, birth_death: 约895-954生年存疑, legitimacy: 非正统十国北汉开国归属争议, source: 新五代史北汉世家页码待核}

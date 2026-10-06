@@ -1,0 +1,16 @@
+period_id: qin
+polity: 秦朝
+note: 生卒年均为约数或存疑；在位时间据传世本，页码待核，未能联网核验
+emperors:
+  - name: 嬴政（秦始皇）
+    reign: 前246—前210（称帝前221—前210）
+    note: 首称皇帝；名义与实际均为最高统治者
+  - name: 嬴胡亥（秦二世）
+    reign: 前210—前207
+    note: 名义君主，实权多为赵高左右，详见power-holders
+  - name: 子婴（秦王子婴）
+    reign: 前207年在位约46日（存疑）
+    note: 或为始皇孙或弟，记载不一标争议；降于刘邦
+honored_not_reigned:
+  - name: 秦庄襄王嬴异人
+    note: 追尊，未即皇帝位

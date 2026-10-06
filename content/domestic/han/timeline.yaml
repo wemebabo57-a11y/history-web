@@ -1,0 +1,15 @@
+period_id: han-western
+covers: [han-western, xin, han-eastern]
+events:
+  - {year_label: 前206—前202年楚汉战争, year: -202, period_id: han-western, title: 刘邦胜项羽建汉, confidence: high, source: 史记·高祖本纪，页码待核}
+  - {year_label: 前180—前141年文景之治, year: -180, period_id: han-western, title: 休养生息，约，存疑分期, confidence: medium, source: 汉书·文景纪，页码待核}
+  - {year_label: 前141—前87年汉武制度开边, year: -141, period_id: han-western, title: 推恩令察举，北击匈奴, confidence: high, source: 汉书·武帝纪，页码待核}
+  - {year_label: 前138年前后张骞通西域, year: -138, period_id: han-western, title: 丝路开通之始（年代多说）, confidence: disputed, source: 史记·大宛列传，页码待核}
+  - {year_label: 前119年盐铁官营雏形, year: -119, period_id: han-western, title: 盐铁均输等财政改革, confidence: medium, source: 汉书·食货志，页码待核}
+  - {year_label: 8—23年王莽改制, year: 8, period_id: xin, title: 新莽改制与失败, confidence: high, source: 汉书·王莽传，页码待核}
+  - {year_label: 17—23年绿林赤眉起义, year: 17, period_id: xin, title: 农民起义覆新, confidence: high, source: 汉书／后汉书，页码待核}
+  - {year_label: 25年光武中兴, year: 25, period_id: han-eastern, title: 刘秀称帝建东汉, confidence: high, source: 后汉书·光武帝纪，页码待核}
+  - {year_label: 73—89年东汉经营西域北疆, year: 73, period_id: han-eastern, title: 班超经营西域，窦宪北伐，约，存疑, confidence: medium, source: 后汉书，页码待核}
+  - {year_label: 166—169年党锢之祸, year: 166, period_id: han-eastern, title: 宦官外戚士人冲突, confidence: high, source: 后汉书·党锢列传，页码待核}
+  - {year_label: 184年黄巾起义, year: 184, period_id: han-eastern, title: 张角太平道起义, confidence: high, source: 后汉书，页码待核}
+  - {year_label: 189—220年东汉倾覆, year: 189, period_id: han-eastern, title: 董卓之乱至禅让，约，存疑, confidence: medium, source: 后汉书／三国志，页码待核}

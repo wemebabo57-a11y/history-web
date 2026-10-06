@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>南北朝 · 304~589 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>南北朝 · 304~589</h1></header><h2>政权综述</h2><article class="entry">
+
+<h1>十六国南北朝综述(304—589,文字示意)</h1>
+
+<p>&gt; 本文件 period_id 用 northern-southern,正文分"十六国/南朝/北朝"三节,符合"综述用 northern-southern但正文分南北两节"要求。疆域只作文字示意。</p>
+
+<h2>南北两节</h2>
+<h3>北:十六国混战→北魏统一→东西分裂→北齐北周</h3>
+<p>304年刘渊建汉(前赵)、李雄建成都(成汉),十六国局面开;439年北魏太武帝统一北方;534年分东西魏,550北齐、557北周代立;577北周灭齐。</p>
+
+<h3>南:东晋→刘宋齐梁陈</h3>
+<p>420年刘裕代晋建宋,其后齐(479)、梁(502)、陈(557)递代,都建康;侯景之乱(548—552)重创南朝;589年隋灭陈,南北统一。</p>
+
+<h3>孝文改革</h3>
+<p>北魏孝文帝(471—499在位)迁都洛阳、改汉姓、断胡服等汉化改革,为北朝制度关键转折,详见 official 条。</p>
+
+<h2>Mermaid 示意</h2>
+
+<pre class="mermaid">
+<p>graph LR</p>
+<p>  JinW[西晋] --&gt; S16[十六国混战 304-439]</p>
+<p>  S16 --&gt; NWei[北魏 386-534: 道武→太武统一→孝文改革→分裂]</p>
+<p>  NWei --&gt; EW[东魏/西魏 534-]</p>
+<p>  EW --&gt; QZ[北齐/北周 550/557-577/581]</p>
+<p>  JinE[东晋] --&gt; Song[刘宋 420-479]</p>
+<p>  Song --&gt; Qi[齐 479-502]</p>
+<p>  Qi --&gt; Liang[梁 502-557]</p>
+<p>  Liang --&gt; Chen[陈 557-589]</p>
+<p>  QZ -. 589隋统一 .-&gt; Sui[隋]</p>
+<p>  Chen -. 589隋灭陈 .-&gt; Sui</p>
+<p></pre></p>
+
+<h2>地理文字示意(非精确)</h2>
+<ul>
+<li>北方:黄河流域为核心,平城/洛阳/邺/长安为都城转移点。</li>
+<li>南方:长江下游建康为中心,江淮为南北拉锯带。</li>
+<li>十六国政权此兴彼灭,不逐一划界。</li>
+</ul>
+
+<h2>来源</h2>
+<ul>
+<li>房玄龄等《晋书·载记》;魏收《魏书》;沈约《宋书》;萧子显《南齐书》;姚思廉《梁书》《陈书》;李百药《北齐书》;令狐德棻等《周书》;司马光《资治通鉴》。传世本,具体版本待考,页码待核,未能联网核验。</li>
+</ul>
+</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 南朝宋齐梁陈 + 北朝代表 + 十六国仅列代表(生卒存疑)
+- {name: 刘裕, temple: 高祖/武帝, polity: 刘宋, period_id: northern-southern, reign: "420-422", birth_death: "约363—422,存疑", confidence: high}
+- {name: 刘义隆, temple: 太祖/文帝, polity: 刘宋, period_id: northern-southern, reign: "424-453", birth_death: "约407—453,存疑", confidence: high}
+- {name: 萧道成, temple: 太祖/高帝, polity: 南齐, period_id: northern-southern, reign: "479-482", birth_death: "约427—482,存疑", confidence: medium}
+- {name: 萧衍, temple: 高祖/武帝, polity: 南梁, period_id: northern-southern, reign: "502-549", birth_death: "约464—549,存疑", confidence: high}
+- {name: 陈霸先, temple: 高祖/武帝, polity: 南陈, period_id: northern-southern, reign: "557-559", birth_death: "约503—559,存疑", confidence: medium}
+- {name: 拓跋珪, temple: 太祖/道武帝, polity: 北魏, period_id: northern-southern, reign: "386-409", birth_death: "约371—409,存疑", confidence: high}
+- {name: 拓跋焘, temple: 世祖/太武帝, polity: 北魏, period_id: northern-southern, reign: "423-452", birth_death: "约408—452,存疑", confidence: high}
+- {name: 拓跋宏, temple: 高祖/孝文帝, polity: 北魏, period_id: northern-southern, reign: "471-499", birth_death: "约467—499,存疑", confidence: high}
+- {name: 高洋, temple: 显祖/文宣帝, polity: 北齐, period_id: northern-southern, reign: "550-559", birth_death: "约529—559,存疑", confidence: medium}
+- {name: 宇文邕, temple: 高祖/武帝, polity: 北周, period_id: northern-southern, reign: "560-578", birth_death: "约543—578,存疑", confidence: medium}
+- {name: 刘渊(代表), polity: 前赵/汉赵, period_id: sixteen-kingdoms, reign: "304-310", birth_death: "约251—310,存疑", confidence: medium, note: 十六国仅列代表}
+- {name: 苻坚(代表), polity: 前秦, period_id: sixteen-kingdoms, reign: "357-385", birth_death: "约338—385,存疑", confidence: high, note: 淝水之战}
+</pre><h2>实际掌权人表 power-holders.yaml</h2><pre>- {name: 刘裕, polity: 东晋→刘宋, period_id: northern-southern, role: 权臣/开国君主, dates: "约363—422,存疑", confidence: high, source: "沈约《宋书·武帝纪》,传世本待考", note: 北伐灭南燕后秦,420代晋}
+- {name: ��文帝改革集团(冯��后/孝文帝), polity: 北魏, period_id: northern-southern, role: 改革, dates: "约467—499,存疑", confidence: high, source: "魏收《魏书·高祖纪》,传世本待考", note: 迁都改制}
+- {name: 尔朱荣, polity: 北魏末, period_id: northern-southern, role: 权臣, dates: "约493—530,存疑", confidence: medium, source: "魏收《魏书》;《北史》,传世本待考", note: 河阴之变,北魏分裂前因}
+- {name: 高欢, polity: 东魏/北齐奠基, period_id: northern-southern, role: 权臣, dates: "约496—547,存疑", confidence: medium, source: "李百药《北齐书·神武纪》,传世本待考", note: 与宇文泰对峙}
+- {name: 宇文泰, polity: 西魏/北周奠基, period_id: northern-southern, role: 权臣/府兵, dates: "约507—556,存疑", confidence: medium, source: "令狐德棻等《周书·文帝纪》,传世本待考", note: 府兵制奠基}
+- {name: 侯景, polity: 梁末, period_id: northern-southern, role: 叛将, dates: "约503—552,存疑", confidence: medium, source: "姚思廉《梁书》;《南史》,传世本待考", note: 侯景之乱}
+</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre>- {date: 304, event: 刘渊建汉/R李雄建成都,十六国开端, period_id: sixteen-kingdoms, confidence: medium, source: "《晋书·载记》,传世本待考"}
+- {date: 383, event: 淝水之战, period_id: sixteen-kingdoms, confidence: high, source: "《晋书·苻坚载记》《谢安传》;《资治通鉴》"}
+- {date: 386, event: 北魏建国(拓跋珪), period_id: northern-southern, confidence: high, source: "魏收《魏书·太祖纪》"}
+- {date: 420, event: 刘裕代晋建宋, period_id: northern-southern, confidence: high, source: "沈约《宋书·武帝纪》"}
+- {date: 439, event: 北魏统一北方, period_id: northern-southern, confidence: high, source: "魏收《魏书·太武帝纪》"}
+- {date: 471, event: 孝文帝即位/改革启动, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
+- {date: 494, event: 迁都洛阳, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
+- {date: 534, event: 北魏分裂东西魏, period_id: northern-southern, confidence: high, source: "《魏书》《北齐书》《周书》"}
+- {date: 548, event: 侯景之乱起, period_id: northern-southern, confidence: high, source: "姚思廉《梁书》;《资治通鉴·梁纪》"}
+- {date: 577, event: 北周灭北齐, period_id: northern-southern, confidence: high, source: "令狐德棻等《周书》;李百药《北齐书》"}
+- {date: 589, event: 隋灭陈,南北统一, period_id: northern-southern, confidence: high, source: "姚思廉《陈书》;《隋书》"}
+</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" role="img" aria-label="南北朝疆域文字示意"><title>南北朝疆域文字示意（非精确测绘）</title><desc>自绘示意方框图，仅表意方位，不套用现代边界</desc><rect x="10" y="10" width="620" height="400" fill="none" stroke="black"/><text x="320" y="60" text-anchor="middle">南北朝疆域文字示意</text><rect x="180" y="130" width="280" height="150" fill="none" stroke="black"/><text x="320" y="190" text-anchor="middle">南北对峙方向示意</text><text x="320" y="220" text-anchor="middle">方位仅供想象禁套现代边界</text><text x="320" y="370" text-anchor="middle">CC0 自绘示意</text></svg></div><pre>period_id: northern-southern
+map: northern-southern-sketch.svg
+method: 自绘示意方框图，仅文字示意方位，不作精确测绘
+license: CC0
+dispute: 边界数字史料不一，不作精确声称；不套用现代行政边界
+note: 需与dynasty.md疆域文字描述配合使用
+source_note: 未能联网核验，页码待核
+</pre><h2>史料条目(官 3 / 民 1)</h2><ul><li><a href="entry-sixteen-kingdoms-official-淝水-001.html">淝水之战(383)</a> <span class="badge">official</span> <span class="badge">sixteen-kingdoms</span></li><li><a href="entry-northern-southern-official-侯景-003.html">侯景之乱(548—552)</a> <span class="badge">official</span> <span class="badge">northern-southern</span></li><li><a href="entry-northern-southern-official-孝文-002.html">孝文帝改革(含迁都洛阳)</a> <span class="badge">official</span> <span class="badge">northern-southern</span></li><li><a href="entry-northern-southern-folk-木兰-001.html">木兰从军(民间文学,非断代史实)</a> <span class="badge">folk</span> <span class="badge">northern-southern</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

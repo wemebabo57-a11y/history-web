@@ -1,0 +1,11 @@
+{
+  "name": "history-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "可验证可追溯历史全集静态站(零依赖构建)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "coverage": "node scripts/coverage.mjs"
+  }
+}

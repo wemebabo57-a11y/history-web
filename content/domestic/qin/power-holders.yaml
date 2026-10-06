@@ -1,0 +1,38 @@
+period_id: qin
+entries:
+  - holder: 吕不韦（约前292—前235，存疑）
+    nominal_lord: 秦庄襄王／秦王政（早年）
+    role: 相国、仲父
+    start_year: -251
+    end_year: -237
+    basis: 拥立庄襄王，摄政秦王政早年
+    event: 嫪毐之乱后免相徙蜀
+    source: 史记·吕不韦列传，传世本，页码待���，未能联网核验
+    dispute: 与嬴政生父传闻系后世演绎，标存疑
+  - holder: 李斯（约前280—前208，存疑）
+    nominal_lord: 秦始皇
+    role: 丞相
+    start_year: -221
+    end_year: -208
+    basis: 郡县制、书同文等制度推行者之一
+    event: 沙丘之谋，后为赵高所害
+    source: 史记·李斯列传，页码待核
+    dispute: 沙丘密谋细节各书记载出入，标争议
+  - holder: 赵高（生卒年存疑）
+    nominal_lord: 秦二世胡亥
+    role: 中车府令／丞相（传世本记载，存疑）
+    start_year: -210
+    end_year: -207
+    basis: 沙丘改诏、指鹿为马典故所涉人物
+    event: 逼杀李斯、弑二世，后被子婴诛杀
+    source: 史记·李斯列传／秦始皇本纪，页码待核
+    dispute: 宦官身份与权力范围记载不一，标争议
+  - holder: 子婴时期权变（子婴，生卒存疑）
+    nominal_lord: 子婴
+    role: 秦王（短暂）
+    start_year: -207
+    end_year: -207
+    basis: 诛杀赵高，谋图自保
+    event: 在位约46日后降刘邦
+    source: 史记·秦始皇本纪，页码待核
+    dispute: 身份世系争议，标待考

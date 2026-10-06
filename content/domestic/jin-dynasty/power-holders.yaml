@@ -1,0 +1,6 @@
+# 金权臣与摄政简表（年份为传世纪年，未能联网核验）
+# period_id: jin-jurchen
+- {nominal_lord: 完颜阿骨打（太祖）, holder: 完颜宗翰（粘罕）, role: 都统统兵灭辽伐宋, start_year: 1115, end_year: 1127, basis: 传世谱系称西路军主帅, event: 灭辽靖康之役, source: 《金史》传世本卷七十二·宗翰传（具体版本待考，页码待核）, dispute: 战功归属与宗望宗翰分工记述小异}
+- {nominal_lord: 完颜亶（熙宗）, holder: 完颜宗弼（兀术）, role: 都元帅、尚书令, start_year: 1135, end_year: 1148, basis: 传世谱系称主宋金和议军政, event: 绍兴和议前对宋用兵, source: 《金史》传世本卷七十七·宗弼传（具体版本待考，页码待核）, dispute: 演义附会连环马等一律后世演绎}
+- {nominal_lord: 完颜璟（章宗）, holder: 完颜襄, role: 丞相统边备蒙古, start_year: 1208, end_year: 1212, basis: 传世谱系称备边失策, event: 蒙古初侵, source: 《金史》传世本相关传（具体版本待考，页码待核）, dispute: 备边城堡得失评价争议}
+- {nominal_lord: 完颜守绪（哀宗）, holder: 完颜合达与移剌蒲阿, role: 忠孝军统帅, start_year: 1231, end_year: 1232, basis: 传世谱系称三峰山覆没, event: 三峰山之战, source: 《金史·哀宗纪》传世本（具体版本待考，页码待核）, dispute: 兵力与溃败过程三方记述矛盾存疑}

@@ -1,0 +1,35 @@
+# 隋朝大事年表.
+period_id: sui
+timeline:
+  - year: 581
+    event: 杨坚代周建隋,改元开皇
+    note: 北周静帝禅位,隋立.
+  - year: 589
+    event: 隋灭陈南北统一
+    note: 杨广统军平陈,结束长期分裂.
+  - year: 590
+    event: 开皇制度推行
+    end_year: 604
+    note: 均田租庸调府兵科举雏形,详见官方条目.
+  - year: 605
+    event: 营东都洛阳开凿通济渠
+    note: 大运河工程启动,役重民困.
+  - year: 607
+    event: 筑长城通西域张掖置郡存疑待考
+    note: 对突厥吐谷浑用兵,方位示意非精确.
+  - year: 612
+    event: 一征辽东无功
+    end_year: 614
+    note: 三征高句丽均无功,耗尽国力.
+  - year: 613
+    event: 杨玄感黎阳起兵
+    note: 隋末大起义先声.
+  - year: 615
+    event: 雁门之围
+    note: 突厥围炀帝于雁门,细节存疑.
+  - year: 617
+    event: 李渊太原起兵入长安立代王侑
+    note: 改元义宁,隋名存实亡.
+  - year: 618
+    event: 江都之变炀帝被弑,恭帝禅唐隋亡
+    note: 宇文化及弑帝,李渊受禅建唐.

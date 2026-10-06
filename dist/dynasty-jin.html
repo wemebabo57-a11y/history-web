@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>晋 · 265~420 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>晋 · 265~420</h1></header><h2>政权综述</h2><article class="entry">
+
+<h1>两晋综述(265—420,文字示意)</h1>
+
+<p>&gt; 一文件一period_id约束下本文件 period_id 取 jin-western 为代表,正文分"西晋/东晋"两节;东晋内容另见 emperors.yaml 中 jin-eastern 条目。疆域只作文字示意。</p>
+
+<h2>西晋(265—316)</h2>
+<p>司马炎代魏(265)、灭吴(280)统一;太康之治后分封诸王,贾后乱政,八王之乱(291—306)耗竭国力;永嘉之乱(311)洛阳陷,316长安陷,西晋亡。</p>
+
+<h2>东晋(317—420)</h2>
+<p>司马睿317建业建制、318称帝,史称东晋;王导“王与马共天下”,门阀(王谢桓庾)与皇权共治;祖逖北伐、桓温北伐、淝水之战(383)前后守成;刘裕北伐后420代晋建宋。</p>
+
+<h2>Mermaid 示意</h2>
+
+<pre class="mermaid">
+<p>graph LR</p>
+<p>  Wei[曹魏] --&gt; JinW[西晋 265-316: 武帝→惠帝→怀帝→愍帝]</p>
+<p>  JinW -- 八王之乱/永嘉之乱 --&gt; JinE[东晋 317-420: 元帝→…→恭帝]</p>
+<p>  JinE -- 刘裕 420代晋 --&gt; Song[刘宋]</p>
+<p></pre></p>
+
+<h2>地理文字示意(非精确)</h2>
+<ul>
+<li>西晋初:约复汉版图而州郡分封并立,都洛阳。</li>
+<li>永嘉后:北方十六国混战,南方东晋约当长江以南,都建康(建业改名)。</li>
+<li>南北分界流动,不绘精确线。</li>
+</ul>
+
+<h2>来源</h2>
+<ul>
+<li>房玄龄等《晋书》纪传;司马光《资治通鉴·晋纪》;刘义庆《世说新语》仅作风貌参考。传世本,具体版本待考,页码待核,未���联网核验。</li>
+</ul>
+</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 西晋4帝 + 东晋11帝(生卒存疑)
+- {name: 司马炎, temple: 世祖/武帝, polity: 西晋, period_id: jin-western, reign: "265-290", birth_death: "约236—290,存疑", confidence: high}
+- {name: 司马衷, temple: 无/惠帝, polity: 西晋, period_id: jin-western, reign: "290-307", birth_death: "约259—307,存疑", confidence: high}
+- {name: 司马炽, temple: 无/怀帝, polity: 西晋, period_id: jin-western, reign: "307-313", birth_death: "约284—313,存疑", confidence: medium}
+- {name: 司马邺, temple: 无/愍帝, polity: 西晋, period_id: jin-western, reign: "313-316", birth_death: "约300—318,存疑", confidence: medium}
+- {name: 司马睿, temple: 中宗/元帝, polity: 东晋, period_id: jin-eastern, reign: "317/318-323", birth_death: "约276—323,存疑", confidence: high}
+- {name: 司马绍, temple: 肃祖/明帝, polity: 东晋, period_id: jin-eastern, reign: "323-325", birth_death: "约299—325,存疑", confidence: high}
+- {name: 司马衍, temple: 显宗/成帝, polity: 东晋, period_id: jin-eastern, reign: "325-342", birth_death: "约321—342,存疑", confidence: medium}
+- {name: 司马岳, temple: 康帝, polity: 东晋, period_id: jin-eastern, reign: "342-344", birth_death: "约322—344,存疑", confidence: medium}
+- {name: 司马聃, temple: 孝宗/穆帝, polity: 东晋, period_id: jin-eastern, reign: "344-361", birth_death: "约343—361,存疑", confidence: medium}
+- {name: 司马丕, temple: 无/哀帝, polity: 东晋, period_id: jin-eastern, reign: "361-365", birth_death: "约341—365,存疑", confidence: medium}
+- {name: 司马奕, temple: 无/废帝, polity: 东晋, period_id: jin-eastern, reign: "365-371", birth_death: "约342—386,存疑", confidence: medium}
+- {name: 司马昱, temple: 太宗/简文帝, polity: 东晋, period_id: jin-eastern, reign: "371-372", birth_death: "约320—372,存疑", confidence: medium}
+- {name: 司马曜, temple: 烈宗/孝武帝, polity: 东晋, period_id: jin-eastern, reign: "372-396", birth_death: "约362—396,存疑", confidence: medium}
+- {name: 司马德宗, temple: 无/安帝, polity: 东晋, period_id: jin-eastern, reign: "396-419", birth_death: "约382—419,存疑", confidence: medium}
+- {name: 司马德文, temple: 无/恭帝, polity: 东晋, period_id: jin-eastern, reign: "419-420", birth_death: "约386—421,存疑", confidence: medium}
+</pre><h2>实际掌权人表 power-holders.yaml</h2><pre>- {name: 贾南风, polity: 西晋, period_id: jin-western, role: 皇后/乱政, dates: "约257—300,存疑", confidence: high, source: "房玄龄等《晋书·后妃传》,传世本待考", note: 八王之乱导火}
+- {name: 八王(汝南王亮等八王统称), polity: 西晋, period_id: jin-western, role: 宗王相残, dates: "291-306", confidence: medium, source: "房玄龄等《晋书·八王传》,传世本待考", note: 内耗致永嘉之乱}
+- {name: 王导, polity: 东晋, period_id: jin-eastern, role: 丞相/门阀领袖, dates: "约276—339,存疑", confidence: high, source: "房玄龄等《晋书·王导传》,传世本待考", note: 王与马共天下}
+- {name: 桓温, polity: 东晋, period_id: jin-eastern, role: 权臣/北伐, dates: "约312—373,存疑", confidence: high, source: "房玄龄等《晋书·桓温传》,传世本待考", note: 三次北伐,废立之权}
+- {name: 谢安, polity: 东晋, period_id: jin-eastern, role: 宰辅/淝水, dates: "约320—385,存疑", confidence: high, source: "房玄龄等《晋书·谢安传》,传世本待考", note: 淝水之���前后}
+</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre>- {date: 265, event: 司马炎代魏建晋, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴统一, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 291, event: 八王之乱起, period_id: jin-western, confidence: high, source: "《晋书·八王传》《后妃传》"}
+- {date: 311, event: 永嘉之乱/洛阳陷, period_id: jin-western, confidence: high, source: "《晋书·怀帝纪》;《资治通鉴·晋纪》"}
+- {date: 316, event: 长安陷,西晋亡, period_id: jin-western, confidence: high, source: "《晋书·愍帝纪》"}
+- {date: 317, event: 司马睿建业建制,东晋始, period_id: jin-eastern, confidence: high, source: "《晋书·元帝纪》"}
+- {date: 383, event: 淝水之战, period_id: jin-eastern, confidence: high, source: "《晋书·谢安传》《苻坚载记》;《资治通鉴》"}
+- {date: 420, event: 刘裕代晋建宋, period_id: jin-eastern, confidence: high, source: "《晋书·恭帝纪》;《宋书》"}
+</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" role="img" aria-label="两晋疆域文字示意"><title>两晋疆域文字示意（非精确测绘）</title><desc>自绘示意方框图，仅表意方位，不套用现代边界</desc><rect x="10" y="10" width="620" height="400" fill="none" stroke="black"/><text x="320" y="60" text-anchor="middle">两晋疆域文字示意</text><rect x="180" y="130" width="280" height="150" fill="none" stroke="black"/><text x="320" y="190" text-anchor="middle">中原—江左方向示意</text><text x="320" y="220" text-anchor="middle">方位仅供想象禁套现代边界</text><text x="320" y="370" text-anchor="middle">CC0 自绘示意</text></svg></div><pre>period_id: jin
+map: jin-sketch.svg
+method: 自绘示意方框图，仅文字示意方位，不作精确测绘
+license: CC0
+dispute: 边界数字史料不一，不作精确声称；不套用现代行政边界
+note: 需与dynasty.md疆域文字描述配合使用
+source_note: 未能联网核验，页码待核
+</pre><h2>史料条目(官 2 / 民 1)</h2><ul><li><a href="entry-jin-western-official-八王-001.html">八王之乱(291—306)</a> <span class="badge">official</span> <span class="badge">jin-western</span></li><li><a href="entry-jin-western-official-永嘉-002.html">永嘉之乱与南渡(311—318)</a> <span class="badge">official</span> <span class="badge">jin-western</span></li><li><a href="entry-jin-western-folk-斗富-001.html">石崇王恺斗富(后世演绎成分,风貌参考)</a> <span class="badge">folk</span> <span class="badge">jin-western</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

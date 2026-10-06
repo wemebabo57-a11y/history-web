@@ -1,0 +1,7 @@
+# 元权臣与摄政简表（年份为传世纪年，未能联网核验）
+# period_id: yuan
+- {nominal_lord: 窝阔台汗, holder: 耶律楚材, role: 中书令, start_year: 1228, end_year: 1243, basis: 传世谱系称佐太宗行汉法、定赋税, event: 中书省建立, source: 《元史》传世本卷一百四十六·耶律楚材传（具体版本待考，页码待核）, dispute: 汉法施行范围与评价争议}
+- {nominal_lord: 忽必烈（世祖）, holder: 伯颜, role: 中书右丞相、统兵伐宋, start_year: 1274, end_year: 1279, basis: 传世谱系称统军灭宋, event: 襄阳崖山之战, source: 《元史》传世本卷一百二十七·伯颜传（具体版本待考，页码待核）, dispute: 屠城与招降数字诸书记述悬殊存疑}
+- {nominal_lord: 忽必烈（世祖）, holder: 阿合马, role: 中书平章理财, start_year: 1264, end_year: 1282, basis: 传世谱系称专理财被杀, event: 阿合马遇害, source: 《元史》传世本卷二百五·奸臣传（具体版本待考，页码待核）, dispute: 贪暴数字多出政敌记述存疑}
+- {nominal_lord: 惠宗妥懽帖睦尔（顺帝）, holder: 伯颜（秦王伯颜）, role: 中书丞相专权, start_year: 1333, end_year: 1340, basis: 传世谱系称罢黜后流放, event: 伯颜罢相, source: 《元史》传世本卷一百三十八·伯颜传具体版本待考，页码待核）, dispute: 废科举与种族政策细节争议}
+- {nominal_lord: 惠宗妥懽帖睦尔（顺帝）, holder: 脱脱, role: 中书右丞相、修史治河, start_year: 1341, end_year: 1355, basis: 传世谱系称主持修辽宋金三史、治黄河, event: 修三史与徐州治河, source: 《元史》传世本卷一百三十八·脱脱传（具体版本待考，页码待核）, dispute: 治河与致乱因果评价争议}

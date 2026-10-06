@@ -1,0 +1,50 @@
+period_id: qin
+events:
+  - year_label: 前221年秦统一
+    year: -221
+    period_id: qin
+    title: 秦灭齐，统一六国
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前221年称皇帝
+    year: -221
+    period_id: qin
+    title: 始皇称皇帝，定制度
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前221年行郡县
+    year: -221
+    period_id: qin
+    title: 废分封，行郡县制
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前213—前212年焚书坑儒
+    year: -213
+    period_id: qin
+    title: 焚书坑儒（范围性质争议）
+    confidence: disputed
+    source: 史记·秦始皇本纪；争议见正文
+  - year_label: 前212年秦直道
+    year: -212
+    period_id: qin
+    title: 修筑秦直道（约，存疑）
+    confidence: medium
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前209年陈胜吴广起义
+    year: -209
+    period_id: qin
+    title: 大泽乡起义
+    confidence: high
+    source: 史记·陈涉世家，页码待核
+  - year_label: 前207年巨鹿之战
+    year: -207
+    period_id: qin
+    title: 项羽巨鹿破秦军主力
+    confidence: high
+    source: 史记·项羽本纪，页码待核
+  - year_label: 前207年秦亡
+    year: -207
+    period_id: qin
+    title: 子婴降刘邦，秦亡
+    confidence: high
+    source: 史记·秦始皇本纪／高祖本纪，页码待核

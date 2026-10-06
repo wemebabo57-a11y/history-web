@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>全局时间线(按朝代分组聚合展示) | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 时间线</div><h1>全局时间线(按朝代分组聚合展示)</h1></header><p>各朝代时间线独立成段,仅聚合展示,不混写正文。</p><h2 id="qin">qin</h2><pre>period_id: qin
+events:
+  - year_label: 前221年秦统一
+    year: -221
+    period_id: qin
+    title: 秦灭齐，统一六国
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前221年称皇帝
+    year: -221
+    period_id: qin
+    title: 始皇称皇帝，定制度
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前221年行郡县
+    year: -221
+    period_id: qin
+    title: 废分封，行郡县制
+    confidence: high
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前213—前212年焚书坑儒
+    year: -213
+    period_id: qin
+    title: 焚书坑儒（范围性质争议）
+    confidence: disputed
+    source: 史记·秦始皇本纪；争议见正文
+  - year_label: 前212年秦直道
+    year: -212
+    period_id: qin
+    title: 修筑秦直道（约，存疑）
+    confidence: medium
+    source: 史记·秦始皇本纪，页码待核
+  - year_label: 前209年陈胜吴广起义
+    year: -209
+    period_id: qin
+    title: 大泽乡起义
+    confidence: high
+    source: 史记·陈涉世家，页码待核
+  - year_label: 前207年巨鹿之战
+    year: -207
+    period_id: qin
+    title: 项羽巨鹿破秦军主力
+    confidence: high
+    source: 史记·项羽本纪，页码待核
+  - year_label: 前207年秦亡
+    year: -207
+    period_id: qin
+    title: 子婴降刘邦，秦亡
+    confidence: high
+    source: 史记·秦始皇本纪／高祖本纪，页码待核
+</pre><h2 id="han">han</h2><pre>period_id: han-western
+covers: [han-western, xin, han-eastern]
+events:
+  - {year_label: 前206—前202年楚汉战争, year: -202, period_id: han-western, title: 刘邦胜项羽建汉, confidence: high, source: 史记·高祖本纪，页码待核}
+  - {year_label: 前180—前141年文景之治, year: -180, period_id: han-western, title: 休养生息，约，存疑分期, confidence: medium, source: 汉书·文景纪，页码待核}
+  - {year_label: 前141—前87年汉武制度开边, year: -141, period_id: han-western, title: 推恩令察举，北击匈奴, confidence: high, source: 汉书·武帝纪，页码待核}
+  - {year_label: 前138年前后张骞通西域, year: -138, period_id: han-western, title: 丝路开通之始（年代多说）, confidence: disputed, source: 史记·大宛列传，页码待核}
+  - {year_label: 前119年盐铁官营雏形, year: -119, period_id: han-western, title: 盐铁均输等财政改革, confidence: medium, source: 汉书·食货志，页码待核}
+  - {year_label: 8—23年王莽改制, year: 8, period_id: xin, title: 新莽改制与失败, confidence: high, source: 汉书·王莽传，页码待核}
+  - {year_label: 17—23年绿林赤眉起义, year: 17, period_id: xin, title: 农民起义覆新, confidence: high, source: 汉书／后汉书，页码待核}
+  - {year_label: 25年光武中兴, year: 25, period_id: han-eastern, title: 刘秀称帝建东汉, confidence: high, source: 后汉书·光武帝纪，页码待核}
+  - {year_label: 73—89年东汉经营西域北疆, year: 73, period_id: han-eastern, title: 班超经营西域，窦宪北伐，约，存疑, confidence: medium, source: 后汉书，页码待核}
+  - {year_label: 166—169年党锢之祸, year: 166, period_id: han-eastern, title: 宦官外戚士人冲突, confidence: high, source: 后汉书·党锢列传，页码待核}
+  - {year_label: 184年黄巾起义, year: 184, period_id: han-eastern, title: 张角太平道起义, confidence: high, source: 后汉书，页码待核}
+  - {year_label: 189—220年东汉倾覆, year: 189, period_id: han-eastern, title: 董卓之乱至禅让，约，存疑, confidence: medium, source: 后汉书／三国志，页码待核}
+</pre><h2 id="three-kingdoms">three-kingdoms</h2><pre>- {date: 208, event: 赤壁之战, period_id: wei, polity: 魏/吴/刘备联军, confidence: high, source: "陈寿《三国志》,裴注引《江表传》,传世本待考"}
+- {date: 220, event: 曹丕代汉建魏, period_id: wei, polity: 曹魏, confidence: high, source: "陈寿《三国志·文帝纪》"}
+- {date: 221, event: 刘备建蜀汉, period_id: shu, polity: 蜀汉, confidence: high, source: "陈寿《三国志·先主传》"}
+- {date: 222, event: 夷陵之战, period_id: wu, polity: 吴胜蜀, confidence: high, source: "陈寿《三国志·吴主传》《先主传》"}
+- {date: 229, event: 孙权建吴,三国鼎立成形, period_id: wu, polity: 孙吴, confidence: high, source: "陈���《三国志·吴主传》"}
+- {date: 234, event: 五丈原之战/诸葛亮卒, period_id: shu, polity: 蜀魏, confidence: high, source: "陈寿《三国志·诸葛亮传》"}
+- {date: 249, event: 高平陵之变, period_id: wei, polity: 曹魏/司马氏, confidence: high, source: "房玄龄等《晋书·宣帝纪》;《三国志》注"}
+- {date: 263, event: 魏灭蜀, period_id: shu, polity: 魏/蜀, confidence: high, source: "陈寿《三国志·后主传》;《晋书》"}
+- {date: 265, event: 司马炎代魏建晋, period_id: wei, polity: 西晋, confidence: high, source: "房玄龄等《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴,三国归晋, period_id: wu, polity: 西晋/吴, confidence: high, source: "房玄龄等《晋书·武帝纪》《吴志》注"}
+</pre><h2 id="jin">jin</h2><pre>- {date: 265, event: 司马炎代魏建晋, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴统一, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 291, event: 八王之乱起, period_id: jin-western, confidence: high, source: "《晋书·八王传》《后妃传》"}
+- {date: 311, event: 永嘉之乱/洛阳陷, period_id: jin-western, confidence: high, source: "《晋书·怀帝纪》;《资治通鉴·晋纪》"}
+- {date: 316, event: 长安陷,西晋亡, period_id: jin-western, confidence: high, source: "《晋书·愍帝纪》"}
+- {date: 317, event: 司马睿建业建制,东晋始, period_id: jin-eastern, confidence: high, source: "《晋书·元帝纪》"}
+- {date: 383, event: 淝水之战, period_id: jin-eastern, confidence: high, source: "《晋书·谢安传》《苻坚载记》;《资治通鉴》"}
+- {date: 420, event: 刘裕代晋建宋, period_id: jin-eastern, confidence: high, source: "《晋书·恭帝纪》;《宋书》"}
+</pre><h2 id="northern-southern">northern-southern</h2><pre>- {date: 304, event: 刘渊建汉/R李雄建成都,十六国开端, period_id: sixteen-kingdoms, confidence: medium, source: "《晋书·载记》,传世本待考"}
+- {date: 383, event: 淝水之战, period_id: sixteen-kingdoms, confidence: high, source: "《晋书·苻坚载记》《谢安传》;《资治通鉴》"}
+- {date: 386, event: 北魏建国(拓跋珪), period_id: northern-southern, confidence: high, source: "魏收《魏书·太祖纪》"}
+- {date: 420, event: 刘裕代晋建宋, period_id: northern-southern, confidence: high, source: "沈约《宋书·武帝纪》"}
+- {date: 439, event: 北魏统一北方, period_id: northern-southern, confidence: high, source: "魏收《魏书·太武帝纪》"}
+- {date: 471, event: 孝文帝即位/改革启动, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
+- {date: 494, event: 迁都洛阳, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
+- {date: 534, event: 北魏分裂东西魏, period_id: northern-southern, confidence: high, source: "《魏书》《北齐书》《周书》"}
+- {date: 548, event: 侯景之乱起, period_id: northern-southern, confidence: high, source: "姚思廉《梁书》;《资治通鉴·梁纪》"}
+- {date: 577, event: 北周灭北齐, period_id: northern-southern, confidence: high, source: "令狐德棻等《周书》;李百药《北齐书》"}
+- {date: 589, event: 隋灭陈,南北统一, period_id: northern-southern, confidence: high, source: "姚思廉《陈书》;《隋书》"}
+</pre><h2 id="sui">sui</h2><pre># 隋朝大事年表.
+period_id: sui
+timeline:
+  - year: 581
+    event: 杨坚代周建隋,改元开皇
+    note: 北周静帝禅位,隋立.
+  - year: 589
+    event: 隋灭陈南北统一
+    note: 杨广统军平陈,结束长期分裂.
+  - year: 590
+    event: 开皇制度推行
+    end_year: 604
+    note: 均田租庸调府兵科举雏形,详见官方条目.
+  - year: 605
+    event: 营东都洛阳开凿通济渠
+    note: 大运河工程启动,役重民困.
+  - year: 607
+    event: 筑长城通西域张掖置郡存疑待考
+    note: 对突厥吐谷浑用兵,方位示意非精确.
+  - year: 612
+    event: 一征辽东无功
+    end_year: 614
+    note: 三征高句丽均无功,耗尽国力.
+  - year: 613
+    event: 杨玄感黎阳起兵
+    note: 隋末大起义先声.
+  - year: 615
+    event: 雁门之围
+    note: 突厥围炀帝于雁门,细节存疑.
+  - year: 617
+    event: 李渊太原起兵入长安立代王侑
+    note: 改元义宁,隋名存实亡.
+  - year: 618
+    event: 江都之变炀帝被弑,恭帝禅唐隋亡
+    note: 宇文化及弑帝,李渊受禅建唐.</pre><h2 id="tang">tang</h2><pre># 唐朝大事年表,至少14条.
+period_id: tang
+timeline:
+  - year: 618
+    event: 李渊长安称帝建唐
+    note: 受隋恭帝禅,改元武德.
+  - year: 626
+    event: 玄武门之变,李世民即位
+    note: 太宗即位,次年改元贞观,传说演绎见民间条目.
+  - year: 627
+    event: 贞观之治开始
+    end_year: 649
+    note: 轻徭薄赋,纳谏用人,详见官方条目.
+  - year: 655
+    event: 武则天立为皇后
+    note: 高宗朝政渐移,垂帘之始,评价争议.
+  - year: 690
+    event: 武则天称帝建周
+    end_year: 705
+    note: 国号周,705神龙政变复唐,详见官方条目.
+  - year: 712
+    event: 李隆基即位,开元盛世
+    end_year: 741
+    note: 姚宋为相,极盛之世,详见综述.
+  - year: 751
+    event: 怛罗斯之战唐军败于大食
+    note: 西域形势转折一说,影响程度存争议.
+  - year: 755
+    event: 安史之乱爆发
+    end_year: 763
+    note: 安禄山范阳起兵,两京陷落,详见官方条目.
+  - year: 756
+    event: 马嵬之变,玄宗让位肃宗
+    note: 杨贵妃死于马嵬,结局存争议,见民间条目.
+  - year: 763
+    event: 吐蕃陷长安,唐代宗幸陕
+    note: 安史甫平边患又起,藩镇格局渐成.
+  - year: 780
+    event: 两税法颁行
+    note: 杨炎建议,以资产户等定税,详见官方条目.
+  - year: 835
+    event: 甘露之变,宦官尽杀朝官
+    note: 文宗与李训郑注谋诛宦官事泄,宦官擅权更固.
+  - year: 875
+    event: 黄巢起义爆发
+    end_year: 884
+    note: 王仙芝黄巢先后起事,转战南北,880陷长安建大齐.
+  - year: 884
+    event: 黄巢败死,朱温降唐为宣武节度使
+    note: 唐基已摇,藩镇混战,朱温渐强.
+  - year: 907
+    event: 朱温篡唐建梁,唐亡
+    note: 哀帝禅位,五代之始.</pre><h2 id="five-dynasties-ten-kingdoms">five-dynasties-ten-kingdoms</h2><pre>period_id: five-dynasties
+# 五代十国大事时间表
+# 来源卷次页码待核未能联网核验
+# 来源:旧五代史薛居正等传世辑本待考,新五代史欧阳修传世本待考,资治通鉴司马光传世本待考,宋史脱脱等传世本待考
+- {date: 907, event: 朱温代唐建后梁, polity: 后梁, source: 资治通鉴后梁纪旧五代史梁太祖纪页码待核}
+- {date: 907-917, event: 十国并立格局形成吴越前蜀吴闽楚荆南南汉次第分据, polity: 十国, source: 新五代史十国世家资治通鉴后梁纪页码待核名目争议}
+- {date: 923, event: 后唐灭梁李存勖入汴, polity: 后唐, source: 新五代史唐庄宗纪资治通鉴后唐纪页码待核}
+- {date: 936-937, event: 石敬瑭建后晋割燕云十六州与南唐代吴, polity: 后晋南唐, source: 旧五代史晋高祖纪新五代史南唐世家页码待核评价争议}
+- {date: 947-951, event: 刘知远建后汉郭威代汉建后周, polity: 后汉后周, source: 旧五代史汉高祖纪周太祖纪页码待核}
+- {date: 954-959, event: 后周世宗三征奠定统一之基, polity: 后周, source: 新五代史周世宗纪资治通鉴后周纪页码待核}
+- {date: 960, event: 赵匡胤陈桥兵变代周建宋, polity: 北宋, source: 资治通鉴后周纪宋史太祖纪页码待核}
+- {date: 965-979, event: 宋次第平诸国至太平兴国平北汉十国终, polity: 北宋十国, source: 宋史太祖太宗纪新五代史十国世家页码待核}
+</pre><h2 id="song">song</h2><pre># 宋朝大事年表（至少12条；年份为传世纪年）
+- {year: 960, event: 陈桥兵变，赵匡胤建宋，定都开封}
+- {year: 979, event: 灭北汉，十国基本统一完成}
+- {year: 1005, event: 澶渊之盟，宋辽议和纳岁币}
+- {year: 1043, event: 范仲淹庆历新政}
+- {year: 1069, event: 王安石熙宁变法开始}
+- {year: 1084, event: 司马光《资治通鉴》传世称进呈（版本待考）}
+- {year: 1115, event: 女真建金；宋金海上之盟约夹攻辽}
+- {year: 1127, event: 靖康之变，北宋亡；赵构南渡}
+- {year: 1130, event: 钟相杨么起义（南方水乡起义，细节存疑）}
+- {year: 1141, event: 绍兴和议；岳飞遇害（官书与传说须区分）}
+- {year: 1161, event: 采石之战，虞允文抗金}
+- {year: 1206, event: 韩侂胄开禧北伐}
+- {year: 1234, event: 宋蒙联合灭金；端平入洛}
+- {year: 1276, event: 元军陷临安}
+- {year: 1279, event: 崖山海战，南宋亡}
+</pre><h2 id="liao">liao</h2><pre># 辽朝大事年表（6条以上）
+- {year: 916, event: 耶律阿保机称帝，契丹建国}
+- {year: 938, event: 后晋献燕云十六州于辽}
+- {year: 947, event: 改国号为辽}
+- {year: 982, event: 萧太后摄政}
+- {year: 1005, event: 澶渊之盟，宋辽议和}
+- {year: 1042, event: 重熙增币，宋加岁币}
+- {year: 1115, event: 女真建金，辽金战争起}
+- {year: 1125, event: 天祚被俘，辽亡}
+</pre><h2 id="western-xia">western-xia</h2><pre># 西夏大事年表（传世纪年，未能联网核验）
+- {year_label: 显道五年（1038）, year: 1038, period_id: western-xia, title: 李元昊称帝建大夏定都兴庆府, confidence: high, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 庆历四年（1044）, year: 1044, period_id: western-xia, title: 宋夏庆历和约，夏向宋称臣纳岁赐, confidence: medium, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 元丰五年（1082）, year: 1082, period_id: western-xia, title: 永乐城之战宋五路伐夏大败, confidence: medium, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 元符二年（1099）, year: 1099, period_id: western-xia, title: 平夏城之战后横山拉锯，夏请和, confidence: low, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 天庆五年（1115）, year: 1115, period_id: western-xia, title: 女真建金，西夏转而通金（具体年代异说存疑）, confidence: disputed, source: 《金史·夏国相关记述》传世本（版本待考，页码待核）}
+- {year_label: 嘉定二十年（1227）, year: 1227, period_id: western-xia, title: 蒙古灭西夏，末主李睍被俘, confidence: medium, source: 《元史·太祖本纪》传世本（版本待考，页码待核）}
+</pre><h2 id="jin-dynasty">jin-dynasty</h2><pre># 金朝大事年表（传世纪年，未能联网核验）
+- {year_label: 收国元年（1115）, year: 1115, period_id: jin-jurchen, title: 完颜阿骨打建金，年号收国, confidence: high, source: 《金史·太祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 天庆五年（1125）, year: 1125, period_id: jin-jurchen, title: 金灭辽，擒天祚帝, confidence: high, source: 《金史·太宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 靖康二年（1127）, year: 1127, period_id: jin-jurchen, title: 靖康之变，金灭北宋掳徽钦, confidence: high, source: 《金史·太宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 绍兴十一年（1141）, year: 1141, period_id: jin-jurchen, title: 绍兴和议，宋金以淮河大散关为界, confidence: high, source: 《金史·熙宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 正隆六年（1161）, year: 1161, period_id: jin-jurchen, title: 采石之战，海陵王南侵失败被杀, confidence: medium, source: 《金史·海陵王本纪》传世本（版本待考，页码待核）}
+- {year_label: 贞祐三年（1215）, year: 1215, period_id: jin-jurchen, title: 蒙古陷金中都，金迁都汴京, confidence: high, source: 《金史·宣宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 天兴三年（1234）, year: 1234, period_id: jin-jurchen, title: 蒙宋联合灭金于蔡州, confidence: high, source: 《金史·哀宗本纪》传世本（版本待考，页码待核）}
+</pre><h2 id="yuan">yuan</h2><pre># 元大事年表（传世纪年，未能联网核验）
+- {year_label: 丙寅年（1206）, year: 1206, period_id: yuan, title: 铁木真称成吉思汗建大蒙古国, confidence: medium, source: 《元史·太祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 甲午年（1234）, year: 1234, period_id: yuan, title: 蒙宋联合灭金于蔡州, confidence: high, source: 《元史·太宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 庚申年（1260）, year: 1260, period_id: yuan, title: 忽必烈称汗与阿里不哥之争, confidence: medium, source: 《元史·世祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 至元八年（1271）, year: 1271, period_id: yuan, title: 建国号大元, confidence: high, source: 《元史·世祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 至元十三年（1276）, year: 1276, period_id: yuan, title: 元军陷临安，南宋恭帝降, confidence: high, source: 《元史·世祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 至元十六年（1279）, year: 1279, period_id: yuan, title: 崖山海战，宋亡元统一, confidence: high, source: 《元史·世祖本纪》传世本（版本待考，页码待核）}
+- {year_label: 延祐二年（1315）, year: 1315, period_id: yuan, title: 仁宗延祐复科举, confidence: medium, source: 《元史·仁宗本纪》传世本（版本待考，页码待核）}
+- {year_label: 至正十一年（1351）, year: 1351, period_id: yuan, title: 颍州红巾起义爆发, confidence: high, source: 《元史·顺帝本纪》传世本（版本待考，页码待核）}
+- {year_label: 至正二十八年（1368）, year: 1368, period_id: yuan, title: 明军入大都，顺帝北走，元亡于中原, confidence: high, source: 《元史·顺帝本纪》传世本（版本待考，页码待核）}
+</pre><h2 id="ming">ming</h2><pre># 明朝大事年表(14条以上)
+period_id: ming
+source_note: 主据《明史》《明实录》(传世本,具体版本待考;页码待核,未能联网核验)
+events:
+  - { year: 1368, event: 洪武建国, note: 朱元璋即皇帝位,国号大明 }
+  - { year: 1380, event: 胡惟庸案, note: 废中书省,皇权集权转折 }
+  - { year: 1399-1402, event: 靖难之役, note: 燕王朱棣夺位,建文帝下落存疑 }
+  - { year: 1405, event: 郑和首下西洋, note: 至1433年凡七次,规模动机多说并存 }
+  - { year: 1421, event: 永乐迁都北京, note: 南京为留都 }
+  - { year: 1424-1435, event: 仁宣之治, note: 守成之说,评价有争议 }
+  - { year: 1449, event: 土木堡之变, note: 英宗被俘,王振之死,责任归属争议 }
+  - { year: 1450-1457, event: 北京保卫战与夺门之变, note: 于谦主守,英宗复辟 }
+  - { year: 1567, event: 隆庆开关, note: 月港开海之说,海禁松弛程度有争议 }
+  - { year: 1581, event: 一条鞭法推行, note: 张居正改革核心,成效评价不一 }
+  - { year: 1592-1598, event: 万历援朝之役, note: 壬辰倭乱,明军入朝作战 }
+  - { year: 1619, event: 萨尔浒之战, note: 明军大败,辽东局势逆转 }
+  - { year: 1624-1627, event: 阉党专权与东林之狱, note: 《明史·阉党传》笔法争议 }
+  - { year: 1644, event: 明亡, note: 李自成入京,崇祯帝死于煤山(传说成分标存疑);吴三桂引清兵等说法并存 }
+</pre><h2 id="qing">qing</h2><pre># 清朝大事年表(14条以上)
+period_id: qing
+source_note: 主据《清史稿》《清实录》(传世本,具体版本待考;页码待核,未能联网核验)
+events:
+  - { year: 1616, event: 后金建国, note: 努尔哈赤建国号金,统一女真 }
+  - { year: 1636, event: 改号清, note: 皇太极改国号大清 }
+  - { year: 1644, event: 清入关, note: 摄政王多尔衮率军入北京,顺治定都 }
+  - { year: 1645-1646, event: 扬州嘉定抗清屠城传闻, note: 多方记载数字悬殊,标争议,详见folk条 }
+  - { year: 1673-1681, event: 三藩之乱与平定, note: 吴三桂等叛乱,康熙削藩平叛 }
+  - { year: 1684-1757, event: 收台湾与闭关定制, note: 施琅平台湾,广州一口通商之说,起因多说并存 }
+  - { year: 1662-1795, event: 康雍乾盛世, note: 人口赋税边疆扩展,盛世实态有争议 }
+  - { year: 1840-1842, event: 鸦片战争, note: 虎门销烟后开战,南京条约赔款割地开埠 }
+  - { year: 1851-1864, event: 太平天国, note: 金田起义,定都天京,湘淮军镇压,性质评价多派 }
+  - { year: 1861-1895, event: 洋务运动, note: 师夷长技,官督商办,甲午战败受挫 }
+  - { year: 1894-1895, event: 甲午战争, note: 马关条约,割台赔款,洋务破产之说争议 }
+  - { year: 1898, event: 戊戌变法, note: 百日维新,慈禧训政,光绪被幽,评价两极 }
+  - { year: 1900, event: 义和团与八国联军, note: 扶清灭洋口号,辛丑条约,评价争议极大 }
+  - { year: 1911-1912, event: 辛亥革命与清帝退位, note: 武昌起义,南北议和,宣统退位,帝制终结 }
+</pre><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

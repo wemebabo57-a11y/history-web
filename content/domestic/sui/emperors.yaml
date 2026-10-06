@@ -1,0 +1,35 @@
+# 隋朝皇帝(3帝加追尊).生卒不确定者标约或存疑.
+period_id: sui
+emperors:
+  - name: 杨忠
+    title: 追尊隋太祖武元皇帝
+    birth_death: 约507-568,存疑
+    reign: 未即位,文帝追尊
+    note: 北周大司空,杨坚之父,死后追尊.
+  - name: 杨坚
+    temple: 高祖文皇帝
+    birth_death: 约541-604,生年存疑
+    reign_start: 581
+    reign_end: 604
+    era: 开皇、仁寿
+    note: 代周建隋,灭陈统一,开创开皇之治.
+  - name: 杨广
+    temple: 炀皇帝
+    birth_death: 约569-618,生年存疑
+    reign_start: 604
+    reign_end: 618
+    era: 大业
+    note: 营洛阳开运河,三征辽东,江都之变被弑.
+  - name: 杨侑
+    temple: 恭皇帝
+    birth_death: 约605-619,薨年存疑
+    reign_start: 617
+    reign_end: 618
+    era: 义宁
+    note: 代王,李渊所立,禅位于唐,隋亡.
+  - name: 杨浩
+    title: 秦王傀儡,是否计入帝系存争议
+    birth_death: 生卒年待考至618
+    reign_start: 618
+    reign_end: 618
+    note: 宇文化及所立傀儡,旋被杀,不计正统,附列存考.

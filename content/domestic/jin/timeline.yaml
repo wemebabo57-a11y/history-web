@@ -1,0 +1,8 @@
+- {date: 265, event: 司马炎代魏建晋, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴统一, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 291, event: 八王之乱起, period_id: jin-western, confidence: high, source: "《晋书·八王传》《后妃传》"}
+- {date: 311, event: 永嘉之乱/洛阳陷, period_id: jin-western, confidence: high, source: "《晋书·怀帝纪》;《资治通鉴·晋纪》"}
+- {date: 316, event: 长安陷,西晋亡, period_id: jin-western, confidence: high, source: "《晋书·愍帝纪》"}
+- {date: 317, event: 司马睿建业建制,东晋始, period_id: jin-eastern, confidence: high, source: "《晋书·元帝纪》"}
+- {date: 383, event: 淝水之战, period_id: jin-eastern, confidence: high, source: "《晋书·谢安传》《苻坚载记》;《资治通鉴》"}
+- {date: 420, event: 刘裕代晋建宋, period_id: jin-eastern, confidence: high, source: "《晋书·恭帝纪》;《宋书》"}

@@ -1,0 +1,57 @@
+period_id: han-western
+covers: [han-western, xin, han-eastern]
+entries:
+  - holder: 吕后吕雉（约前241—前180，存疑）
+    nominal_lord: 惠帝／少帝
+    role: 皇太后临朝
+    start_year: -195
+    end_year: -180
+    basis: 惠帝年幼，吕后称制
+    event: 诛韩信彭越，分封吕氏
+    source: 史记·吕太后本纪；汉书，页码待核
+    dispute: 少帝废杀细节争议
+  - holder: 霍光（约前130—前68，存疑）
+    nominal_lord: 昭帝／宣帝
+    role: 大司马大将军辅政
+    start_year: -87
+    end_year: -68
+    basis: 武帝托孤辅政
+    event: 废刘贺，立宣帝
+    source: 汉书·霍光传，页码待核
+    dispute: 废立合法性评价分歧
+  - holder: 王莽（约前45—23，存疑）
+    nominal_lord: 平帝／孺子婴转自立
+    role: 安汉公转摄政转新帝
+    start_year: -1
+    end_year: 23
+    basis: 外戚辅政篡代
+    event: 王莽改制、新亡
+    source: 汉书·王莽传，页码待核
+    dispute: 改制动机评价两极，标争议
+  - holder: 窦宪（卒92，存疑）
+    nominal_lord: 和帝（早年）
+    role: 外戚大将军
+    start_year: 89
+    end_year: 92
+    basis: 外戚专权、北击匈奴
+    event: 窦宪之变被诛
+    source: 后汉书·窦宪传，页码待核
+    dispute: 功罪评价分歧
+  - holder: 梁冀（卒159，存疑）
+    nominal_lord: 冲帝／质帝／桓帝早年
+    role: 外戚大将军
+    start_year: 144
+    end_year: 159
+    basis: 连续立幼主专权
+    event: 毒杀质帝，后被桓帝诛灭
+    source: 后汉书·梁冀传，页码待核
+    dispute: 跋扈细节多出追述，存疑
+  - holder: 宦官集团（以十常侍为代表，人物生卒存疑）
+    nominal_lord: 桓帝／灵帝
+    role: 中常侍等内朝
+    start_year: 159
+    end_year: 189
+    basis: 党锢之祸、黄巾前后专权
+    event: 何进谋诛宦官反被杀
+    source: 后汉书·宦者列传，页码待核
+    dispute: 十常侍人数与事迹多后世演绎，标存疑

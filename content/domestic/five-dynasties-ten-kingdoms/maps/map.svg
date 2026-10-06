@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+<rect width="600" height="400" fill="#f7f3e8"/>
+<text x="20" y="30" font-size="16">FiveDTTK文字示意图(示意非精确)</text>
+<rect x="180" y="100" width="240" height="140" fill="#e3d9bd" stroke="#8a7a4d"/>
+<text x="220" y="170" font-size="14">中原五代相承(示意)</text>
+<text x="40" y="140" font-size="12">西:巴蜀(示意)</text>
+<text x="450" y="140" font-size="12">东:吴越吴(示意)</text>
+<text x="220" y="280" font-size="12">南:南汉闽楚(示意)</text>
+<text x="220" y="90" font-size="12">北:契丹北汉(存争议)</text>
+<text x="20" y="370" font-size="12">注:十国名目说法不一,仅文字示意.</text>
+</svg>

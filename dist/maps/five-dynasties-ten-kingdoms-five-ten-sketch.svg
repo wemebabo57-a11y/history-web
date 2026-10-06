@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+<title>五代十国疆域文字示意非精确</title>
+<rect x="0" y="0" width="800" height="560" fill="#f7f3e8"/>
+<text x="400" y="32" text-anchor="middle" font-size="22">五代十国文字示意SVG不精确仅示相对方位CC0自绘</text>
+<text x="400" y="56" text-anchor="middle" font-size="13">免责疆域为示意方框不代表精确边界河流海岸线省略存疑地名待考</text>
+<g font-size="14">
+<rect x="300" y="120" width="200" height="90" fill="#e8dcc0" stroke="#333"/><text x="400" y="145" text-anchor="middle">中原五代相承</text><text x="400" y="165" text-anchor="middle">汴洛太原邺</text><text x="400" y="185" text-anchor="middle">907-960</text>
+<rect x="80" y="120" width="140" height="70" fill="#fff" stroke="#333"/><text x="150" y="145" text-anchor="middle">吴南唐</text><text x="150" y="165" text-anchor="middle">淮南江东</text>
+<rect x="580" y="120" width="140" height="70" fill="#fff" stroke="#333"/><text x="650" y="145" text-anchor="middle">北汉</text><text x="650" y="165" text-anchor="middle">河东一隅</text>
+<rect x="80" y="230" width="140" height="70" fill="#fff" stroke="#333"/><text x="150" y="255" text-anchor="middle">吴越</text><text x="150" y="275" text-anchor="middle">两浙</text>
+<rect x="260" y="230" width="140" height="70" fill="#fff" stroke="#333"/><text x="330" y="255" text-anchor="middle">荆南楚闽</text><text x="330" y="275" text-anchor="middle">江汉湘闽</text>
+<rect x="440" y="230" width="140" height="70" fill="#fff" stroke="#333"/><text x="510" y="255" text-anchor="middle">前蜀后蜀</text><text x="510" y="275" text-anchor="middle">成都平原</text>
+<rect x="620" y="230" width="140" height="70" fill="#fff" stroke="#333"/><text x="690" y="255" text-anchor="middle">南汉</text><text x="690" y="275" text-anchor="middle">岭南</text>
+</g>
+<text x="40" y="360" font-size="13">读图说明本图仅以方框示意相对方位方框大小位置均非精确十国名目归属争议北汉荆南另见条目</text>
+<text x="40" y="385" font-size="13">燕云十六州约在中原方框北缘以北本图不绘制界线割让评价争议见官方条目</text>
+<text x="40" y="410" font-size="13">来源旧五代史新五代史资治通鉴宋史传世本待考页码待核未能联网核验</text>
+<text x="40" y="435" font-size="13">许可CC0自绘示意可复用无需署名</text>
+<text x="40" y="520" font-size="12">period_id示意归属five-dynasties与ten-kingdoms共用本图元数据见meta.yaml</text>
+</svg>

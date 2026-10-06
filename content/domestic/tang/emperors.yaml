@@ -1,0 +1,121 @@
+# 唐朝皇帝21帝加武则天,含追尊.生卒不确定标约或存疑.
+period_id: tang
+posthumous_founders:
+  - name: 李虎
+    title: 追尊唐太祖景皇帝
+    birth_death: 约?-551,生年待考
+    note: 西魏八柱国,李渊祖父,唐追尊.
+  - name: 李昞
+    title: 追尊唐世祖元皇帝
+    birth_death: 生卒年待考至573前后存疑
+    note: 北周柱国,李渊之父,唐追尊.
+emperors:
+  - n: 1
+    name: 李渊
+    temple: 高祖神尧大圣大光孝皇帝
+    birth_death: 约566-635,生年存疑
+    reign: 618-626
+  - n: 2
+    name: 李世民
+    temple: 太宗文武大圣大广孝皇帝
+    birth_death: 约598-649,生年存疑
+    reign: 626-649
+    era: 贞观
+  - n: 3
+    name: 李治
+    temple: 高宗天皇大圣大弘孝皇帝
+    birth_death: 约628-683,生年存疑
+    reign: 649-683
+  - n: 4
+    name: 武则天
+    title: 则天大圣皇后并武周皇帝单列
+    birth_death: 约624-705,生卒年存疑
+    reign: 690-705称帝,此前垂帘临朝
+    note: 女皇单列,周国号武周,705退位复唐.
+  - n: 5
+    name: 李显
+    temple: 中宗大和大圣大昭孝皇帝
+    birth_death: 约656-710,生年存疑
+    reign: 683-684及705-710两度
+  - n: 6
+    name: 李旦
+    temple: 睿宗玄真大圣大兴孝皇帝
+    birth_death: 约662-716,生年存疑
+    reign: 684-690及710-712两度
+  - n: 7
+    name: 李隆基
+    temple: 玄宗至道大圣大明孝皇帝
+    birth_death: 约685-762,生年存疑
+    reign: 712-756
+    era: 开元天宝
+  - n: 8
+    name: 李亨
+    temple: 肃宗文明武德大圣大宣孝皇帝
+    birth_death: 约711-762,生年存疑
+    reign: 756-762
+  - n: 9
+    name: 李豫
+    temple: 代宗睿文孝武皇帝
+    birth_death: 约726-779,生年存疑
+    reign: 762-779
+  - n: 10
+    name: 李适
+    temple: 德宗神武孝文皇帝
+    birth_death: 约742-805,生年存疑
+    reign: 779-805
+  - n: 11
+    name: 李诵
+    temple: 顺宗至德大圣大安孝皇帝
+    birth_death: 约761-806,生年存疑
+    reign: 805在位约半年
+  - n: 12
+    name: 李纯
+    temple: 宪宗昭文章武大圣至神孝皇帝
+    birth_death: 约778-820,生年存疑
+    reign: 805-820
+  - n: 13
+    name: 李恒
+    temple: 穆宗睿圣文惠孝皇帝
+    birth_death: 约795-824,生年存疑
+    reign: 820-824
+  - n: 14
+    name: 李湛
+    temple: 敬宗睿武昭愍孝皇帝
+    birth_death: 约809-827,生年存疑
+    reign: 824-827
+  - n: 15
+    name: 李昂
+    temple: 文宗元圣昭献孝皇帝
+    birth_death: 约809-840,生年存疑
+    reign: 827-840
+  - n: 16
+    name: 李炎
+    temple: 武宗至道昭肃孝皇帝
+    birth_death: 约814-846,生年存疑
+    reign: 840-846
+  - n: 17
+    name: 李忱
+    temple: 宣宗元圣至明成武献文睿智章仁神聪懿道大孝皇帝简称宣宗
+    birth_death: 约810-859,生年存疑
+    reign: 846-859
+  - n: 18
+    name: 李漼
+    temple: 懿宗昭圣恭惠孝皇帝
+    birth_death: 约833-873,生年存疑
+    reign: 859-873
+  - n: 19
+    name: 李儇
+    temple: 僖宗惠圣恭定孝皇帝
+    birth_death: 约862-888,生年存疑
+    reign: 873-888
+  - n: 20
+    name: 李晔
+    temple: 昭宗圣穆景文孝皇帝
+    birth_death: 约867-904,生年存疑
+    reign: 888-904
+  - n: 21
+    name: 李柷
+    temple: 哀皇帝一作昭宣光烈孝皇帝
+    birth_death: 约892-908,生卒年存疑
+    reign: 904-907
+    note: 唐哀帝,禅位于朱温,唐亡.

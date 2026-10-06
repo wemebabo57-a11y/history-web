@@ -1,0 +1,5 @@
+map: three-kingdoms-map.svg
+purpose: 文字示意,非精确疆域图
+period_ids: [wei, shu, wu]
+note: 仅示意三区方位与都城,不得作精确边界引用;具体界线随战事变动,待考
+confidence: low

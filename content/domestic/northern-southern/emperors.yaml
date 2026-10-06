@@ -1,0 +1,13 @@
+# 南朝宋齐梁陈 + 北朝代表 + 十六国仅列代表(生卒存疑)
+- {name: 刘裕, temple: 高祖/武帝, polity: 刘宋, period_id: northern-southern, reign: "420-422", birth_death: "约363—422,存疑", confidence: high}
+- {name: 刘义隆, temple: 太祖/文帝, polity: 刘宋, period_id: northern-southern, reign: "424-453", birth_death: "约407—453,存疑", confidence: high}
+- {name: 萧道成, temple: 太祖/高帝, polity: 南齐, period_id: northern-southern, reign: "479-482", birth_death: "约427—482,存疑", confidence: medium}
+- {name: 萧衍, temple: 高祖/武帝, polity: 南梁, period_id: northern-southern, reign: "502-549", birth_death: "约464—549,存疑", confidence: high}
+- {name: 陈霸先, temple: 高祖/武帝, polity: 南陈, period_id: northern-southern, reign: "557-559", birth_death: "约503—559,存疑", confidence: medium}
+- {name: 拓跋珪, temple: 太祖/道武帝, polity: 北魏, period_id: northern-southern, reign: "386-409", birth_death: "约371—409,存疑", confidence: high}
+- {name: 拓跋焘, temple: 世祖/太武帝, polity: 北魏, period_id: northern-southern, reign: "423-452", birth_death: "约408—452,存疑", confidence: high}
+- {name: 拓跋宏, temple: 高祖/孝文帝, polity: 北魏, period_id: northern-southern, reign: "471-499", birth_death: "约467—499,存疑", confidence: high}
+- {name: 高洋, temple: 显祖/文宣帝, polity: 北齐, period_id: northern-southern, reign: "550-559", birth_death: "约529—559,存疑", confidence: medium}
+- {name: 宇文邕, temple: 高祖/武帝, polity: 北周, period_id: northern-southern, reign: "560-578", birth_death: "约543—578,存疑", confidence: medium}
+- {name: 刘渊(代表), polity: 前赵/汉赵, period_id: sixteen-kingdoms, reign: "304-310", birth_death: "约251—310,存疑", confidence: medium, note: 十六国仅列代表}
+- {name: 苻坚(代表), polity: 前秦, period_id: sixteen-kingdoms, reign: "357-385", birth_death: "约338—385,存疑", confidence: high, note: 淝水之战}

@@ -1,0 +1,37 @@
+period_id: han-western
+covers: [han-western, xin, han-eastern]
+note: 生卒年在位皆据传世本整理，约数或存疑；页码待核，未能联网核验
+western_han:
+  - {name: 汉高祖刘邦, reign: 前202—前195, note: 开国}
+  - {name: 惠帝刘盈, reign: 前195—前188}
+  - {name: 少帝刘恭（非正统，存疑）, reign: 前188—前184, note: 吕后时期，是否列帝争议}
+  - {name: 少帝刘弘（非正统，存疑）, reign: 前184—前180}
+  - {name: 文帝刘恒, reign: 前180—前157}
+  - {name: 景帝刘启, reign: 前157—前141}
+  - {name: 武帝刘彻, reign: 前141—前87}
+  - {name: 昭帝刘弗陵, reign: 前87—前74}
+  - {name: 废帝刘贺（在位短，存疑）, reign: 前74年27日}
+  - {name: 宣帝刘询, reign: 前74—前49}
+  - {name: 元帝刘奭, reign: 前49—前33}
+  - {name: 成帝刘骜, reign: 前33—前7}
+  - {name: 哀帝刘欣, reign: 前7—前1}
+  - {name: 平帝刘衎, reign: 前1—5}
+  - {name: 孺子婴刘婴（非正统，存疑）, reign: 6—8}
+xin:
+  - {name: 王莽（新朝）, reign: 8—23, note: period xin，改制失败}
+  - {name: 更始帝刘玄（非正统，存疑）, reign: 23—25}
+eastern_han:
+  - {name: 光武帝刘秀, reign: 25—57}
+  - {name: 明帝刘庄, reign: 57—75}
+  - {name: 章帝刘炟, reign: 75—88}
+  - {name: 和帝刘肇, reign: 88—105}
+  - {name: 殇帝刘隆, reign: 105—106}
+  - {name: 安帝刘祜, reign: 106—125}
+  - {name: 少帝刘懿（存疑）, reign: 125年短暂}
+  - {name: 顺帝刘保, reign: 125—144}
+  - {name: 冲帝刘炳, reign: 144—145}
+  - {name: 质帝刘缵, reign: 145—146}
+  - {name: 桓帝刘志, reign: 146—168}
+  - {name: 灵帝刘宏, reign: 168—189}
+  - {name: 少帝刘辩（存疑）, reign: 189}
+  - {name: 献帝刘协, reign: 189—220}

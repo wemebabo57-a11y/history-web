@@ -1,0 +1,5 @@
+# Sui示意地图元数据
+period_id: sui
+map_file: maps/map.svg
+disclaimer: 仅文字示意,不声称精确疆界,辽东西域交趾方位均为示意,存疑待考.
+source: 基于隋书地理志文字描述绘制示意,传世本,具体版本待考,页码待核,未能联网核验.

@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三国 · 220~280 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>三国 · 220~280</h1></header><h2>政权综述</h2><article class="entry">
+
+<h1>三国并立综述(魏蜀吴,220—280,文字示意)</h1>
+
+<p>&gt; 本文件为三国综述,依"一文件一period_id"硬约束,period_id取 wei 为代表,正文分魏/蜀/吴三节叙述;shu、wu 另见各 official 条目。疆域下述仅为文字示意,非精确边界。</p>
+
+<h2>脉络</h2>
+<p>东汉末群雄并起,208年赤壁之战后形成三足雏形;220年曹丕代汉建魏,221年刘备建汉(蜀汉),229年孙权建吴,三国鼎立。263年魏灭蜀,265年司马炎代魏建晋,280年晋灭吴,三国归晋。</p>
+
+<h2>Mermaid 三线传承示意</h2>
+
+<pre class="mermaid">
+<p>graph LR</p>
+<p>  Han[东汉] --&gt; CaoCao[曹操据中原]</p>
+<p>  CaoCao --&gt; Wei[曹魏 220-265: 曹丕→曹叡→曹芳→曹髦→曹奂]</p>
+<p>  Han --&gt; LiuBei[刘备 221建蜀汉]</p>
+<p>  LiuBei --&gt; Shu[蜀汉 221-263: 刘备→刘禅]</p>
+<p>  SunJian[孙坚/孙策据江东] --&gt; SunQuan[孙权 229建吴]</p>
+<p>  SunQuan --&gt; Wu[孙吴 229-280: 孙权→孙亮→孙休→孙皓]</p>
+<p>  Wei --&gt; Jin[西晋: 司马炎265代魏,280灭吴]</p>
+<p>  Shu -. 263魏灭蜀 .-&gt; Jin</p>
+<p>  Wu -. 280晋灭吴 .-&gt; Jin</p>
+<p></pre></p>
+
+<h2>地理文字示意(非精确)</h2>
+<ul>
+<li>曹魏:约当黄河流域、中原、关中及辽东一带,都洛阳,后迁许昌/洛阳之间政治中心。</li>
+<li>蜀汉:约当今四川盆地、汉中及云贵部分,都成都。</li>
+<li>孙吴:约当长江下游、东南沿海及荆州东部,都建业(今南京一带)。</li>
+<li>接触带:荆州、合肥、汉中为反复争夺区,具体界线随战事变动,不作精确描绘。</li>
+</ul>
+
+<h2>来源</h2>
+<ul>
+<li>陈寿《三国志》、裴松之注;房玄龄等《晋书》;司马光《资治通鉴》。版本均为"传世本,具体版本待考",页码待核,未能联网核验。</li>
+</ul>
+</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 曹魏5帝 + 蜀汉2帝 + 孙吴4帝(生卒多存疑,标约/存疑)
+- {name: 曹丕, temple: 高祖/文帝, polity: 曹魏, period_id: wei, reign: "220-226", birth_death: "约187—226,存疑", confidence: high, note: 代汉建魏}
+- {name: 曹叡, temple: 烈祖/明帝, polity: 曹魏, period_id: wei, reign: "226-239", birth_death: "约204—239,存疑", confidence: high, note: 青龙年间守成}
+- {name: 曹芳, temple: 无/少帝, polity: 曹魏, period_id: wei, reign: "239-254", birth_death: "约231—274,存疑", confidence: medium, note: 为司马师所废}
+- {name: 曹髦, temple: 无/高贵乡公, polity: 曹魏, period_id: wei, reign: "254-260", birth_death: "约241—260,存疑", confidence: medium, note: 甘露之变被杀,存疑细节}
+- {name: 曹奂, temple: 无/元帝, polity: 曹魏, period_id: wei, reign: "260-265", birth_death: "约246—302,存疑", confidence: medium, note: 禅让于司马炎}
+- {name: 刘备, temple: 烈祖/昭烈帝, polity: 蜀汉, period_id: shu, reign: "221-223", birth_death: "约161—223,存疑", confidence: high, note: 章武建国,夷陵后托孤}
+- {name: 刘禅, temple: 无/后主, polity: 蜀汉, period_id: shu, reign: "223-263", birth_death: "约207—271,存疑", confidence: high, note: 诸葛亮辅政,263降魏}
+- {name: 孙权, temple: 太祖/大帝, polity: 孙吴, period_id: wu, reign: "229-252", birth_death: "约182—252,存疑", confidence: high, note: 黄武称帝,都建业}
+- {name: 孙亮, temple: 无/少帝, polity: 孙吴, period_id: wu, reign: "252-258", birth_death: "约243—260,存疑", confidence: medium, note: 为孙綝所废}
+- {name: 孙休, temple: 无/景帝, polity: 孙吴, period_id: wu, reign: "258-264", birth_death: "约235—264,存疑", confidence: medium, note: 诛孙綝亲政}
+- {name: 孙皓, temple: 无/末帝, polity: 孙吴, period_id: wu, reign: "264-280", birth_death: "约242—284,存疑", confidence: medium, note: 280降晋}
+</pre><h2>实际掌权人表 power-holders.yaml</h2><pre>- {name: 曹操, polity: 曹魏奠基, period_id: wei, role: 丞相/魏王, dates: "约155—220,存疑", confidence: high, source: "陈寿《三国志·魏书·武帝纪》,传世本,具体版本待考,页码待核,未能联网核验", note: 统一北方,赤壁后成三足之势}
+- {name: 司马懿, polity: 曹魏→晋奠基, period_id: wei, role: 太尉/托孤大臣, dates: "约179—251,存疑", confidence: high, source: "房玄龄等《晋书·宣帝纪》,传世本,具体版本待考,页码待核", note: 高平陵之变掌权}
+- {name: 诸葛亮, polity: 蜀汉, period_id: shu, role: 丞相, dates: "约181—234,存疑", confidence: high, source: "陈寿《三国志·蜀书·诸葛亮传》裴注,传世本,具体版本待考", note: 隆中对策、北伐、五丈原}
+- {name: 孙氏宗室与顾陆朱张, polity: 孙吴, period_id: wu, role: 宗室/江东士族共治, dates: "东汉末—280", confidence: medium, source: "陈寿《三国志·吴书》,裴注引江表传等,传世本待考", note: 周瑜/鲁肃/吕蒙/陆逊等前后辅政}
+- {name: 周瑜, polity: 孙吴, period_id: wu, role: 都督, dates: "约175—210,存疑", confidence: high, source: "陈寿《三国志·吴书·周瑜传》,传世本待考", note: 赤壁前线指挥之一}
+</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre>- {date: 208, event: 赤壁之战, period_id: wei, polity: 魏/吴/刘备联军, confidence: high, source: "陈寿《三国志》,裴注引《江表传》,传世本待考"}
+- {date: 220, event: 曹丕代汉建魏, period_id: wei, polity: 曹魏, confidence: high, source: "陈寿《三国志·文帝纪》"}
+- {date: 221, event: 刘备建蜀汉, period_id: shu, polity: 蜀汉, confidence: high, source: "陈寿《三国志·先主传》"}
+- {date: 222, event: 夷陵之战, period_id: wu, polity: 吴胜蜀, confidence: high, source: "陈寿《三国志·吴主传》《先主传》"}
+- {date: 229, event: 孙权建吴,三国鼎立成形, period_id: wu, polity: 孙吴, confidence: high, source: "陈���《三国志·吴主传》"}
+- {date: 234, event: 五丈原之战/诸葛亮卒, period_id: shu, polity: 蜀魏, confidence: high, source: "陈寿《三国志·诸葛亮传》"}
+- {date: 249, event: 高平陵之变, period_id: wei, polity: 曹魏/司马氏, confidence: high, source: "房玄龄等《晋书·宣帝纪》;《三国志》注"}
+- {date: 263, event: 魏灭蜀, period_id: shu, polity: 魏/蜀, confidence: high, source: "陈寿《三国志·后主传》;《晋书》"}
+- {date: 265, event: 司马炎代魏建晋, period_id: wei, polity: 西晋, confidence: high, source: "房玄龄等《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴,三国归晋, period_id: wu, polity: 西晋/吴, confidence: high, source: "房玄龄等《晋书·武帝纪》《吴志》注"}
+</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" role="img" aria-label="三国疆域文字示意,非精确地图"><rect width="640" height="360" fill="#f7f5ef"/><text x="20" y="30" font-size="16">三国鼎立文字示意(非精确,不作边界依据)</text><rect x="40" y="60" width="560" height="240" fill="none" stroke="#999"/><text x="60" y="110" font-size="14">北:曹魏(约黄河流域,都洛阳)</text><text x="60" y="180" font-size="14">西:蜀汉(约四川盆地,都成都)</text><text x="60" y="250" font-size="14">东:孙吴(约江东,都建业)</text></svg></div><pre></pre><h2>史料条目(官 3 / 民 1)</h2><ul><li><a href="entry-wei-official-赤壁-001.html">赤壁之战(208)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-鼎立-002.html">三国鼎立(220—229)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-归晋-003.html">三国归晋(263—280)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-shu-folk-空城-001.html">空城计(后世演绎,非史实)</a> <span class="badge">folk</span> <span class="badge">shu</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

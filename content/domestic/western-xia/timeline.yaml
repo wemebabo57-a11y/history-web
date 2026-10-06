@@ -1,0 +1,7 @@
+# 西夏大事年表（传世纪年，未能联网核验）
+- {year_label: 显道五年（1038）, year: 1038, period_id: western-xia, title: 李元昊称帝建大夏定都兴庆府, confidence: high, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 庆历四年（1044）, year: 1044, period_id: western-xia, title: 宋夏庆历和约，夏向宋称臣纳岁赐, confidence: medium, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 元丰五年（1082）, year: 1082, period_id: western-xia, title: 永乐城之战宋五路伐夏大败, confidence: medium, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 元符二年（1099）, year: 1099, period_id: western-xia, title: 平夏城之战后横山拉锯，夏请和, confidence: low, source: 《宋史·夏国传》传世本（版本待考，页码待核）}
+- {year_label: 天庆五年（1115）, year: 1115, period_id: western-xia, title: 女真建金，西夏转而通金（具体年代异说存疑）, confidence: disputed, source: 《金史·夏国相关记述》传世本（版本待考，页码待核）}
+- {year_label: 嘉定二十年（1227）, year: 1227, period_id: western-xia, title: 蒙古灭西夏，末主李睍被俘, confidence: medium, source: 《元史·太祖本纪》传世本（版本待考，页码待核）}
