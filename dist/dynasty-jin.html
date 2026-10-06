@@ -35,40 +35,36 @@
 <p>Sima Rui 司马睿 established a southern regime at Jianye in 317 and proclaimed himself emperor in 318, known as Eastern Jin. Guided by Wang Dao 王导 under the saying of joint rule by the Wang clan and the Sima house, great families such as the Wang, Xie, Huan, and Yu clans shared power with the throne. Northern expeditions by Zu Ti 祖逖 and Huan Wen 桓温 and the defense at the Battle of Fei River 淝水之战 (383) preserved the south until Liu Yu 刘裕 replaced Jin with Song in 420.</p>
 <p>Territory is schematic only: the early Western Jin broadly inherited Han domains from Luoyang, while Eastern Jin held the south of the Yangtze from Jiankang, with a fluid north-south frontier.</p>
 <p>Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((晋朝（西晋·东晋）·君主世系))
-    西晋4位
-      司马炎
-        世祖/武帝｜西晋 ’265-290’
-      司马衷
-        无/惠帝｜西晋 ’290-307’
-      司马炽
-        无/怀帝｜西晋 ’307-313’
-      司马邺
-        无/愍帝｜西晋 ’313-316’
-    东晋11位
-      司马睿
-        中宗/元帝｜东晋 ’317/318-
-      司马绍
-        肃祖/明帝｜东晋 ’323-325’
-      司马衍
-        显宗/成帝｜东晋 ’325-342’
-      司马岳
-        康帝｜东晋 ’342-344’
-      司马聃
-        孝宗/穆帝｜东晋 ’344-361’
-      司马丕
-        无/哀帝｜东晋 ’361-365’
-      司马奕
-        无/废帝｜东晋 ’365-371’
-      司马昱
-        太宗/简文帝｜东晋 ’371-372
-      司马曜
-        烈宗/孝武帝｜东晋 ’372-396
-      司马德宗
-        无/安帝｜东晋 ’396-419’
-      司马德文
-        无/恭帝｜东晋 ’419-420’
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["司马炎 世祖/武帝｜西晋 ’265-290’"]
+  E1["司马衷 无/惠帝｜西晋 ’290-307’"]
+  E0 --&gt; E1
+  E2["司马炽 无/怀帝｜西晋 ’307-313’"]
+  E1 --&gt; E2
+  E3["司马邺 无/愍帝｜西晋 ’313-316’"]
+  E2 --&gt; E3
+  E4["司马睿 中宗/元帝｜东晋 ’317/318-32"]
+  E3 --&gt; E4
+  E5["司马绍 肃祖/明帝｜东晋 ’323-325’"]
+  E4 --&gt; E5
+  E6["司马衍 显宗/成帝｜东晋 ’325-342’"]
+  E5 --&gt; E6
+  E7["司马岳 康帝｜东晋 ’342-344’"]
+  E6 --&gt; E7
+  E8["司马聃 孝宗/穆帝｜东晋 ’344-361’"]
+  E7 --&gt; E8
+  E9["司马丕 无/哀帝｜东晋 ’361-365’"]
+  E8 --&gt; E9
+  E10["司马奕 无/废帝｜东晋 ’365-371’"]
+  E9 --&gt; E10
+  E11["司马昱 太宗/简文帝｜东晋 ’371-372’"]
+  E10 --&gt; E11
+  E12["司马曜 烈宗/孝武帝｜东晋 ’372-396’"]
+  E11 --&gt; E12
+  E13["司马德宗 无/安帝｜东晋 ’396-419’"]
+  E12 --&gt; E13
+  E14["司马德文 无/恭帝｜东晋 ’419-420’"]
+  E13 --&gt; E14
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 西晋4帝 + 东晋11帝(生卒存疑)
 - {name: 司马炎, temple: 世祖/武帝, polity: 西晋, period_id: jin-western, reign: "265-290", birth_death: "约236—290,存疑", confidence: high}
 - {name: 司马衷, temple: 无/惠帝, polity: 西晋, period_id: jin-western, reign: "290-307", birth_death: "约259—307,存疑", confidence: high}
@@ -103,26 +99,28 @@
 - {name: 王导, polity: 东晋, period_id: jin-eastern, role: 丞相/门阀领袖, dates: "约276—339,存疑", confidence: high, source: "房玄龄等《晋书·王导传》,传世本待考", note: 王与马共天下}
 - {name: 桓温, polity: 东晋, period_id: jin-eastern, role: 权臣/北伐, dates: "约312—373,存疑", confidence: high, source: "房玄龄等《晋书·桓温传》,传世本待考", note: 三次北伐,废立之权}
 - {name: 谢安, polity: 东晋, period_id: jin-eastern, role: 宰辅/淝水, dates: "约320—385,存疑", confidence: high, source: "房玄龄等《晋书·谢安传》,传世本待考", note: 淝水之���前后}
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((晋朝（西晋·东晋）·大事分期))
-    西晋
-      司马炎代魏建晋
-        265
-      晋灭吴统一
-        280
-      八王之乱起
-        291
-      永嘉之乱/洛阳陷
-        311
-      长安陷,西晋亡
-        316
-    东晋
-      司马睿建业建制,东晋始
-        317
-      淝水之战
-        383
-      刘裕代晋建宋
-        420
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["西晋"]
+  direction LR
+    P0N0["司马炎代魏建晋 265"]
+    P0N1["晋灭吴统一 280"]
+    P0N0 --&gt; P0N1
+    P0N2["八王之乱起 291"]
+    P0N1 --&gt; P0N2
+    P0N3["永嘉之乱/洛阳陷 311"]
+    P0N2 --&gt; P0N3
+    P0N4["长安陷,西晋亡 316"]
+    P0N3 --&gt; P0N4
+  end
+  subgraph P1["东晋"]
+  direction LR
+    P1N0["司马睿建业建制,东晋始 317"]
+    P1N1["淝水之战 383"]
+    P1N0 --&gt; P1N1
+    P1N2["刘裕代晋建宋 420"]
+    P1N1 --&gt; P1N2
+  end
+  P0N4 --&gt; P1N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre>- {date: 265, event: 司马炎代魏建晋, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
 - {date: 280, event: 晋灭吴统一, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
 - {date: 291, event: 八王之乱起, period_id: jin-western, confidence: high, source: "《晋书·八王传》《后妃传》"}

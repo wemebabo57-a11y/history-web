@@ -106,6 +106,45 @@ function mmMermaid(root, branches){
   }
   return s;
 }
+function mmEmpFlow(root, branches){
+  const nodes = [];
+  for(const br of (branches||[])){ for(const n of (br.nodes||[])){ nodes.push(n); } }
+  const N = nodes.slice(0, 30);
+  let s = 'flowchart LR\n';
+  for(let i=0;i<N.length;i++){
+    const n = N[i];
+    const lab = cleanLabel(n.label).slice(0,12);
+    const ex = cleanLabel(n.extra).slice(0,20);
+    const txt = (lab + (ex ? ' ' + ex : '')).slice(0, 30);
+    s += '  E'+i+'["' + txt + '"]\n';
+    if(i>0) s += '  E'+(i-1)+' --> E'+i+'\n';
+  }
+  return s;
+}
+function mmTlFlow(root, branches){
+  let s = 'flowchart TD\n';
+  let prevLast = null;
+  const bs = (branches||[]).slice(0,8);
+  for(let bi=0; bi<bs.length; bi++){
+    const br = bs[bi];
+    const bl = cleanLabel(br.label).slice(0,14);
+    s += '  subgraph P'+bi+'["' + bl + '"]\n  direction LR\n';
+    const ns = (br.nodes||[]).slice(0,16);
+    for(let k=0;k<ns.length;k++){
+      const n = ns[k];
+      const lab = cleanLabel(n.label).slice(0,12);
+      const ex = cleanLabel(n.extra).slice(0,20);
+      const txt = (lab + (ex ? ' ' + ex : '')).slice(0, 28);
+      const id = 'P'+bi+'N'+k;
+      s += '    '+id+'["' + txt + '"]\n';
+      if(k>0) s += '    P'+bi+'N'+(k-1)+' --> '+id+'\n';
+    }
+    s += '  end\n';
+    if(prevLast && ns.length) s += '  '+prevLast+' --> P'+bi+'N0\n';
+    if(ns.length) prevLast = 'P'+bi+'N'+(ns.length-1);
+  }
+  return s;
+}
 function readEntries(group){
   const out = [];
   for(const sub of ['official','folk']){
@@ -146,8 +185,9 @@ for(const g of GROUPS){
   function mmBlock(key, title, fallback){
     const sec = mm[key];
     if(!sec || !sec.branches || !sec.branches.length) return '<h2>' + title + '</h2><p>思维导图数据缺失，见下方yaml明细。</p>';
-    const code = mmMermaid(sec.root || title, sec.branches);
-    return '<h2>' + title + '</h2>' + '<div class="mm-wrap"><pre class="mermaid">' + esc(code) + '</pre></div>';
+    let code = key==='emperors_mindmap' ? mmEmpFlow(sec.root||title, sec.branches) : key==='timeline_mindmap' ? mmTlFlow(sec.root||title, sec.branches) : mmMermaid(sec.root || title, sec.branches);
+    const hint = key==='emperors_mindmap' ? '<p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p>' : key==='timeline_mindmap' ? '<p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p>' : '';
+    return '<h2>' + title + '</h2>' + hint + '<div class="mm-wrap"><pre class="mermaid">' + esc(code) + '</pre></div>';
   }
   try{
     const md = path.join(gd,'maps');

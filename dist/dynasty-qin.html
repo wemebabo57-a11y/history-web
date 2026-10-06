@@ -30,17 +30,14 @@
 <p>The short-lived dynasty ended after the death of the First Emperor: Qin Er Shi 胡亥 (circa 230–207 BCE, disputed) took the throne, the Chen Sheng–Wu Guang 陈胜吴广 uprising broke out, and after the Battle of Julu 巨鹿之战, Liu Bang 刘邦 entered the pass and Zi Ying 子婴 (identity disputed) surrendered in 207 BCE.</p>
 <p>The scope of the burning of books and burying of scholars, the identity of Zi Ying, and the causes of the rapid collapse remain disputed among transmitted accounts such as the Shi Ji 史记.</p>
 <p>Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((秦朝·君主世系))
-    皇帝3位
-      嬴政（秦始皇）
-        前246—前210（称帝前221—前
-      嬴胡亥（秦二世）
-        前210—前207
-      子婴（秦王子婴）
-        前207年在位约46日（存疑）
-    追尊·未即皇帝位1位
-      秦庄襄王嬴异人
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["嬴政（秦始皇） 前246—前210（称帝前221—前21"]
+  E1["嬴胡亥（秦二世） 前210—前207"]
+  E0 --&gt; E1
+  E2["子婴（秦王子婴） 前207年在位约46日（存疑）"]
+  E1 --&gt; E2
+  E3["秦庄襄王嬴异人 未命名"]
+  E2 --&gt; E3
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre>period_id: qin
 polity: 秦朝
 note: 生卒年均为约数或存疑；在位时间据传世本，页码待核，未能联网核验
@@ -109,25 +106,25 @@ entries:
     event: 在位约46日后降刘邦
     source: 史记·秦始皇本纪，页码待核
     dispute: 身份世系争议，标待考
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((秦朝·大事分期))
-    大事编年
-      项羽巨鹿破秦军主力
-        前207年巨鹿之战
-      子婴降刘邦，秦亡
-        前207年秦亡
-      大泽乡起义
-        前209年陈胜吴广起义
-      修筑秦直道（约，存疑）
-        前212年秦直道
-      焚书坑儒（范围性质争议）
-        前213—前212年焚书坑儒
-      秦灭齐，统一六国
-        前221年秦统一
-      始皇称皇帝，定制度
-        前221年称皇帝
-      废分封，行郡县制
-        前221年行郡县
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["大事编年"]
+  direction LR
+    P0N0["项羽巨鹿破秦军主力 前207年巨鹿之战"]
+    P0N1["子婴降刘邦，秦亡 前207年秦亡"]
+    P0N0 --&gt; P0N1
+    P0N2["大泽乡起义 前209年陈胜吴广起义"]
+    P0N1 --&gt; P0N2
+    P0N3["修筑秦直道（约，存疑） 前212年秦直道"]
+    P0N2 --&gt; P0N3
+    P0N4["焚书坑儒（范围性质争议） 前213—前212年焚书坑儒"]
+    P0N3 --&gt; P0N4
+    P0N5["秦灭齐，统一六国 前221年秦统一"]
+    P0N4 --&gt; P0N5
+    P0N6["始皇称皇帝，定制度 前221年称皇帝"]
+    P0N5 --&gt; P0N6
+    P0N7["废分封，行郡县制 前221年行郡县"]
+    P0N6 --&gt; P0N7
+  end
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre>period_id: qin
 events:
   - year_label: 前221年秦统一
@@ -195,4 +192,4 @@ real_maps:
     license: 原包未声明（制图者/原书/许可待考；仅本地展示，勿再分发）
 note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用
 map_source_url: https://gitcode.com/open-source-toolkit/2fba6（用户提供下载地址；原包未声明制图者/原书/许可，仅本地展示勿再分发）
-</pre></details><h2>史料条目(官 3 / 民 1)</h2><ul><li><a href="entry-qin-official-shiji-001.html">秦始皇本纪要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-shiji-002.html">李斯列传要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-shiji-003.html">秦统一制度郡县书同文度量衡</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-folk-mengjiang-001.html">孟姜女传说</a> <span class="badge">folk</span> <span class="badge">qin</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+</pre></details><h2>史料条目(官 5 / 民 1)</h2><ul><li><a href="entry-qin-official-chenwu-005.html">陈胜吴广起义与秦亡要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-fenshu-004.html">焚书坑儒与郡县制争议要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-shiji-001.html">秦始皇本纪要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-shiji-002.html">李斯列传要录</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-official-shiji-003.html">秦统一制度郡县书同文度量衡</a> <span class="badge">official</span> <span class="badge">qin</span></li><li><a href="entry-qin-folk-mengjiang-001.html">孟姜女传说</a> <span class="badge">folk</span> <span class="badge">qin</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

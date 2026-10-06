@@ -35,46 +35,42 @@
 <p>Fan Zhongyan's 范仲淹 Qingli reforms soon ended; Wang Anshi 王安石 (1021–1086) carried out New Policies under Emperor Shenzong, opposed by Sima Guang 司马光 (1019–1086) and the old party, and factional strife continued. Jin armies advanced south in 1125–1127, the Jingkang 靖康 disaster carried Emperors Huizong and Qinzong north, and Kaifeng fell, ending Northern Song.</p>
 <p>Zhao Gou 赵构 (1107–1187) restored Song rule in the south with Lin'an as capital. Generals including Yue Fei 岳飞 resisted the Jin until the Shaoxing peace of 1141 fixed the Huai–Dasanguan frontier with Song tribute payments. Failed northern campaigns under Xiaozong and Han Tuozhou 韩侂胄 followed; after the joint destruction of Jin in 1234, Song–Mongol conflict resumed, ending with the fall of Lin'an and the deaths at Yashan 崖山 in 1279. Captive counts and abdication details are disputed.</p>
 <p>Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((宋朝（北宋·南宋）·君主世系))
-    北宋9位
-      宋太祖赵匡胤
-        ’960-976’
-      宋太宗赵光义
-        ’976-997’
-      宋真宗赵恒
-        ’997-1022’
-      宋仁宗赵祯
-        ’1022-1063’
-      宋英宗赵曙
-        ’1063-1067’
-      宋神宗赵顼
-        ’1067-1085’
-      宋哲宗赵煦
-        ’1085-1100’
-      宋徽宗赵佶
-        ’1100-1126’
-      宋钦宗赵桓
-        ’1126-1127’
-    南宋9位
-      宋高宗赵构
-        ’1127-1162’
-      宋孝宗赵昚
-        ’1162-1189’
-      宋光宗赵惇
-        ’1189-1194’
-      宋宁宗赵扩
-        ’1194-1224’
-      宋理宗赵昀
-        ’1224-1264’
-      宋度宗赵禥
-        ’1264-1274’
-      宋恭帝赵㬎
-        ’1274-1276’
-      宋端宗赵昰
-        ’1276-1278’
-      宋卫王赵昺
-        ’1278-1279’
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["宋太祖赵匡胤 ’960-976’"]
+  E1["宋太宗赵光义 ’976-997’"]
+  E0 --&gt; E1
+  E2["宋真宗赵恒 ’997-1022’"]
+  E1 --&gt; E2
+  E3["宋仁宗赵祯 ’1022-1063’"]
+  E2 --&gt; E3
+  E4["宋英宗赵曙 ’1063-1067’"]
+  E3 --&gt; E4
+  E5["宋神宗赵顼 ’1067-1085’"]
+  E4 --&gt; E5
+  E6["宋哲宗赵煦 ’1085-1100’"]
+  E5 --&gt; E6
+  E7["宋徽宗赵佶 ’1100-1126’"]
+  E6 --&gt; E7
+  E8["宋钦宗赵桓 ’1126-1127’"]
+  E7 --&gt; E8
+  E9["宋高宗赵构 ’1127-1162’"]
+  E8 --&gt; E9
+  E10["宋孝宗赵昚 ’1162-1189’"]
+  E9 --&gt; E10
+  E11["宋光宗赵惇 ’1189-1194’"]
+  E10 --&gt; E11
+  E12["宋宁宗赵扩 ’1194-1224’"]
+  E11 --&gt; E12
+  E13["宋理宗赵昀 ’1224-1264’"]
+  E12 --&gt; E13
+  E14["宋度宗赵禥 ’1264-1274’"]
+  E13 --&gt; E14
+  E15["宋恭帝赵㬎 ’1274-1276’"]
+  E14 --&gt; E15
+  E16["宋端宗赵昰 ’1276-1278’"]
+  E15 --&gt; E16
+  E17["宋卫王赵昺 ’1278-1279’"]
+  E16 --&gt; E17
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 宋朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
 northern_song:
   - {name: 宋太祖赵匡胤, reign: '960-976', birth_death: 约927—976存疑, note: 陈桥建国}
@@ -140,41 +136,45 @@ southern_song:
 - {name: 史弥远, role: 宁宗理宗朝权相, period: 1208—1233, note: 废立济王争议}
 - {name: 贾似道, role: 理宗度宗朝权相, period: 约1259—1275, birth_death: 约1213—1275存疑, note: 公田法；襄阳之战时误国之责争议}
 - {name: 谢太后谢道清, role: 恭帝朝垂帘, period: 1274—1276, note: 临安陷落前决策}
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((宋朝（北宋·南宋）·大事分期))
-    前期
-      陈桥兵变，赵匡胤建宋，定都开封
-        960
-      灭北汉，十国基本统一完成
-        979
-      澶渊之盟，宋辽议和纳岁币
-        1005
-      范仲淹庆历新政
-        1043
-      王安石熙宁变法开始
-        1069
-    中期
-      司马光《资治通鉴》传世称进呈（版本待考）
-        1084
-      女真建金；宋金海上之盟约夹攻辽
-        1115
-      靖康之变，北宋亡；赵构南渡
-        1127
-      钟相杨么起义（南方水乡起义，细节存疑）
-        1130
-      绍兴和议；岳飞遇害（官书与传说须区分）
-        1141
-    后期
-      采石之战，虞允文抗金
-        1161
-      韩侂胄开禧北伐
-        1206
-      宋蒙联合灭金；端平入洛
-        1234
-      元军陷临安
-        1276
-      崖山海战，南宋亡
-        1279
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["前期"]
+  direction LR
+    P0N0["陈桥兵变，赵匡胤建宋，定 960"]
+    P0N1["灭北汉，十国基本统一完成 979"]
+    P0N0 --&gt; P0N1
+    P0N2["澶渊之盟，宋辽议和纳岁币 1005"]
+    P0N1 --&gt; P0N2
+    P0N3["范仲淹庆历新政 1043"]
+    P0N2 --&gt; P0N3
+    P0N4["王安石熙宁变法开始 1069"]
+    P0N3 --&gt; P0N4
+  end
+  subgraph P1["中期"]
+  direction LR
+    P1N0["司马光《资治通鉴》传世称 1084"]
+    P1N1["女真建金；宋金海上之盟约 1115"]
+    P1N0 --&gt; P1N1
+    P1N2["靖康之变，北宋亡；赵构南 1127"]
+    P1N1 --&gt; P1N2
+    P1N3["钟相杨么起义（南方水乡起 1130"]
+    P1N2 --&gt; P1N3
+    P1N4["绍兴和议；岳飞遇害（官书 1141"]
+    P1N3 --&gt; P1N4
+  end
+  P0N4 --&gt; P1N0
+  subgraph P2["后期"]
+  direction LR
+    P2N0["采石之战，虞允文抗金 1161"]
+    P2N1["韩侂胄开禧北伐 1206"]
+    P2N0 --&gt; P2N1
+    P2N2["宋蒙联合灭金；端平入洛 1234"]
+    P2N1 --&gt; P2N2
+    P2N3["元军陷临安 1276"]
+    P2N2 --&gt; P2N3
+    P2N4["崖山海战，南宋亡 1279"]
+    P2N3 --&gt; P2N4
+  end
+  P1N4 --&gt; P2N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 宋朝大事年表（至少12条；年份为传世纪年）
 - {year: 960, event: 陈桥兵变，赵匡胤建宋，定都开封}
 - {year: 979, event: 灭北汉，十国基本统一完成}

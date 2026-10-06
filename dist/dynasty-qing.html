@@ -31,33 +31,30 @@
 <p>The Kangxi 玄烨 (1654–1722), Yongzheng 胤禛 (circa 1678–1735), and Qianlong 弘历 (1711–1799) reigns suppressed the Three Feudatories, incorporated Taiwan, expanded frontiers, regularized the poll-tax merger and permanent tax quotas, and enforced maritime restrictions. After the Opium Wars, unequal treaties, the Taiping rebellion, the Self-Strengthening movement, defeat by Japan in 1895, the Hundred Days reform, the Boxer rising, and late constitutional moves reshaped the state; Empress Dowager Cixi 慈禧 (circa 1835–1908) held effective power from 1861 to 1908.</p>
 <p>The 1911 Revolution ended imperial rule in 1912. Judgments on the High Qing, the reasons for the closed-door policy, the nature of Taiping and Boxer movements, and the chief cause of the fall present multiple views and are left disputed.</p>
 <p>Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((清朝·君主世系))
-    皇帝12位
-      努尔哈赤
-        1616-1626
-      皇太极
-        1626-1643
-      福临
-        世祖 1644-1661
-      玄烨
-        圣祖 1662-1722
-      胤禛
-        世宗 1723-1735
-      弘历
-        高宗 1736-1795
-      颙琰
-        仁宗 1796-1820
-      旻宁
-        宣宗 1821-1850
-      奕詝
-        文宗 1851-1861
-      载淳
-        穆宗 1862-1874
-      载湉
-        德宗 1875-1908
-      溥仪
-        逊帝 1909-1912
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["努尔哈赤 1616-1626"]
+  E1["皇太极 1626-1643"]
+  E0 --&gt; E1
+  E2["福临 世祖 1644-1661"]
+  E1 --&gt; E2
+  E3["玄烨 圣祖 1662-1722"]
+  E2 --&gt; E3
+  E4["胤禛 世宗 1723-1735"]
+  E3 --&gt; E4
+  E5["弘历 高宗 1736-1795"]
+  E4 --&gt; E5
+  E6["颙琰 仁宗 1796-1820"]
+  E5 --&gt; E6
+  E7["旻宁 宣宗 1821-1850"]
+  E6 --&gt; E7
+  E8["奕詝 文宗 1851-1861"]
+  E7 --&gt; E8
+  E9["载淳 穆宗 1862-1874"]
+  E8 --&gt; E9
+  E10["载湉 德宗 1875-1908"]
+  E9 --&gt; E10
+  E11["溥仪 逊帝 1909-1912"]
+  E10 --&gt; E11
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 清朝皇帝系表(12帝含追尊,慈禧垂帘另注实际掌权)
 period_id: qing
 dynasty: 清朝
@@ -113,39 +110,43 @@ holders:
   - { name: 慈禧, role: 太后垂帘实际掌权者, years: 1835约-1908约(存疑), event: 洋务戊戌义和团诸政局, note: 实际掌权1861-1908,评价争议极大 }
   - { name: 袁世凯, role: 北洋大臣民国大总统, years: 1859-1916约, event: 小站练兵、逼清帝退位、洪宪称帝, note: 奸雄两极评价,不下结论 }
   - { name: 奕䜣, role: 恭亲王总理衙门, years: 1833约-1898约(存疑), event: 洋务官办外交, note: 与慈禧关系说法并存 }
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((清朝·大事分期))
-    前期
-      后金建国
-        1616
-      改号清
-        1636
-      清入关
-        1644
-      扬州嘉定抗清屠城传闻
-        1645-1646
-      康雍乾盛世
-        1662-1795
-    中期
-      三藩之乱与平定
-        1673-1681
-      收台湾与闭关定制
-        1684-1757
-      鸦片战争
-        1840-1842
-      太平天国
-        1851-1864
-      洋务运动
-        1861-1895
-    后期
-      甲午战争
-        1894-1895
-      戊戌变法
-        1898
-      义和团与八国联军
-        1900
-      辛亥革命与清帝退位
-        1911-1912
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["前期"]
+  direction LR
+    P0N0["后金建国 1616"]
+    P0N1["改号清 1636"]
+    P0N0 --&gt; P0N1
+    P0N2["清入关 1644"]
+    P0N1 --&gt; P0N2
+    P0N3["扬州嘉定抗清屠城传闻 1645-1646"]
+    P0N2 --&gt; P0N3
+    P0N4["康雍乾盛世 1662-1795"]
+    P0N3 --&gt; P0N4
+  end
+  subgraph P1["中期"]
+  direction LR
+    P1N0["三藩之乱与平定 1673-1681"]
+    P1N1["收台湾与闭关定制 1684-1757"]
+    P1N0 --&gt; P1N1
+    P1N2["鸦片战争 1840-1842"]
+    P1N1 --&gt; P1N2
+    P1N3["太平天国 1851-1864"]
+    P1N2 --&gt; P1N3
+    P1N4["洋务运动 1861-1895"]
+    P1N3 --&gt; P1N4
+  end
+  P0N4 --&gt; P1N0
+  subgraph P2["后期"]
+  direction LR
+    P2N0["甲午战争 1894-1895"]
+    P2N1["戊戌变法 1898"]
+    P2N0 --&gt; P2N1
+    P2N2["义和团与八国联军 1900"]
+    P2N1 --&gt; P2N2
+    P2N3["辛亥革命与清帝退位 1911-1912"]
+    P2N2 --&gt; P2N3
+  end
+  P1N4 --&gt; P2N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 清朝大事年表(14条以上)
 period_id: qing
 source_note: 主据《清史稿》《清实录》(传世本,具体版本待考;页码待核,未能联网核验)

@@ -46,41 +46,30 @@
 <p>In the south, Liu Yu replaced Eastern Jin with Song in 420; Qi (479), Liang (502), and Chen (557) followed in succession at Jiankang. The Hou Jing Rebellion 侯景之乱 (548–552) devastated the southern courts. In 589 Sui destroyed Chen and reunified north and south.</p>
 <p>A key institutional turning point was the reform of Emperor Xiaowen 孝文帝 (reigned 471–499), who moved the capital to Luoyang, adopted Han surnames, and restricted steppe dress. Northern centers shifted among Pingcheng, Luoyang, Ye, and Chang'an, while the south centered on Jiankang with the Huai valley as a contested zone; no precise boundaries are asserted here.</p>
 <p>Detailed treatment of the southern courts from Song through Chen and of individual northern regimes appears in the official entries, with Hou Jing's rebellion and the Jiankang courts given separate attention. Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((南北朝·君主世系))
-    刘宋2位
-      刘裕
-        高祖/武帝｜刘宋 ’420-422’
-      刘义隆
-        太祖/文帝｜刘宋 ’424-453’
-    南齐1位
-      萧道成
-        太祖/高帝｜南齐 ’479-482’
-    南梁1位
-      萧衍
-        高祖/武帝｜南梁 ’502-549’
-    南陈1位
-      陈霸先
-        高祖/武帝｜南陈 ’557-559’
-    北魏3位
-      拓跋珪
-        太祖/道武帝｜北魏 ’386-409
-      拓跋焘
-        世祖/太武帝｜北魏 ’423-452
-      拓跋宏
-        高祖/孝文帝｜北魏 ’471-499
-    北齐1位
-      高洋
-        显祖/文宣帝｜北齐 ’550-559
-    北周1位
-      宇文邕
-        高祖/武帝｜北周 ’560-578’
-    前赵/汉赵1位
-      刘渊（代表）
-        前赵/汉赵 ’304-310’
-    前秦1位
-      苻坚（代表）
-        前秦 ’357-385’
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["刘裕 高祖/武帝｜刘宋 ’420-422’"]
+  E1["刘义隆 太祖/文帝｜刘宋 ’424-453’"]
+  E0 --&gt; E1
+  E2["萧道成 太祖/高帝｜南齐 ’479-482’"]
+  E1 --&gt; E2
+  E3["萧衍 高祖/武帝｜南梁 ’502-549’"]
+  E2 --&gt; E3
+  E4["陈霸先 高祖/武帝｜南陈 ’557-559’"]
+  E3 --&gt; E4
+  E5["拓跋珪 太祖/道武帝｜北魏 ’386-409’"]
+  E4 --&gt; E5
+  E6["拓跋焘 世祖/太武帝｜北魏 ’423-452’"]
+  E5 --&gt; E6
+  E7["拓跋宏 高祖/孝文帝｜北魏 ’471-499’"]
+  E6 --&gt; E7
+  E8["高洋 显祖/文宣帝｜北齐 ’550-559’"]
+  E7 --&gt; E8
+  E9["宇文邕 高祖/武帝｜北周 ’560-578’"]
+  E8 --&gt; E9
+  E10["刘渊（代表） 前赵/汉赵 ’304-310’"]
+  E9 --&gt; E10
+  E11["苻坚（代表） 前秦 ’357-385’"]
+  E10 --&gt; E11
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 南朝宋齐梁陈 + 北朝代表 + 十六国仅列代表(生卒存疑)
 - {name: 刘裕, temple: 高祖/武帝, polity: 刘宋, period_id: northern-southern, reign: "420-422", birth_death: "约363—422,存疑", confidence: high}
 - {name: 刘义隆, temple: 太祖/文帝, polity: 刘宋, period_id: northern-southern, reign: "424-453", birth_death: "约407—453,存疑", confidence: high}
@@ -115,32 +104,34 @@
 - {name: 高欢, polity: 东魏/北齐奠基, period_id: northern-southern, role: 权臣, dates: "约496—547,存疑", confidence: medium, source: "李百药《北齐书·神武纪》,传世本待考", note: 与宇文泰对峙}
 - {name: 宇文泰, polity: 西魏/北周奠基, period_id: northern-southern, role: 权臣/府兵, dates: "约507—556,存疑", confidence: medium, source: "令狐德棻等《周书·文帝纪》,传世本待考", note: 府兵制奠基}
 - {name: 侯景, polity: 梁末, period_id: northern-southern, role: 叛将, dates: "约503—552,存疑", confidence: medium, source: "姚思廉《梁书》;《南史》,传世本待考", note: 侯景之乱}
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((南北朝·大事分期))
-    十六国（仅列代表）
-      刘渊建汉/R李雄建成都,十六国开端
-        304
-      淝水之战
-        383
-    northern-southern
-      北魏建国（拓跋珪）
-        386
-      刘裕代晋建宋
-        420
-      北魏统一北方
-        439
-      孝文帝即位/改革启动
-        471
-      迁都洛阳
-        494
-      北魏分裂东西魏
-        534
-      侯景之乱起
-        548
-      北周灭北齐
-        577
-      隋灭陈,南北统一
-        589
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["十六国（仅列代表）"]
+  direction LR
+    P0N0["刘渊建汉/R李雄建成都, 304"]
+    P0N1["淝水之战 383"]
+    P0N0 --&gt; P0N1
+  end
+  subgraph P1["northern-south"]
+  direction LR
+    P1N0["北魏建国（拓跋珪） 386"]
+    P1N1["刘裕代晋建宋 420"]
+    P1N0 --&gt; P1N1
+    P1N2["北魏统一北方 439"]
+    P1N1 --&gt; P1N2
+    P1N3["孝文帝即位/改革启动 471"]
+    P1N2 --&gt; P1N3
+    P1N4["迁都洛阳 494"]
+    P1N3 --&gt; P1N4
+    P1N5["北魏分裂东西魏 534"]
+    P1N4 --&gt; P1N5
+    P1N6["侯景之乱起 548"]
+    P1N5 --&gt; P1N6
+    P1N7["北周灭北齐 577"]
+    P1N6 --&gt; P1N7
+    P1N8["隋灭陈,南北统一 589"]
+    P1N7 --&gt; P1N8
+  end
+  P0N1 --&gt; P1N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre>- {date: 304, event: 刘渊建汉/R李雄建成都,十六国开端, period_id: sixteen-kingdoms, confidence: medium, source: "《晋书·载记》,传世本待考"}
 - {date: 383, event: 淝水之战, period_id: sixteen-kingdoms, confidence: high, source: "《晋书·苻坚载记》《谢安传》;《资治通鉴》"}
 - {date: 386, event: 北魏建国(拓跋珪), period_id: northern-southern, confidence: high, source: "魏收《魏书·太祖纪》"}

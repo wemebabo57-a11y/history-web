@@ -1,15 +1,15 @@
 # 覆盖率报告
 
-生成: 2026-10-06T08:01:31.910Z
+生成: 2026-10-06T08:15:25.041Z
 
 | 分组 | 综述 | 帝系 | 掌权表 | 时间线 | 官方条目 | 民间条目 | maps | 状态 |
 |---|---|---|---|---|---|---|---|---|
-| qin | Y | Y | Y | Y | 3 | 1 | Y | MVP达标 |
-| han | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
-| three-kingdoms | Y | Y | Y | Y | 3 | 1 | Y | MVP达标 |
+| qin | Y | Y | Y | Y | 5 | 1 | Y | MVP达标 |
+| han | Y | Y | Y | Y | 7 | 2 | Y | MVP达标 |
+| three-kingdoms | Y | Y | Y | Y | 6 | 1 | Y | MVP达标 |
 | jin | Y | Y | Y | Y | 2 | 1 | Y | MVP达标 |
 | northern-southern | Y | Y | Y | Y | 3 | 1 | Y | MVP达标 |
-| sui | Y | Y | Y | Y | 2 | 1 | Y | MVP达标 |
+| sui | Y | Y | Y | Y | 5 | 1 | Y | MVP达标 |
 | tang | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
 | five-dynasties-ten-kingdoms | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
 | song | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
@@ -20,12 +20,11 @@
 | ming | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
 | qing | Y | Y | Y | Y | 4 | 2 | Y | MVP达标 |
 
-合计: 官方条目 46 / 民间条目 22
+合计: 官方条目 57 / 民间条目 22
 
 ## TODO(增量扩展,不追求一次穷尽)
 
 - [ ] jin: 官方条目仅2条,向3条以上扩展
-- [ ] sui: 官方条目仅2条,向3条以上扩展
 - [ ] liao: 官方条目仅1条,向3条以上扩展
 - [ ] western-xia: 官方条目仅1条,向3条以上扩展
 - [ ] jin-dynasty: 官方条目仅1条,向3条以上扩展

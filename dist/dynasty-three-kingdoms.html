@@ -39,33 +39,28 @@
 <p>Cao Cao 曹操 had built the northern base later inherited by Wei, whose capitals centered on Luoyang and Xu. Shu Han, ruled by Liu Bei and his heir Liu Shan 刘禅, held the Sichuan basin, Hanzhong, and parts of the southwest from Chengdu. Wu, ruled by Sun Quan 孙权 and successors Sun Liang 孙亮, Sun Xiu 孙休, and Sun Hao 孙皓, held the lower Yangtze, the southeast coast, and eastern Jingzhou from Jianye 建业. Jingzhou, Hefei, and Hanzhong were repeatedly contested; boundaries shifted with campaigns and are given here only schematically.</p>
 <p>Wei is used as the representative period identifier for filing purposes; Shu and Wu details appear in their respective entries.</p>
 <p>Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((三国（曹魏·蜀汉·孙吴）·君主世系))
-    曹魏5位
-      曹丕
-        高祖/文帝｜曹魏 ’220-226’
-      曹叡
-        烈祖/明帝｜曹魏 ’226-239’
-      曹芳
-        无/少帝｜曹魏 ’239-254’
-      曹髦
-        无/高贵乡公｜曹魏 ’254-260
-      曹奂
-        无/元帝｜曹魏 ’260-265’
-    蜀汉2位
-      刘备
-        烈祖/昭烈帝｜蜀汉 ’221-223
-      刘禅
-        无/后主｜蜀汉 ’223-263’
-    孙吴4位
-      孙权
-        太祖/大帝｜孙吴 ’229-252’
-      孙亮
-        无/少帝｜孙吴 ’252-258’
-      孙休
-        无/景帝｜孙吴 ’258-264’
-      孙皓
-        无/末帝｜孙吴 ’264-280’
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["曹丕 高祖/文帝｜曹魏 ’220-226’"]
+  E1["曹叡 烈祖/明帝｜曹魏 ’226-239’"]
+  E0 --&gt; E1
+  E2["曹芳 无/少帝｜曹魏 ’239-254’"]
+  E1 --&gt; E2
+  E3["曹髦 无/高贵乡公｜曹魏 ’254-260’"]
+  E2 --&gt; E3
+  E4["曹奂 无/元帝｜曹魏 ’260-265’"]
+  E3 --&gt; E4
+  E5["刘备 烈祖/昭烈帝｜蜀汉 ’221-223’"]
+  E4 --&gt; E5
+  E6["刘禅 无/后主｜蜀汉 ’223-263’"]
+  E5 --&gt; E6
+  E7["孙权 太祖/大帝｜孙吴 ’229-252’"]
+  E6 --&gt; E7
+  E8["孙亮 无/少帝｜孙吴 ’252-258’"]
+  E7 --&gt; E8
+  E9["孙休 无/景帝｜孙吴 ’258-264’"]
+  E8 --&gt; E9
+  E10["孙皓 无/末帝｜孙吴 ’264-280’"]
+  E9 --&gt; E10
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 曹魏5帝 + 蜀汉2帝 + 孙吴4帝(生卒多存疑,标约/存疑)
 - {name: 曹丕, temple: 高祖/文帝, polity: 曹魏, period_id: wei, reign: "220-226", birth_death: "约187—226,存疑", confidence: high, note: 代汉建魏}
 - {name: 曹叡, temple: 烈祖/明帝, polity: 曹魏, period_id: wei, reign: "226-239", birth_death: "约204—239,存疑", confidence: high, note: 青龙年间守成}
@@ -96,31 +91,35 @@
 - {name: 诸葛亮, polity: 蜀汉, period_id: shu, role: 丞相, dates: "约181—234,存疑", confidence: high, source: "陈寿《三国志·蜀书·诸葛亮传》裴注,传世本,具体版本待考", note: 隆中对策、北伐、五丈原}
 - {name: 孙氏宗室与顾陆朱张, polity: 孙吴, period_id: wu, role: 宗室/江东士族共治, dates: "东汉末—280", confidence: medium, source: "陈寿《三国志·吴书》,裴注引江表传等,传世本待考", note: 周瑜/鲁肃/吕蒙/陆逊等前后辅政}
 - {name: 周瑜, polity: 孙吴, period_id: wu, role: 都督, dates: "约175—210,存疑", confidence: high, source: "陈寿《三国志·吴书·周瑜传》,传世本待考", note: 赤壁前线指挥之一}
-</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((三国（曹魏·蜀汉·孙吴）·大事分期))
-    曹魏
-      赤壁之战
-        208
-      曹丕代汉建魏
-        220
-      高平陵之变
-        249
-      司马炎代魏建晋
-        265
-    蜀汉
-      刘备建蜀汉
-        221
-      五丈原之战/诸葛亮卒
-        234
-      魏灭蜀
-        263
-    孙吴
-      夷陵之战
-        222
-      孙权建吴,三国鼎立成形
-        229
-      晋灭吴,三国归晋
-        280
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["曹魏"]
+  direction LR
+    P0N0["赤壁之战 208"]
+    P0N1["曹丕代汉建魏 220"]
+    P0N0 --&gt; P0N1
+    P0N2["高平陵之变 249"]
+    P0N1 --&gt; P0N2
+    P0N3["司马炎代魏建晋 265"]
+    P0N2 --&gt; P0N3
+  end
+  subgraph P1["蜀汉"]
+  direction LR
+    P1N0["刘备建蜀汉 221"]
+    P1N1["五丈原之战/诸葛亮卒 234"]
+    P1N0 --&gt; P1N1
+    P1N2["魏灭蜀 263"]
+    P1N1 --&gt; P1N2
+  end
+  P0N3 --&gt; P1N0
+  subgraph P2["孙吴"]
+  direction LR
+    P2N0["夷陵之战 222"]
+    P2N1["孙权建吴,三国鼎立成形 229"]
+    P2N0 --&gt; P2N1
+    P2N2["晋灭吴,三国归晋 280"]
+    P2N1 --&gt; P2N2
+  end
+  P1N2 --&gt; P2N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre>- {date: 208, event: 赤壁之战, period_id: wei, polity: 魏/吴/刘备联军, confidence: high, source: "陈寿《三国志》,裴注引《江表传》,传世本待考"}
 - {date: 220, event: 曹丕代汉建魏, period_id: wei, polity: 曹魏, confidence: high, source: "陈寿《三国志·文帝纪》"}
 - {date: 221, event: 刘备建蜀汉, period_id: shu, polity: 蜀汉, confidence: high, source: "陈寿《三国志·先主传》"}
@@ -143,4 +142,4 @@ real_maps:
     license: 原包未声明（制图者/原书/许可待考；仅本地展示，勿再分发）
 note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用
 map_source_url: https://gitcode.com/open-source-toolkit/2fba6（用户提供下载地址；原包未声明制图者/原书/许可，仅本地展示勿再分发）
-</pre></details><h2>史料条目(官 3 / 民 1)</h2><ul><li><a href="entry-wei-official-赤壁-001.html">赤壁之战(208)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-鼎立-002.html">三国鼎立(220—229)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-归晋-003.html">三国归晋(263—280)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-shu-folk-空城-001.html">空城计(后世演绎,非史实)</a> <span class="badge">folk</span> <span class="badge">shu</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+</pre></details><h2>史料条目(官 6 / 民 1)</h2><ul><li><a href="entry-three-kingdoms-official-gaopingling-006.html">高平陵之变与司马氏掌权(约249—265)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-赤壁-001.html">赤壁之战(208)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-鼎立-002.html">三国鼎立(220—229)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-wei-official-归晋-003.html">三国归晋(263—280)</a> <span class="badge">official</span> <span class="badge">wei</span></li><li><a href="entry-three-kingdoms-official-wuzhangyuan-005.html">五丈原与诸葛亮北伐(约228—234)</a> <span class="badge">official</span> <span class="badge">shu</span></li><li><a href="entry-three-kingdoms-official-yiling-004.html">夷陵之战与三国鼎立定型(约221—229)</a> <span class="badge">official</span> <span class="badge">wu</span></li><li><a href="entry-shu-folk-空城-001.html">空城计(后世演绎,非史实)</a> <span class="badge">folk</span> <span class="badge">shu</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

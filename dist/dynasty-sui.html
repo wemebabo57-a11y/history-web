@@ -36,18 +36,16 @@
 <p>Emperor Yang 杨广 (circa 569–618, disputed) moved to Luoyang, opened the Grand Canal by linking channels including the Tongji Canal from 605, and projected power toward Liaodong. Three campaigns against Goguryeo in 612–614 exhausted the state; the Yang Xuangan 杨玄感 revolt of 613, the Yanmen encirclement of 615, and the Li Yuan 李渊 rising of 617 followed. Yang Guang was killed at Jiangdu in 618, and the puppet child emperor Yang You 杨侑 (circa 605–619, disputed) yielded to the Tang.</p>
 <p>The founding year of the presented-scholar examination, judgments on Emperor Yang shaped by early Tang historians, and responsibility for the Chen campaign remain disputed. Territorial extent is schematic and the Liaodong and Hexi limits are uncertain.</p>
 <p>The equal-field, rented-labor modulation, fubing militia, Kaihuang legal code, and courier relay network are treated in the official entries, and the Sui–Tang transition is cross-referenced under Tang. Sources pending page verification, no internet verification.</p>
-</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((隋朝·君主世系))
-    皇帝5位
-      杨忠
-        未即位,文帝追尊
-      杨坚
-        高祖文皇帝
-      杨广
-        炀皇帝
-      杨侑
-        恭皇帝
-      杨浩
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><p class="mm-hint">时间顺序：从左到右为即位先后，箭头即传承方向。</p><div class="mm-wrap"><pre class="mermaid">flowchart LR
+  E0["杨忠 未即位,文帝追尊"]
+  E1["杨坚 高祖文皇帝"]
+  E0 --&gt; E1
+  E2["杨广 炀皇帝"]
+  E1 --&gt; E2
+  E3["杨侑 恭皇帝"]
+  E2 --&gt; E3
+  E4["杨浩 未命名"]
+  E3 --&gt; E4
 </pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 隋朝皇帝(3帝加追尊).生卒不确定者标约或存疑.
 period_id: sui
 emperors:
@@ -135,31 +133,35 @@ power_holders:
   - name: 李渊
     birth_death: 约566-635,生年存疑
     role: 唐国公太原留守
-    note: 617年太原起兵,入长安立恭帝,次年建唐.</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
-  root((隋朝·大事分期))
-    前期
-      杨坚代周建隋,改元开皇
-        581
-      隋灭陈南北统一
-        589
-      开皇制度推行
-        590
-      营东都洛阳开凿通济渠
-        605
-    中期
-      筑长城通西域张掖置郡存疑待考
-        607
-      一征辽东无功
-        612
-      杨玄感黎阳起兵
-        613
-    后期
-      雁门之围
-        615
-      李渊太原起兵入长安立代王侑
-        617
-      江都之变炀帝被弑,恭帝禅唐隋亡
-        618
+    note: 617年太原起兵,入长安立恭帝,次年建唐.</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><p class="mm-hint">时间顺序：分期从上到下、期内从左到右为先后。</p><div class="mm-wrap"><pre class="mermaid">flowchart TD
+  subgraph P0["前期"]
+  direction LR
+    P0N0["杨坚代周建隋,改元开皇 581"]
+    P0N1["隋灭陈南北统一 589"]
+    P0N0 --&gt; P0N1
+    P0N2["开皇之治与制度推行开皇之 590"]
+    P0N1 --&gt; P0N2
+    P0N3["营东都洛阳开凿通济渠 605"]
+    P0N2 --&gt; P0N3
+  end
+  subgraph P1["中期"]
+  direction LR
+    P1N0["筑长城通西域张掖置郡存疑 607"]
+    P1N1["一征辽东无功 612"]
+    P1N0 --&gt; P1N1
+    P1N2["杨玄感黎阳起兵 613"]
+    P1N1 --&gt; P1N2
+  end
+  P0N3 --&gt; P1N0
+  subgraph P2["后期"]
+  direction LR
+    P2N0["雁门之围 615"]
+    P2N1["李渊太原起兵入长安立代王 617"]
+    P2N0 --&gt; P2N1
+    P2N2["江都之变炀帝被弑,恭帝禅 618"]
+    P2N1 --&gt; P2N2
+  end
+  P1N2 --&gt; P2N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 隋朝大事年表.
 period_id: sui
 timeline:
@@ -170,7 +172,7 @@ timeline:
     event: 隋灭陈南北统一
     note: 杨广统军平陈,结束长期分裂.
   - year: 590
-    event: 开皇制度推行
+    event: 开皇之治与制度推行(开皇之治)
     end_year: 604
     note: 均田租庸调府兵科举雏形,详见官方条目.
   - year: 605
@@ -209,4 +211,4 @@ real_maps:
     license: 原包未声明（制图者/原书/许可待考；仅本地展示，勿再分发）
 note_real: 本组疆域图已替换为真实地图图片（jpg），页面优先展示real_maps；territory.svg仅保留兼容/五代等缺包组使用
 map_source_url: https://gitcode.com/open-source-toolkit/2fba6（用户提供下载地址；原包未声明制图者/原书/许可，仅本地展示勿再分发）
-</pre></details><h2>史料条目(官 2 / 民 1)</h2><ul><li><a href="entry-sui-official-kaihuang-002.html">开皇制度均田租庸调府兵与科举滥觞</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-tongyi-001.html">隋灭陈与南北统一(589)</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-folk-yangdi-001.html">隋炀帝奢靡传闻考辨</a> <span class="badge">folk</span> <span class="badge">sui</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+</pre></details><h2>史料条目(官 5 / 民 1)</h2><ul><li><a href="entry-sui-official-kaihuang-002.html">开皇制度均田租庸调府兵与科举滥觞</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-kaihuangzhi-003.html">开皇之治盛世要录</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-liaodong-005.html">三征辽东与江都之变隋亡要录</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-tongyi-001.html">隋灭陈与南北统一(589)</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-yunhe-004.html">大运河与东都洛阳要录</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-folk-yangdi-001.html">隋炀帝奢靡传闻考辨</a> <span class="badge">folk</span> <span class="badge">sui</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
