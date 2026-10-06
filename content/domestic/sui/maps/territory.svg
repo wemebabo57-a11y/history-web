@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460">
+<title>隋疆域示意图（示意非精确 CC0自绘）</title>
+<rect x="0" y="0" width="640" height="460" fill="#a9c8e2"/>
+<polygon points="90,80 200,58 330,52 460,82 532,128 562,200 542,282 502,352 402,412 282,422 172,382 102,300 70,200" fill="#ece3c6" stroke="#8a7a4d" stroke-width="1.5"/>
+<ellipse cx="505" cy="330" rx="14" ry="9" fill="#ece3c6" stroke="#8a7a4d"/>
+<ellipse cx="548" cy="300" rx="6" ry="10" fill="#ece3c6" stroke="#8a7a4d"/>
+<path d="M210,170 L280,148 L340,148 L352,186 L312,202 L292,232 L352,252 L422,242" fill="none" stroke="#3a7bd5" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="428" y="240" font-size="11" fill="#1d4e89">黄河（示意）</text>
+<path d="M168,282 L260,270 L340,276 L430,264 L522,272" fill="none" stroke="#3a7bd5" stroke-width="2.5"/>
+<text x="528" y="275" font-size="11" fill="#1d4e89">长江</text>
+<polygon points="152,122 382,112 452,152 432,222 382,262 362,342 332,382 310,342 300,272 202,252 142,202" fill="#e0b25a" fill-opacity="0.85" stroke="#7a4d00" stroke-width="2"/>
+<polygon points="452,128 492,124 498,152 458,158" fill="none" stroke="#7a4d00" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="452" y="118" font-size="11" fill="#5a3c00">辽东存争议（虚线禁套用）</text>
+<polyline points="398,116 362,170 330,210 372,238 420,260 448,290" fill="none" stroke="#0b5394" stroke-width="2.5" stroke-dasharray="7,3"/>
+<circle cx="398" cy="116" r="3.5" fill="#0b5394"/><circle cx="330" cy="210" r="3.5" fill="#0b5394"/><circle cx="420" cy="260" r="3.5" fill="#0b5394"/><circle cx="448" cy="290" r="3.5" fill="#0b5394"/>
+<text x="356" y="140" font-size="11" fill="#0b5394">大运河线（永济/通济/邗沟/江南示意）</text>
+<text x="386" y="108" font-size="11" fill="#0b5394">涿郡</text>
+<text x="424" y="262" font-size="11" fill="#0b5394">江都</text>
+<text x="452" y="292" font-size="11" fill="#0b5394">余杭</text>
+<text x="298" y="208" font-size="15">★</text><text x="312" y="212" font-size="12">大兴（隋都）</text>
+<circle cx="330" cy="222" r="4" fill="#c00000" stroke="#fff" stroke-width="1"/><text x="338" y="226" font-size="12">洛阳（东都）</text>
+<text x="150" y="140" font-size="11" fill="#5a3c00">北：雁门长城一线</text>
+<text x="312" y="398" font-size="11" fill="#5a3c00">南：交趾（细长示意）</text>
+<text x="110" y="215" font-size="11" fill="#5a3c00">西：敦煌张掖待考</text>
+<rect x="0" y="0" width="640" height="44" fill="#f7f3e8" stroke="#8a7a4d"/>
+<text x="16" y="20" font-size="16" font-weight="bold">隋疆域示意（581–618·极盛示意非精确）</text>
+<text x="16" y="36" font-size="11" fill="#555">海陆底色＋黄河长江＋大运河线＋都城 ｜ 争议区虚线禁套用 ｜ CC0自绘</text>
+<g transform="translate(592,72)"><circle r="17" fill="#fff" stroke="#333"/><text y="-2" text-anchor="middle" font-size="11">N</text><polygon points="0,-12 4,2 0,-1 -4,2" fill="#333"/><text y="12" text-anchor="middle" font-size="9">北</text></g>
+<g><rect x="16" y="428" width="150" height="20" fill="#fff" stroke="#333"/><line x1="16" y1="438" x2="66" y2="438" stroke="#333" stroke-width="3"/><line x1="66" y1="438" x2="116" y2="438" stroke="#fff" stroke-width="3"/><line x1="66" y1="434" x2="66" y2="442" stroke="#333"/><text x="20" y="426" font-size="10">比例尺示意 0—约500km（非精确）</text></g>
+<g><rect x="452" y="340" width="172" height="102" fill="#fff" fill-opacity="0.92" stroke="#333"/><text x="460" y="356" font-size="11" font-weight="bold">图例</text><rect x="460" y="362" width="16" height="10" fill="#e0b25a" stroke="#7a4d00"/><text x="480" y="371" font-size="10">隋实控示意</text><line x1="460" y1="379" x2="476" y2="379" stroke="#0b5394" stroke-width="2" stroke-dasharray="5,2"/><text x="480" y="382" font-size="10">大运河线</text><text x="460" y="393" font-size="10">★都城 ●东都</text><rect x="460" y="397" width="16" height="8" fill="none" stroke="#333" stroke-dasharray="4,2"/><text x="480" y="404" font-size="10">争议区禁套用</text><text x="460" y="416" font-size="10">黄河长江为示意走向</text><text x="460" y="428" font-size="10">CC0：可复用无需署名</text></g>
+<text x="16" y="414" font-size="10" fill="#333">注：本图为示意多边形，不代表精确疆界；辽东/西域/交趾存疑待考，禁作精确套用。</text>
+</svg>

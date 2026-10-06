@@ -1,7 +1,8 @@
 period_id: jin
-map: jin-sketch.svg
-method: 自绘示意方框图，仅文字示意方位，不作精确测绘
+maps:
+  - {file: territory.svg, coverage: 西晋统一及永嘉南渡后南北分治, claim: 自绘多边形示意,非精确疆界,不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 永嘉后北方政权林立,此图不裁决具体归属争议, modern_boundary: 禁套现代国界省界}
+  - {file: jin-sketch.svg, coverage: 旧版方位示意, claim: 旧版兼容保留, drawn: 文字示意, license: CC0, dispute: 不作精确声称, modern_boundary: 禁套现代国界省界}
+method: 自绘示意多边形图,黄河长江走向示意,不作精确测绘
 license: CC0
-dispute: 边界数字史料不一，不作精确声称；不套用现代行政边界
+dispute: 边界数字史料不一,不作精确声称;不套用现代行政边界
 note: 需与dynasty.md疆域文字描述配合使用
-source_note: 未能联网核验，页码待核

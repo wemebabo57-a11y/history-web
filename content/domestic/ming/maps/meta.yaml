@@ -1,5 +1,12 @@
 period_id: ming
-maps:
-  - file: ming-territory.svg
-    note: 文字示意描述,不声称精确疆界;仅示南北大势与都城北京/南京相对位置
-    source: 据《明史·地理志》(传世本,具体版本待考)大势转述,页码待核,未能联网核验
+covers: [ming]
+map: maps/territory.svg
+legacy_map: maps/ming-territory.svg
+year_label: 洪武—永乐大势（约1420年代）
+polity: 明（含北京京师＋南京留都双都）
+method: 自绘示意（SVG手写多边形），640x460，海陆底色＋经纬网＋海岸线＋疆域填充＋黄河长江曲线＋明长城虚线＋北京南京都城＋郑和下西洋航线虚线＋辽东/乌斯藏注记＋指南针＋比例尺示意不按比例＋图例，仅方位示意，不作精确测绘
+license: CC0（自绘示意）
+dispute: 交趾布政使司 short-lived、乌斯藏羁縻程度、辽东边墙走向各说并存；郑和虚线仅表航行方向非精确航迹；本图不套用现代行政边界，不声称精确
+compat: maps/ming-territory.svg 为旧版文字框示意，保留兼容；maps/territory.svg 为本次重绘正式示意图
+source_note: 据《明史·地理志》（传世本，具体版本待考）大势转述，页码待核，未能联网核验
+note: 需与ming/dynasty.md疆域文字描述配合使用

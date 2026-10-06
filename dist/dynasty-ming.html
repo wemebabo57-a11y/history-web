@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>明 · 1368~1644 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>明 · 1368~1644</h1></header><h2>政权综述</h2><article class="entry">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>明 · 1368~1644 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>明 · 1368~1644</h1></header><h2>政权综述 · 中文 / English 独立切换</h2><div class="lang-switch"><button id="btnZh" class="on" onclick="showLang('zh')">中文</button><button id="btnEn" onclick="showLang('en')">English</button></div><article class="entry" id="zh-block">
 
 <h2>摘要</h2>
 <p>明朝(1368—1644)为朱元璋建立的汉族王朝,历十六帝,以下分洪武开国、永乐经营、土木转折、万历中衰、崇祯覆亡五节概述,南明与并立政权另附注说明,均存疑处标明。</p>
@@ -26,7 +26,47 @@
 
 <h2>关联条目</h2>
 <p>本组emperors.yaml、timeline.yaml、power-holders.yaml及official/folk各条;南明弘光、隆武、永历政权附注存疑,不计入正统十六帝。</p>
-</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 明朝皇帝系表(十六帝,建文附注,南明附注存疑)
+</article><article class="entry" id="en-block" style="display:none"><h1>Ming Dynasty Overview (1368–1644)</h1>
+<p>The Ming dynasty (1368–1644) was founded by Zhu Yuanzhang 朱元璋 (1328–1398), who proclaimed the dynasty in 1368 after the Red Turban wars. Early Ming abolished the Central Secretariat, concentrated authority in the emperor, staffed administration through the Six Ministries and later the Grand Secretariat, and paired garrison guards with lijia community organization. Sixteen emperors are counted in the transmitted line, excluding the later Southern Ming courts.</p>
+<p>Zhu Di 朱棣 (1360–1424), the Yongle emperor, moved the capital to Beijing, retained a Nanjing establishment, and sent Zheng He 郑和 on maritime voyages. After the Tumu crisis of 1449, civil officials gained weight against the throne; Yu Qian 于谦 (1398–1457) organized the defense of Beijing. The Single Whip fiscal reform, Wanli aid to Korea, the Sarhu defeat, and factional strife marked the middle and late periods, with Zhang Juzheng 张居正 (circa 1525–1582) and Wei Zhongxian 魏忠贤 (circa 1568–1627) as prominent figures.</p>
+<p>The Chongzhen emperor Zhu Youjian 朱由检 (1611–1644) faced fiscal collapse, rebellion, and Manchu pressure until Li Zicheng 李自成 entered Beijing in 1644. The Jianwen emperor's fate, responsibility for Tumu, the degree of Wanli negligence, and the chief cause of the fall remain disputed.</p>
+<p>Sources pending page verification, no internet verification.</p>
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((明朝·君主世系))
+    皇帝16位
+      朱元璋
+        太祖 1368-1398
+      朱允炆
+        惠宗 1399-1402
+      朱棣
+        成祖 1403-1424
+      朱高炽
+        仁宗 1424-1425
+      朱瞻基
+        宣宗 1426-1435
+      朱祁镇
+        英宗 1436-1449/1457-
+      朱祁钰
+        代宗 1450-1457
+      朱见深
+        宪宗 1465-1487
+      朱佑樘
+        孝宗 1488-1505
+      朱厚照
+        武宗 1506-1521
+      朱厚熜
+        世宗 1522-1566
+      朱载垕
+        穆宗 1567-1572
+      朱翊钧
+        神宗 1573-1620
+      朱常洛
+        光宗 1620
+      朱由校
+        熹宗 1621-1627
+      朱由检
+        思宗 1628-1644
+</pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 明朝皇帝系表(十六帝,建文附注,南明附注存疑)
 period_id: ming
 dynasty: 明朝
 source_note: 主据《明史·本纪》(张廷玉等,传世本,具体版本待考;页码待核,未能联网核验)
@@ -48,7 +88,28 @@ emperors:
   - { temple: 熹宗, name: 朱由校, reign: 1621-1627, note: 天启,魏忠贤专权 }
   - { temple: 思宗, name: 朱由检, reign: 1628-1644, note: 崇祯,煤山结局见folk条目,传说成分标存疑 }
 south_note: 南明弘光、隆武、永历等政权附注存疑,不计入十六帝,世系与正统性各家说法不一,此处不下结论。
-</pre><h2>实际掌权人表 power-holders.yaml</h2><pre># 明朝权臣与实力派(至少8行)
+</pre></details><h2>实际掌权人思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((明朝·名义君主与实际掌权者))
+    权臣与实力人物（9人）
+      胡惟庸
+        左丞相
+      郑和
+        宦官使者
+      王振
+        司礼监太监
+      于谦
+        兵部尚书
+      严嵩
+        内阁首辅
+      张居正
+        内阁首辅
+      魏忠贤
+        司礼监秉笔太监
+      东林党人
+        士人政治群体
+      袁崇焕
+        辽东经略
+</pre></div><details><summary>掌权表明细(power-holders.yaml)</summary><pre># 明朝权臣与实力派(至少8行)
 period_id: ming
 source_note: 综合《明史·列传》(张廷玉等,传世本,具体版本待考;页码待核,未能联网核验);生卒不确定者标约/存疑
 holders:
@@ -61,7 +122,40 @@ holders:
   - { name: 魏忠贤, role: 司礼监秉笔太监, years: 1568约-1627约(存疑), event: 天启专权、东林党争, note: 《明史·阉党传》笔法有争议 }
   - { name: 东林党人, role: 士人政治群体, years: 万历末至崇祯, event: 东林党争, note: 以顾宪成、高攀龙、杨涟等为代表,人物众多不一一系年 }
   - { name: 袁崇焕, role: 辽东经略, years: 1584约-1630约(存疑), event: 宁远之战、平台被杀, note: 功罪评价争议极大,此处不下结论 }
-</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre># 明朝大事年表(14条以上)
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((明朝·大事分期))
+    前期
+      洪武建国
+        1368
+      胡惟庸案
+        1380
+      靖难之役
+        1399-1402
+      郑和首下西洋
+        1405
+      永乐迁都北京
+        1421
+    中期
+      仁宣之治
+        1424-1435
+      土木堡之变
+        1449
+      北京保卫战与夺门之变
+        1450-1457
+      隆庆开关
+        1567
+      一条鞭法推行
+        1581
+    后期
+      万历援朝之役
+        1592-1598
+      萨尔浒之战
+        1619
+      阉党专权与东林之狱
+        1624-1627
+      明亡
+        1644
+</pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 明朝大事年表(14条以上)
 period_id: ming
 source_note: 主据《明史》《明实录》(传世本,具体版本待考;页码待核,未能联网核验)
 events:
@@ -79,9 +173,16 @@ events:
   - { year: 1619, event: 萨尔浒之战, note: 明军大败,辽东局势逆转 }
   - { year: 1624-1627, event: 阉党专权与东林之狱, note: 《明史·阉党传》笔法争议 }
   - { year: 1644, event: 明亡, note: 李自成入京,崇祯帝死于煤山(传说成分标存疑);吴三桂引清兵等说法并存 }
-</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><text x="20" y="30">明疆域文字示意(非精确地图)</text><rect x="150" y="80" width="300" height="180" fill="none" stroke="black"/><text x="180" y="150">北:长城沿线(示意)</text><text x="180" y="180">南:交趾一度列为交趾布政使司(后弃)</text><text x="180" y="210">西:乌斯藏等羁縻(示意)</text><text x="180" y="240">东:辽东都司(示意)</text></svg></div><pre>period_id: ming
-maps:
-  - file: ming-territory.svg
-    note: 文字示意描述,不声称精确疆界;仅示南北大势与都城北京/南京相对位置
-    source: 据《明史·地理志》(传世本,具体版本待考)大势转述,页码待核,未能联网核验
-</pre><h2>史料条目(官 4 / 民 2)</h2><ul><li><a href="entry-ming-official-hongwu-001.html">洪武开国制度</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-mingwang-004.html">崇祯朝覆亡</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-yongle-002.html">永乐迁都与郑和下西洋</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-zhangjz-003.html">张居正改革与一条鞭法</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-folk-meishan-002.html">崇祯煤山结局传说</a> <span class="badge">folk</span> <span class="badge">ming</span></li><li><a href="entry-ming-folk-jianwen-001.html">建文帝下落传说</a> <span class="badge">folk</span> <span class="badge">ming</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+</pre></details><h2>疆域示意图(图片)</h2><figure class="map-fig"><img src="maps/ming-territory.svg" alt="明疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure><details><summary>疆域图来源与许可(meta.yaml)</summary><pre>period_id: ming
+covers: [ming]
+map: maps/territory.svg
+legacy_map: maps/ming-territory.svg
+year_label: 洪武—永乐大势（约1420年代）
+polity: 明（含北京京师＋南京留都双都）
+method: 自绘示意（SVG手写多边形），640x460，海陆底色＋经纬网＋海岸线＋疆域填充＋黄河长江曲线＋明长城虚线＋北京南京都城＋郑和下西洋航线虚线＋辽东/乌斯藏注记＋指南针＋比例尺示意不按比例＋图例，仅方位示意，不作精确测绘
+license: CC0（自绘示意）
+dispute: 交趾布政使司 short-lived、乌斯藏羁縻程度、辽东边墙走向各说并存；郑和虚线仅表航行方向非精确航迹；本图不套用现代行政边界，不声称精确
+compat: maps/ming-territory.svg 为旧版文字框示意，保留兼容；maps/territory.svg 为本次重绘正式示意图
+source_note: 据《明史·地理志》（传世本，具体版本待考）大势转述，页码待核，未能联网核验
+note: 需与ming/dynasty.md疆域文字描述配合使用
+</pre></details><h2>史料条目(官 4 / 民 2)</h2><ul><li><a href="entry-ming-official-hongwu-001.html">洪武开国制度</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-mingwang-004.html">崇祯朝覆亡</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-yongle-002.html">永乐迁都与郑和下西洋</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-official-zhangjz-003.html">张居正改革与一条鞭法</a> <span class="badge">official</span> <span class="badge">ming</span></li><li><a href="entry-ming-folk-meishan-002.html">崇祯煤山结局传说</a> <span class="badge">folk</span> <span class="badge">ming</span></li><li><a href="entry-ming-folk-jianwen-001.html">建文帝下落传说</a> <span class="badge">folk</span> <span class="badge">ming</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

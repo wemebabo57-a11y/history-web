@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif"><defs>
+<pattern id="sea" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="0.8" fill="#9db8cf" opacity="0.5"/></pattern>
+<marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0L6,3L0,6Z" fill="#4a6b8a"/></marker>
+</defs>
+<rect width="640" height="460" fill="#b9d0e3"/>
+<rect width="640" height="460" fill="url(#sea)" opacity="0.5"/>
+<polygon points="30,20 600,20 615,60 600,180 610,260 560,330 470,400 340,430 200,420 90,370 40,280 25,150" fill="#f0e9d4" stroke="#7d7259" stroke-width="2.2"/>
+<polygon points="30,20 600,20 615,60 600,180 610,260 560,330 470,400 340,430 200,420 90,370 40,280 25,150" fill="none" stroke="#fff" stroke-width="0.6" opacity="0.6"/>
+<g stroke="#ffffff" stroke-width="0.5" opacity="0.45"><path d="M40,100H600M40,170H605M40,240H608M40,310H580M80,380H480M80,40V420M170,30V420M260,30V430M350,30V430M440,30V410M530,30V340"/></g>
+<path d="M560,120 C580,160 590,220 575,275 C565,310 545,340 520,365 C560,330 610,260 600,180 Z" fill="#b9d0e3" stroke="#7d7259" stroke-width="1.2"/>
+<text x="585" y="230" font-size="13" fill="#3d5a76" transform="rotate(90,585,230)">东 海</text>
+<text x="430" y="415" font-size="13" fill="#3d5a76">南 海</text><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M130,250 C160,240 190,225 215,208 C235,195 260,195 278,205 C290,213 292,228 288,245 C285,258 290,268 310,272 C340,277 370,270 400,258 C430,245 460,225 490,210 C510,200 525,193 538,188" stroke="#3f7fbf" stroke-width="2.4" opacity="0.9"/>
+<text x="495" y="200" font-size="10" fill="#2f5f8f">黄河(示意)</text>
+<path d="M110,312 C160,306 210,303 270,300 C330,297 390,290 440,280 C490,270 540,263 580,260" stroke="#3f7fbf" stroke-width="2.6" opacity="0.9"/>
+<text x="520" y="278" font-size="10" fill="#2f5f8f">长江(示意)</text>
+<path d="M250,300 C260,320 275,335 300,345" stroke="#3f7fbf" stroke-width="1.2" opacity="0.6"/>
+</g>
+<polygon points="180,60 470,50 560,110 555,190 520,250 480,300 420,350 320,380 220,360 150,320 120,260 130,180 140,110" fill="#cfc39a" opacity="0.9" stroke="#5a4a1e" stroke-width="2.2"/>
+<text x="300" y="140" font-size="26" font-weight="bold" fill="#4a3c10">大 元</text><text x="270" y="158" font-size="10.5" fill="#4a3c10">直辖+行省·宣政院辖地皆为示意</text>
+<g font-size="10" fill="#3a3010">
+<text x="360" y="200">岭北行省</text><text x="480" y="150">辽阳行省</text>
+<text x="330" y="235">甘肃行省</text><text x="360" y="260">陕西行省</text>
+<text x="330" y="290">四川行省</text><text x="420" y="280">河南江北行省</text>
+<text x="450" y="305">江浙行省</text><text x="400" y="322">江西行省</text>
+<text x="370" y="310">湖广行省</text><text x="320" y="325">云南行省</text>
+<text x="270" y="270" fill="#5a3a1a">宣政院辖地(示意)</text></g>
+<g><circle cx="402" cy="212" r="4" fill="#111" stroke="#fff" stroke-width="1.4"/><circle cx="402" cy="212" r="1.4" fill="#fff"/><text x="409" y="216" font-size="11" font-weight="bold" text-anchor="start" fill="#1a1a1a" stroke="#fff" stroke-width="2.5" paint-order="stroke">大都</text></g><g><circle cx="424" cy="184" r="4" fill="#111" stroke="#fff" stroke-width="1.4"/><circle cx="424" cy="184" r="1.4" fill="#fff"/><text x="431" y="188" font-size="11" font-weight="bold" text-anchor="start" fill="#1a1a1a" stroke="#fff" stroke-width="2.5" paint-order="stroke">上都</text></g><rect x="0" y="0" width="640" height="46" fill="#2f2b24" opacity="0.88"/><text x="16" y="20" font-size="15" font-weight="bold" fill="#fff">元疆域与行省示意</text><text x="16" y="36" font-size="10.5" fill="#e8ddc0">大块疆域+行省注记 · 蒙元极盛与直辖争议不裁决</text><g transform="translate(438,52)"><rect x="0" y="0" width="150" height="68" rx="6" fill="#fff" opacity="0.94" stroke="#555"/><rect x="8" y="8" width="22" height="12" fill="#cfc39a" stroke="#333" stroke-width="1"/><text x="34" y="18" font-size="11">元疆域</text><rect x="8" y="28" width="22" height="12" fill="#5a4a1e" stroke="#333" stroke-width="1"/><text x="34" y="38" font-size="11">行省/辖区注记</text><rect x="8" y="48" width="22" height="12" fill="#3f7fbf" stroke="#333" stroke-width="1"/><text x="34" y="58" font-size="11">黄河·长江示意</text></g><g transform="translate(572,52)">
+<circle r="20" fill="#fff" opacity="0.9" stroke="#333" stroke-width="1"/>
+<path d="M0,-14 L4,4 L0,0 L-4,4 Z" fill="#333"/><text y="-8" font-size="10" text-anchor="middle" font-weight="bold">N</text>
+<text y="13" font-size="9" text-anchor="middle">北</text></g>
+<g transform="translate(48,428)"><rect x="0" y="0" width="100" height="6" fill="#fff" stroke="#333"/><rect x="0" y="0" width="25" height="6" fill="#333"/><rect x="50" y="0" width="25" height="6" fill="#333"/>
+<text x="0" y="-4" font-size="9">0</text><text x="46" y="-4" font-size="9">500</text><text x="88" y="-4" font-size="9">km</text>
+<text x="0" y="18" font-size="9" fill="#444">比例尺示意，非精确投影</text></g><text x="320" y="446" font-size="9.5" text-anchor="middle" fill="#4a4438">自绘疆域示意，非精确疆界·不作比例与海岸线依据·禁套现代国界省界·CC0</text></svg>

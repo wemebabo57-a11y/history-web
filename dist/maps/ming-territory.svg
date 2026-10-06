@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif">
+<defs>
+<linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfd9ea"/><stop offset="1" stop-color="#8fb6d1"/></linearGradient>
+<linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e7c4"/><stop offset="1" stop-color="#e3d3a2"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="640" height="460" fill="url(#sea)"/>
+<!-- 周边陆地底 -->
+<path d="M30,50 L560,50 L590,120 L570,190 L545,250 L520,300 L470,360 L380,410 L240,425 L130,380 L60,290 L30,180 Z" fill="url(#land)" stroke="#8a7a55" stroke-width="1.5"/>
+<!-- 漠北/西域底色(非本朝) -->
+<path d="M30,50 L560,50 L560,120 L480,130 L400,125 L300,120 L150,120 L60,130 Z" fill="#ddd6bd" opacity="0.7"/>
+<text x="180" y="95" font-size="11" fill="#8a8468">漠北·鞑靼瓦剌(塞外示意)</text>
+<text x="70" y="200" font-size="11" fill="#8a8468">西域(明羁縻·示意)</text>
+<text x="560" y="220" font-size="11" fill="#4a6b84">东海</text>
+<text x="520" y="370" font-size="11" fill="#4a6b84">南海</text>
+<!-- 经纬网 -->
+<g stroke="#ffffff" opacity="0.35" stroke-width="1">
+<line x1="100" y1="50" x2="100" y2="425"/><line x1="200" y1="50" x2="200" y2="425"/><line x1="300" y1="50" x2="300" y2="425"/><line x1="400" y1="50" x2="400" y2="425"/><line x1="500" y1="50" x2="500" y2="425"/>
+<line x1="30" y1="130" x2="590" y2="130"/><line x1="30" y1="210" x2="570" y2="210"/><line x1="30" y1="290" x2="520" y2="290"/><line x1="60" y1="370" x2="470" y2="370"/>
+</g>
+<!-- 海岸线强调 -->
+<path d="M505,130 L520,170 L510,220 L495,265 L480,310 L460,345" fill="none" stroke="#4a6b84" stroke-width="2"/>
+<!-- 明疆域多边形 -->
+<path d="M492,138 L460,150 L440,158 L380,152 L320,148 L275,155 L252,175 L245,210 L250,250 L270,295 L300,330 L340,355 L390,360 L430,340 L465,310 L490,270 L505,220 L515,175 Z" fill="#d9a441" opacity="0.55" stroke="#8c1f1f" stroke-width="2.5"/>
+<text x="330" y="255" font-size="16" font-weight="bold" fill="#6b1508">明疆域(约1420年代大势·示意)</text>
+<!-- 黄河长江 -->
+<path d="M270,170 L320,180 L360,175 L400,190 L430,210 L420,235 L380,245 L340,240" fill="none" stroke="#2f6fae" stroke-width="2.2"/>
+<text x="395" y="192" font-size="10" fill="#1f4e7d">黄河(示意)</text>
+<path d="M250,250 L300,255 L350,250 L410,260 L460,275 L490,270" fill="none" stroke="#2f6fae" stroke-width="2.6"/>
+<text x="350" y="245" font-size="10" fill="#1f4e7d">长江(示意)</text>
+<!-- 长城线 -->
+<path d="M252,165 L300,152 L360,150 L410,155 L445,162 L465,152" fill="none" stroke="#5a2d0c" stroke-width="2.5" stroke-dasharray="8,3"/>
+<g font-size="10" fill="#5a2d0c"><text x="300" y="143">▲ 长城线(明长城·示意)</text></g>
+<!-- 都城 -->
+<g>
+<circle cx="435" cy="168" r="6" fill="#b00909" stroke="#fff" stroke-width="1.5"/><text x="445" y="171" font-size="12" font-weight="bold">北京(京师)</text>
+<circle cx="462" cy="258" r="5" fill="#b00909" stroke="#fff" stroke-width="1.5"/><text x="470" y="261" font-size="12" font-weight="bold">南京(留都)</text>
+</g>
+<!-- 郑和虚线 -->
+<path d="M468,262 L475,300 L440,340 L370,385 L260,405 L150,400" fill="none" stroke="#a41212" stroke-width="2" stroke-dasharray="7,5" marker-end="url(#x)"/>
+<defs><marker id="x" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a41212"/></marker></defs>
+<text x="230" y="395" font-size="11" fill="#a41212" font-weight="bold">┄ 郑和下西洋航线(示意虚线)</text>
+<text x="492" y="150" font-size="10" fill="#333">辽东都司</text>
+<text x="255" y="330" font-size="10" fill="#333">乌斯藏羁縻(示意)</text>
+<!-- 指南针 -->
+<g transform="translate(585,75)"><circle r="22" fill="#fff" opacity="0.9" stroke="#333"/><text y="-4" text-anchor="middle" font-size="13" font-weight="bold">N</text><path d="M0,-8 L5,10 L0,6 L-5,10 Z" fill="#b00909"/><text y="19" text-anchor="middle" font-size="9">北</text></g>
+<!-- 比例尺 -->
+<g transform="translate(40,425)"><rect x="0" y="0" width="120" height="6" fill="#333"/><rect x="0" y="0" width="60" height="6" fill="#fff" stroke="#333"/><text x="0" y="-4" font-size="10">0ㅤ500ㅤ1000km(示意·非精确)</text></g>
+<!-- 图例 -->
+<g transform="translate(430,370)"><rect x="0" y="0" width="185" height="72" fill="#fff" opacity="0.92" stroke="#333" rx="4"/>
+<rect x="8" y="8" width="18" height="10" fill="#d9a441" opacity="0.7" stroke="#8c1f1f"/><text x="30" y="17" font-size="10">明疆域</text>
+<line x1="8" y1="28" x2="26" y2="28" stroke="#5a2d0c" stroke-width="2.5" stroke-dasharray="6,2"/><text x="30" y="31" font-size="10">长城</text>
+<line x1="8" y1="43" x2="26" y2="43" stroke="#a41212" stroke-width="2" stroke-dasharray="5,3"/><text x="30" y="46" font-size="10">郑和航线</text>
+<line x1="8" y1="58" x2="26" y2="58" stroke="#2f6fae" stroke-width="2"/><text x="30" y="61" font-size="10">黄河·长江</text>
+<circle cx="115" cy="40" r="4" fill="#b00909"/><text x="122" y="43" font-size="10">都城</text>
+</g>
+<text x="20" y="28" font-size="17" font-weight="bold">明疆域示意图(洪武—永乐大势)</text>
+<text x="20" y="445" font-size="9" fill="#333">示意非精确·仅供教学·CC0·据《明史·地理志》大势绘制</text>
+</svg>

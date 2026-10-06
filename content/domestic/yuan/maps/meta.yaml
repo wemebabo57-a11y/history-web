@@ -1,3 +1,4 @@
 # 元 maps 元数据（自绘文字示意，非精确地图）
 maps:
   - {file: yuan-territory.svg, coverage: 大元时期行省与宣政院辖区示意, claim: 文字示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 蒙元极盛与大元直辖范围历来争议，此图不裁决, modern_boundary: 禁套现代国界省界}
+  - {file: territory.svg, coverage: 大元时期行省与宣政院辖区, claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}

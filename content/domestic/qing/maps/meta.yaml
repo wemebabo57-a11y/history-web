@@ -1,5 +1,12 @@
 period_id: qing
-maps:
-  - file: qing-territory.svg
-    note: 文字示意描述,不声称精确疆界;仅示康乾后大势与北京都城相对位置
-    source: 据《清史稿·地理志》(传世本,具体版本待考)大势转述,页码待核,未能联网核验
+covers: [qing]
+map: maps/territory.svg
+legacy_map: maps/qing-territory.svg
+year_label: 康乾极盛（约1759后大势）
+polity: 清（京师北京）
+method: 自绘示意（SVG手写多边形），640x460，海陆底色＋经纬网＋海岸线＋极盛疆域大块填充＋黄河长江曲线＋前代长城参考线＋北京都城＋雅克萨/台湾注记＋海运线虚线＋指南针＋比例尺示意不按比例＋图例，仅方位示意，不作精确测绘
+license: CC0（自绘示意）
+dispute: 北界尼布楚/恰克图一线文字分歧、西界新疆界线、南界台湾海南归属时段不一；海运虚线仅表联系方向非实控线；本图不套用现代行政边界，不声称精确
+compat: maps/qing-territory.svg 为旧版文字框示意，保留兼容；maps/territory.svg 为本次重绘正式示意图
+source_note: 据《清史稿·地理志》（传世本，具体版本待考）大势转述，页码待核，未能联网核验
+note: 需与qing/dynasty.md疆域文字描述配合使用

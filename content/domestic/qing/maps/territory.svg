@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, sans-serif">
+<defs>
+<linearGradient id="sea2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfd9ea"/><stop offset="1" stop-color="#8fb6d1"/></linearGradient>
+<linearGradient id="land2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e7c4"/><stop offset="1" stop-color="#e3d3a2"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="640" height="460" fill="url(#sea2)"/>
+<path d="M25,45 L565,45 L595,120 L570,200 L545,260 L520,310 L470,365 L380,415 L240,428 L120,385 L55,295 L25,180 Z" fill="url(#land2)" stroke="#8a7a55" stroke-width="1.5"/>
+<text x="560" y="230" font-size="11" fill="#4a6b84">东海</text>
+<text x="520" y="380" font-size="11" fill="#4a6b84">南海</text>
+<g stroke="#ffffff" opacity="0.35"><line x1="100" y1="45" x2="100" y2="428"/><line x1="200" y1="45" x2="200" y2="428"/><line x1="300" y1="45" x2="300" y2="428"/><line x1="400" y1="45" x2="400" y2="428"/><line x1="500" y1="45" x2="500" y2="428"/><line x1="25" y1="130" x2="595" y2="130"/><line x1="25" y1="210" x2="570" y2="210"/><line x1="25" y1="290" x2="520" y2="290"/><line x1="55" y1="370" x2="470" y2="370"/></g>
+<path d="M510,120 L528,165 L515,220 L498,270 L482,315 L462,350" fill="none" stroke="#4a6b84" stroke-width="2"/>
+<!-- 清极盛疆域大块 -->
+<path d="M515,80 L470,70 L400,65 L320,70 L230,80 L150,110 L110,150 L105,200 L130,250 L160,300 L200,340 L260,370 L330,385 L410,375 L460,340 L495,290 L515,230 L530,170 L535,120 Z" fill="#cf7d4a" opacity="0.55" stroke="#7a1f12" stroke-width="2.5"/>
+<text x="250" y="225" font-size="16" font-weight="bold" fill="#5e1608">清极盛疆域(约1759后大势·示意)</text>
+<text x="230" y="245" font-size="11" fill="#5e1608">蒙古·新疆·西藏皆入版图(示意)</text>
+<path d="M270,170 L320,180 L360,175 L400,190 L430,210 L420,235 L380,245 L340,240" fill="none" stroke="#2f6fae" stroke-width="2.2"/>
+<text x="395" y="192" font-size="10" fill="#1f4e7d">黄河(示意)</text>
+<path d="M250,250 L300,255 L350,250 L410,260 L460,275 L490,270" fill="none" stroke="#2f6fae" stroke-width="2.6"/>
+<text x="350" y="245" font-size="10" fill="#1f4e7d">长江(示意)</text>
+<!-- 长城(参考线,清已越过) -->
+<path d="M252,165 L300,152 L360,150 L410,155 L445,162" fill="none" stroke="#5a2d0c" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+<text x="300" y="143" font-size="10" fill="#5a2d0c">长城(前代界线·仅参考)</text>
+<!-- 都城 -->
+<circle cx="435" cy="168" r="6" fill="#b00909" stroke="#fff" stroke-width="1.5"/><text x="445" y="171" font-size="12" font-weight="bold">北京(京师)</text>
+<!-- 雅克萨注记 -->
+<g><circle cx="508" cy="92" r="5" fill="#0b5394" stroke="#fff"/><text x="420" y="85" font-size="11" font-weight="bold" fill="#0b5394">雅克萨(1689尼布楚界约·示意)</text><line x1="460" y1="87" x2="503" y2="91" stroke="#0b5394" stroke-width="1"/></g>
+<!-- 台湾注记 -->
+<g><ellipse cx="502" cy="330" rx="7" ry="12" fill="#d9a441" stroke="#8c1f1f" stroke-width="1.5"/><text x="440" y="355" font-size="11" font-weight="bold" fill="#8c1f1f">台湾(1683入版图·示意)</text><line x1="480" y1="350" x2="498" y2="338" stroke="#8c1f1f"/></g>
+<ellipse cx="440" cy="372" rx="9" ry="6" fill="#d9a441" stroke="#8c1f1f"/><text x="410" y="388" font-size="10">海南</text>
+<!-- 海运虚线(清海运/海防示意) -->
+<path d="M450,300 L470,280 L480,240 L470,200 L445,172" fill="none" stroke="#1a5c2e" stroke-width="2" stroke-dasharray="7,5"/>
+<text x="478" y="250" font-size="10" fill="#1a5c2e">海运线(示意)</text>
+<g transform="translate(585,70)"><circle r="22" fill="#fff" opacity="0.9" stroke="#333"/><text y="-4" text-anchor="middle" font-size="13" font-weight="bold">N</text><path d="M0,-8 L5,10 L0,6 L-5,10 Z" fill="#b00909"/><text y="19" text-anchor="middle" font-size="9">北</text></g>
+<g transform="translate(40,425)"><rect x="0" y="0" width="120" height="6" fill="#333"/><rect x="0" y="0" width="60" height="6" fill="#fff" stroke="#333"/><text x="0" y="-4" font-size="10">0ㅤ500ㅤ1000km(示意·非精确)</text></g>
+<g transform="translate(430,372)"><rect x="0" y="0" width="185" height="70" fill="#fff" opacity="0.92" stroke="#333" rx="4"/>
+<rect x="8" y="8" width="18" height="10" fill="#cf7d4a" opacity="0.7" stroke="#7a1f12"/><text x="30" y="17" font-size="10">清疆域</text>
+<line x1="8" y1="28" x2="26" y2="28" stroke="#2f6fae" stroke-width="2"/><text x="30" y="31" font-size="10">黄河·长江</text>
+<line x1="8" y1="43" x2="26" y2="43" stroke="#1a5c2e" stroke-width="2" stroke-dasharray="5,3"/><text x="30" y="46" font-size="10">海运线</text>
+<circle cx="12" cy="58" r="4" fill="#0b5394"/><text x="30" y="61" font-size="10">雅克萨/台湾注记</text>
+</g>
+<text x="20" y="28" font-size="17" font-weight="bold">清极盛疆域示意图(康乾后大势)</text>
+<text x="20" y="445" font-size="9" fill="#333">示意非精确·仅供教学·CC0·据《清史稿·地理志》大势绘制</text>
+</svg>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>辽 · 916~1125 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>辽 · 916~1125</h1></header><h2>政权综述</h2><article class="entry">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>辽 · 916~1125 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>辽 · 916~1125</h1></header><h2>政权综述 · 中文 / English 独立切换</h2><div class="lang-switch"><button id="btnZh" class="on" onclick="showLang('zh')">中文</button><button id="btnEn" onclick="showLang('en')">English</button></div><article class="entry" id="zh-block">
 <h1>辽朝（契丹）政权史</h1>
 
 <p><b>说明</b>：本文件为现代转述的政权概述，非史料原文。疆域为文字示意，不声称精确。人物生卒凡不确定标约/存疑。</p>
@@ -14,7 +14,35 @@
 
 <h2>帝系与疆域示意</h2>
 <p>九帝传世谱系：太祖阿保机、太宗德光、世宗阮、穆宗璟、景宗贤、圣宗隆绪、兴宗宗真、道宗洪基、天祚延禧；萧绰摄政附于景圣之间标注。疆域文字示意：东至海（日本海）、西至阿尔泰山以东与漠北诸部、西夏北缘为界、北至外兴安岭以南、南以拒马河—雁门与宋为界并领有燕云十六州。详见maps/meta.yaml。</p>
-</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 辽朝皇帝简表（传世谱系；生卒多存疑）
+</article><article class="entry" id="en-block" style="display:none"><h1>Liao Dynasty Overview (916–1125)</h1>
+<p>The Liao dynasty (916–1125) was founded by the Khitan leader Yelü Abaoji 耶律阿保机 (circa 872–926, disputed), who united the Khitan tribes, proclaimed himself emperor in 916, and fixed the supreme capital at Linhuang. His successor Yelü Deguang 耶律德光 destroyed Later Jin, gained the Sixteen Prefectures of Yan and Yun, and in 947 adopted the dynastic name Liao, securing agrarian households and revenue along the farming–pastoral frontier.</p>
+<p>After Emperor Jingzong, Empress Dowager Xiao Xiao Chuo 萧绰 (circa 953–1009, disputed) acted as regent for about twenty-seven years, employing Yelü Xiezhen 耶律斜轸 and Han Derang 韩德让, regularizing administration and household registers. Repeated Song–Liao wars ended with the Chanyuan 澶渊 covenant of 1005, making the two courts nominal brothers, with annual Song payments of silver and silk and frontier markets sustaining roughly a century of peace.</p>
+<p>From Emperor Daozong the administration decayed; the last ruler Yelü Yanxi 耶律延禧 lost control as the Jurchen rose, and the Song–Jin Maritime Alliance attacked Liao from two sides until Jin captured the emperor in 1125. Yelü Dashi 耶律大石 later moved west to found Western Liao. Territorial limits are schematic, with Yan–Yun held in the south.</p>
+<p>Sources pending page verification, no internet verification.</p>
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((辽朝·君主世系))
+    其他10位
+      辽太祖耶律阿保机
+        ’916-926’
+      辽太宗耶律德光
+        ’926-947’
+      辽世宗耶律阮
+        ’947-951’
+      辽穆宗耶律璟
+        ’951-969’
+      辽景宗耶律贤
+        ’969-982’
+      摄政萧太后萧绰
+        ’982-1009摄政’
+      辽圣宗耶律隆绪
+        ’982-1031’
+      辽兴宗耶律宗真
+        ’1031-1055’
+      辽道宗耶律洪基
+        ’1055-1101’
+      辽天祚帝耶律延禧
+        ’1101-1125’
+</pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 辽朝皇帝简表（传世谱系；生卒多存疑）
 - {name: 辽太祖耶律阿保机, reign: '916-926', birth_death: 约872—926存疑, note: 建国称帝}
 - {name: 辽太宗耶律德光, reign: '926-947', birth_death: 约902—947存疑, note: 得燕云十六州}
 - {name: 辽世宗耶律阮, reign: '947-951', birth_death: 约918—951存疑, note: 内争被弑}
@@ -25,13 +53,45 @@
 - {name: 辽兴宗耶律宗真, reign: '1031-1055', birth_death: 约1016—1055存疑, note: 重熙增币}
 - {name: 辽道宗耶律洪基, reign: '1055-1101', birth_death: 约1032—1101存疑, note: 吏治败坏之始}
 - {name: 辽天祚帝耶律延禧, reign: '1101-1125', birth_death: 约1075—约1128存疑, note: 辽亡被俘}
-</pre><h2>实际掌权人表 power-holders.yaml</h2><pre># 辽朝权臣与摄政简表
+</pre></details><h2>实际掌权人思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((辽朝·名义君主与实际掌权者))
+    权臣与实力人物（5人）
+      萧绰（萧太后）
+        摄政皇太后
+      韩德让（耶律隆运）
+        圣宗朝权臣
+      耶律斜轸
+        名将，伐宋主帅
+      耶律休哥
+        南京留守名将
+      耶律仁先
+        兴宗道宗朝宰相
+</pre></div><details><summary>掌权表明细(power-holders.yaml)</summary><pre># 辽朝权臣与摄政简表
 - {name: 萧绰（萧太后）, role: 摄政皇太后, period: '982-1009', note: 承天太后，军政多出其手}
 - {name: 韩德让（耶律隆运）, role: 圣宗朝权臣, period: 约982—1011, birth_death: 约941—1011存疑, note: 汉官南枢密使}
 - {name: 耶律斜轸, role: 名将，伐宋主帅, period: 约980—999, birth_death: 约942—999存疑, note: 拒马河之战}
 - {name: 耶律休哥, role: 南京留守名将, period: 约979—1009, note: 高粱河、望都之战}
 - {name: 耶律仁先, role: 兴宗道宗朝宰相, period: 约1031—1072, birth_death: 约1013—1072存疑, note: 谏阻伐夏}
-</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre># 辽朝大事年表（6条以上）
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((辽朝·大事分期))
+    大事编年
+      耶律阿保机称帝，契丹建国
+        916
+      后晋献燕云十六州于辽
+        938
+      改国号为辽
+        947
+      萧太后摄政
+        982
+      澶渊之盟，宋辽议和
+        1005
+      重熙增币，宋加岁币
+        1042
+      女真建金，辽金战争起
+        1115
+      天祚被俘，辽亡
+        1125
+</pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 辽朝大事年表（6条以上）
 - {year: 916, event: 耶律阿保机称帝，契丹建国}
 - {year: 938, event: 后晋献燕云十六州于辽}
 - {year: 947, event: 改国号为辽}
@@ -40,7 +100,8 @@
 - {year: 1042, event: 重熙增币，宋加岁币}
 - {year: 1115, event: 女真建金，辽金战争起}
 - {year: 1125, event: 天祚被俘，辽亡}
-</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="400"><rect width="640" height="400" fill="#f7f3e8"/><text x="20" y="30" font-size="18">辽疆域文字示意（非精确地图）</text><rect x="100" y="80" width="420" height="220" fill="#e8dcc0" stroke="#333"/><text x="120" y="120" font-size="14">北至外兴安岭以南（示意） 西至阿尔泰以东（示意）</text><text x="120" y="150" font-size="14">南以拒马河—雁门为界，领燕云十六州（示意）</text><text x="120" y="180" font-size="14">上京临潢府 / 南京析津府（今北京）</text><text x="20" y="380" font-size="12">示意而已，不表示精确疆界与比例</text></svg></div><pre># 辽 maps 元数据
+</pre></details><h2>疆域示意图(图片)</h2><figure class="map-fig"><img src="maps/liao-territory.svg" alt="辽疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure><details><summary>疆域图来源与许可(meta.yaml)</summary><pre># 辽 maps 元数据
 maps:
   - {file: liao-territory.svg, coverage: 辽极盛时期, claim: 文字示意，非精确疆界}
-</pre><h2>史料条目(官 1 / 民 1)</h2><ul><li><a href="entry-liao-official-chanyuan-001.html">澶渊之盟与宋辽和约</a> <span class="badge">official</span> <span class="badge">liao</span></li><li><a href="entry-liao-folk-xiaotaihou-001.html">萧太后与杨家将故事中的辽</a> <span class="badge">folk</span> <span class="badge">liao</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+  - {file: territory.svg, coverage: 辽极盛时期单组, claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}
+</pre></details><h2>史料条目(官 1 / 民 1)</h2><ul><li><a href="entry-liao-official-chanyuan-001.html">澶渊之盟与宋辽和约</a> <span class="badge">official</span> <span class="badge">liao</span></li><li><a href="entry-liao-folk-xiaotaihou-001.html">萧太后与杨家将故事中的辽</a> <span class="badge">folk</span> <span class="badge">liao</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

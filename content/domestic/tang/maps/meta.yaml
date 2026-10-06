@@ -1,5 +1,9 @@
 # Tang示意地图元数据
 period_id: tang
 map_file: maps/map.svg
-disclaimer: 仅文字示意,不声称精确疆界,安西安东安南羁縻区均为示意,存疑待考.
+territory_file: maps/territory.svg
+license: CC0自绘示意
+precision: 640x460示意多边形不声称精确疆界河流海岸线省略
 source: 基于旧唐书地理志与通典文字描述绘制示意,传世本,具体版本待考,页码待核,未能联网核验.
+disclaimer: 仅示意不声称精确疆界,安西安东安南羁縻区虚线方向禁套用,极盛与中晚期差异大,存疑待考.
+note: 旧maps/map.svg保留兼容,新maps/territory.svg为CC0疆域示意,争议禁套.

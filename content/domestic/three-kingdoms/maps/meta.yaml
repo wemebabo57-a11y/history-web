@@ -1,0 +1,6 @@
+maps:
+  - {file: territory.svg, coverage: 三国鼎立(220-280), claim: 自绘多边形示意,非精确疆界,不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 魏蜀吴界线随战事变动,此图不裁决争议, modern_boundary: 禁套现代国界省界}
+  - {file: three-kingdoms-map.svg, coverage: 三区方位文字示意, claim: 旧版兼容保留, drawn: 文字示意, license: CC0, dispute: 不作精确声称, modern_boundary: 禁套现代国界省界}
+license: CC0
+dispute: 边界数字史料不一,不作精确声称;不套用现代行政边界
+note: 需与dynasty.md疆域文字描述配合使用;territory.svg为疆域示意主体,旧svg保留兼容

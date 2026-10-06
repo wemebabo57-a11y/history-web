@@ -1,9 +1,11 @@
 period_id: qin
-map: qin-221-bc.svg
-year_label: 前221年（秦统一前后示意）
+map: maps/territory.svg
+legacy_map: maps/qin-221-bc.svg
+year_label: 前221年前后（秦统一前后示意）
 polity: 秦朝
-method: 自绘示意方框图，仅文字示意方位，不作精确测绘
+method: 自绘示意（SVG手写多边形），海洋/陆地底色＋黄河长江曲线＋疆域填充＋邻族方位＋咸阳＋长城线＋指南针＋比例尺示意不按比例＋图例，仅方位示意，不作精确测绘
 source_links: []
-license: CC0
-dispute: 四至数字史料不一，学界对秦郡数与边界有争议；本图不套用现代行政边界
-note: 需与qin/dynasty.md疆域文字描述配合使用
+license: CC0（自绘示意）
+dispute: 四至数字史料不一，学界对秦郡数与边界有争议；本图不套用现代行政边界，不声称精确
+compat: maps/qin-221-bc.svg 与 maps/territory.svg 内容一致，保留旧文件名兼容
+note: 需与qin/dynasty.md疆域文字描述配合使用；页码待核，未能联网核验

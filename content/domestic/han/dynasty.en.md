@@ -1,0 +1,6 @@
+# Han, Xin, and Eastern Han Overview (202 BCE–220 CE)
+This survey covers the Western Han (202 BCE–8 CE), the Xin interregnum (8–23 CE), and the Eastern Han (25–220 CE). Liu Bang 刘邦 (circa 256–195 BCE, disputed) founded the Han after the Chu-Han wars, retaining Qin institutions while lightening burdens, a policy continued under the Wen-Jing 文景 reigns.
+Emperor Wu of Han 汉武帝刘彻 (circa 156–87 BCE, disputed) expanded into the steppe and the Western Regions, opened routes later called the Silk Road, and promoted Confucian officials alongside fiscal monopolies. Wang Mang 王莽 (circa 45 BCE–23 CE, disputed) founded the Xin and attempted sweeping reforms, which failed amid crisis. Liu Xiu 刘秀 (circa 5 BCE–57 CE, disputed), Emperor Guangwu, restored the dynasty at Luoyang, opening the Eastern Han and the Ming-Zhang 明章 consolidation.
+The Han combined commanderies and enfeoffed kingdoms, used recommendation (cha ju 察举) recruitment, and supervised provinces through inspectors. At its height it reached Liaodong and the Four Commanderies, the Western Regions protectorate, Jiaozhi in the south, and the steppe frontier; the Eastern Han held a broadly smaller area.
+Inclusion of the child emperors, the status of Gengshi, judgments on Wang Mang, and Silk Road dates are disputed.
+Sources pending page verification, no internet verification.

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-label="三国鼎立疆域示意,非精确地图">
+<title>三国鼎立疆域示意(220—280)</title>
+<desc>自绘示意多边形疆域,黄河长江走向示意,都城与赤壁标记,禁套现代边界,CC0</desc>
+<rect width="720" height="520" fill="#cfe3f2"/>
+<text x="648" y="300" font-size="13" fill="#3a6d96" text-anchor="middle">东海</text>
+<text x="648" y="318" font-size="11" fill="#3a6d96" text-anchor="middle">(示意)</text>
+<text x="330" y="470" font-size="13" fill="#3a6d96" text-anchor="middle">南海(示意)</text>
+<polygon points="120,80 300,55 430,60 520,100 560,160 600,220 620,300 590,360 520,420 400,460 250,440 150,380 110,280 100,180" fill="#f2ecdd" stroke="#8a7d5c" stroke-width="2"/>
+<text x="150" y="130" font-size="11" fill="#8a7d5c">陆地(示意)</text>
+<text x="60" y="250" font-size="11" fill="#3a6d96">海洋(示意)</text>
+
+  <polygon points="150,120 300,95 480,100 540,160 520,220 400,240 300,230 200,220 140,180" fill="#e9c46a" opacity="0.85" stroke="#8a6d1b" stroke-width="2"/>
+  <text x="300" y="165" font-size="15" font-weight="bold" fill="#5c430a">曹魏</text>
+  <polygon points="140,260 260,250 290,300 260,360 170,370 120,320" fill="#90be6d" opacity="0.85" stroke="#2d6a4f" stroke-width="2"/>
+  <text x="170" y="315" font-size="14" font-weight="bold" fill="#1b4332">蜀汉</text>
+  <polygon points="295,275 420,255 520,275 560,330 500,400 380,420 300,380" fill="#7fb3d5" opacity="0.85" stroke="#1d4e89" stroke-width="2"/>
+  <text x="420" y="355" font-size="14" font-weight="bold" fill="#12395b">孙吴</text>
+<path d="M130,190 C200,170 240,200 300,195 C360,190 380,220 430,215 C480,210 520,190 565,200" fill="none" stroke="#2f80ed" stroke-width="3"/>
+<text x="470" y="200" font-size="12" fill="#1a5fb4">黄河(示意)</text>
+<path d="M130,320 C220,308 300,325 380,310 C450,298 520,305 595,290" fill="none" stroke="#2f80ed" stroke-width="3.5"/>
+<text x="480" y="325" font-size="12" fill="#1a5fb4">长江(示意)</text>
+
+  <circle cx="380" cy="225" r="5" fill="#111" stroke="#fff" stroke-width="1.5"/><text x="389" y="229" font-size="12" font-weight="bold" text-anchor="start">洛阳·魏都</text>
+  <circle cx="200" cy="322" r="5" fill="#111" stroke="#fff" stroke-width="1.5"/><text x="209" y="326" font-size="12" font-weight="bold" text-anchor="start">成都·蜀都</text>
+  <circle cx="520" cy="296" r="5" fill="#111" stroke="#fff" stroke-width="1.5"/><text x="511" y="300" font-size="12" font-weight="bold" text-anchor="end">建业·吴都</text>
+  <g transform="translate(400,305)">
+    <polygon points="0,-10 2.9,-3.1 10,-3.1 4.3,1.9 6.2,9 0,4.5 -6.2,9 -4.3,1.9 -10,-3.1 -2.9,-3.1" fill="#c0392b" stroke="#fff" stroke-width="1"/>
+    <text x="12" y="4" font-size="12" font-weight="bold" fill="#7b241c">赤壁(208)</text>
+  </g>
+
+  <g transform="translate(664,56)" aria-label="指南针">
+    <circle r="22" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    <polygon points="0,-16 6,6 0,2 -6,6" fill="#c0392b"/>
+    <text y="-26" text-anchor="middle" font-size="13" font-weight="bold">N</text>
+    <text y="4" text-anchor="middle" font-size="9">北</text>
+  </g>
+  <g transform="translate(24,478)" aria-label="比例尺示意">
+    <rect x="0" y="0" width="120" height="7" fill="#fff" stroke="#333"/>
+    <rect x="0" y="0" width="60" height="7" fill="#333"/>
+    <text x="0" y="20" font-size="10">0</text>
+    <text x="52" y="20" font-size="10">500</text>
+    <text x="100" y="20" font-size="10">1000km</text>
+    <text x="150" y="12" font-size="10" fill="#555">比例尺示意·非精确</text>
+  </g><text x="360" y="512" text-anchor="middle" font-size="10" fill="#555">自绘示意·CC0·禁套现代国界省界海岸线·不作精确疆界与比例依据</text>
+<rect x="8" y="8" width="420" height="58" rx="6" fill="#fff" opacity="0.92" stroke="#333"/>
+<text x="20" y="31" font-size="16" font-weight="bold">三国鼎立疆域示意(220—280)</text>
+<text x="20" y="50" font-size="11" fill="#555">魏·蜀·吴三分设色 · ★赤壁之战(208) · 自绘示意非精确</text>
+<g transform="translate(8,430)" aria-label="图例">
+<rect x="0" y="0" width="300" height="40" rx="5" fill="#fff" opacity="0.94" stroke="#666"/>
+<rect x="10" y="10" width="16" height="12" fill="#e9c46a" stroke="#8a6d1b"/><text x="30" y="20" font-size="11">魏</text>
+  <rect x="70" y="10" width="16" height="12" fill="#90be6d" stroke="#2d6a4f"/><text x="90" y="20" font-size="11">蜀</text>
+  <rect x="130" y="10" width="16" height="12" fill="#7fb3d5" stroke="#1d4e89"/><text x="150" y="20" font-size="11">吴</text>
+  <text x="190" y="20" font-size="11">★战役 ●都城 ━河流</text></g>
+</svg>

@@ -39,6 +39,7 @@ function walk(d, group) {
     const st = fs.statSync(p);
     if (st.isDirectory()) { walk(p, group); continue; }
     if (!f.endsWith('.md')) continue;
+    if (f.endsWith('.en.md')) continue;
     files++;
     const rel = path.relative(ROOT, p).replace(/\\/g, '/');
     const t = fs.readFileSync(p, 'utf8');

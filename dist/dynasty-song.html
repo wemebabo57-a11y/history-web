@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>宋 · 960~1279 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>宋 · 960~1279</h1></header><h2>政权综述</h2><article class="entry">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>宋 · 960~1279 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>宋 · 960~1279</h1></header><h2>政权综述 · 中文 / English 独立切换</h2><div class="lang-switch"><button id="btnZh" class="on" onclick="showLang('zh')">中文</button><button id="btnEn" onclick="showLang('en')">English</button></div><article class="entry" id="zh-block">
 <h1>宋朝（北宋—南宋）政权史</h1>
 
 <p><b>说明</b>：本文件为现代转述的政权概述，非史料原文。疆域描述为文字示意，不声称精确。人物生卒年凡不确定者标"约/存疑"。</p>
@@ -30,7 +30,52 @@
 
 <h2>疆域文字示意（非精确地图）</h2>
 <p>北宋极盛时东至海、西至陇东与河西走廊东缘、北至燕云以南（后失燕云，北界大体拒马河—雁门一线为与辽对峙）、南至交趾北缘与南海；南宋绍兴和议后北界约为淮河—大散关一线，仅据江南、两湖、四川等地。详见 maps/meta.yaml。</p>
-</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 宋朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
+</article><article class="entry" id="en-block" style="display:none"><h1>Song Dynasty Overview: Northern and Southern Song (960–1279)</h1>
+<p>The Song dynasty (960–1279) divides into Northern Song (960–1127) and Southern Song (1127–1279). Zhao Kuangyin 赵匡胤 (circa 927–976, disputed) took the throne at Chenqiao, made Kaifeng the capital, and with his successor progressively absorbed Jingnan, Later Shu, Southern Han, Southern Tang, Wuyue, and Northern Han by 979. Centralizing policy removed military governors' power and used fiscal intendants and prefectural supervisors, creating a strong-center pattern.</p>
+<p>Fan Zhongyan's 范仲淹 Qingli reforms soon ended; Wang Anshi 王安石 (1021–1086) carried out New Policies under Emperor Shenzong, opposed by Sima Guang 司马光 (1019–1086) and the old party, and factional strife continued. Jin armies advanced south in 1125–1127, the Jingkang 靖康 disaster carried Emperors Huizong and Qinzong north, and Kaifeng fell, ending Northern Song.</p>
+<p>Zhao Gou 赵构 (1107–1187) restored Song rule in the south with Lin'an as capital. Generals including Yue Fei 岳飞 resisted the Jin until the Shaoxing peace of 1141 fixed the Huai–Dasanguan frontier with Song tribute payments. Failed northern campaigns under Xiaozong and Han Tuozhou 韩侂胄 followed; after the joint destruction of Jin in 1234, Song–Mongol conflict resumed, ending with the fall of Lin'an and the deaths at Yashan 崖山 in 1279. Captive counts and abdication details are disputed.</p>
+<p>Sources pending page verification, no internet verification.</p>
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((宋朝（北宋·南宋）·君主世系))
+    北宋9位
+      宋太祖赵匡胤
+        ’960-976’
+      宋太宗赵光义
+        ’976-997’
+      宋真宗赵恒
+        ’997-1022’
+      宋仁宗赵祯
+        ’1022-1063’
+      宋英宗赵曙
+        ’1063-1067’
+      宋神宗赵顼
+        ’1067-1085’
+      宋哲宗赵煦
+        ’1085-1100’
+      宋徽宗赵佶
+        ’1100-1126’
+      宋钦宗赵桓
+        ’1126-1127’
+    南宋9位
+      宋高宗赵构
+        ’1127-1162’
+      宋孝宗赵昚
+        ’1162-1189’
+      宋光宗赵惇
+        ’1189-1194’
+      宋宁宗赵扩
+        ’1194-1224’
+      宋理宗赵昀
+        ’1224-1264’
+      宋度宗赵禥
+        ’1264-1274’
+      宋恭帝赵㬎
+        ’1274-1276’
+      宋端宗赵昰
+        ’1276-1278’
+      宋卫王赵昺
+        ’1278-1279’
+</pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 宋朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
 northern_song:
   - {name: 宋太祖赵匡胤, reign: '960-976', birth_death: 约927—976存疑, note: 陈桥建国}
   - {name: 宋太宗赵光义, reign: '976-997', birth_death: 约939—997存疑, note: 统一北汉，雍熙北伐失利}
@@ -51,7 +96,37 @@ southern_song:
   - {name: 宋恭帝赵㬎, reign: '1274-1276', birth_death: 约1271—约1323存疑, note: 临安陷落}
   - {name: 宋端宗赵昰, reign: '1276-1278', birth_death: 约1269—1278存疑, note: 海上行朝}
   - {name: 宋卫王赵昺, reign: '1278-1279', birth_death: 约1271—1279存疑, note: 崖山投海}
-</pre><h2>实际掌权人表 power-holders.yaml</h2><pre># 宋朝权臣与摄政简表
+</pre></details><h2>实际掌权人思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((宋朝（北宋·南宋）·名义君主与实际掌权者))
+    权臣与实力人物（12人）（之一）
+      赵普
+        北宋初宰相
+      寇准
+        真宗朝宰相
+      刘太后刘娥
+        仁宗朝垂帘听政
+      范仲淹
+        庆历新政主持
+      王安石
+        神宗朝宰相变法
+      司马光
+        旧党领袖，哲宗朝宰相
+      蔡京
+        徽宗朝宰相
+      高太后高滔滔
+        哲宗朝垂帘
+      秦桧
+        高宗朝宰相
+      韩侂胄
+        宁宗朝权臣
+      史弥远
+        宁宗理宗朝权相
+      贾似道
+        理宗度宗朝权相
+    权臣与实力人物（之二）
+      谢太后谢道清
+        恭帝朝垂帘
+</pre></div><details><summary>掌权表明细(power-holders.yaml)</summary><pre># 宋朝权臣与摄政简表
 - {name: 赵普, role: 北宋初宰相, period: 约960—992, note: 佐太祖定策收兵权，传世称半部论语治天下（语出后世记述，存疑）}
 - {name: 寇准, role: 真宗朝宰相, period: 约1004—1022, note: 澶渊之盟主战}
 - {name: 刘太后刘娥, role: 仁宗朝垂帘听政, period: '1022-1033', note: 传世谱系称临朝称制}
@@ -65,7 +140,42 @@ southern_song:
 - {name: 史弥远, role: 宁宗理宗朝权相, period: 1208—1233, note: 废立济王争议}
 - {name: 贾似道, role: 理宗度宗朝权相, period: 约1259—1275, birth_death: 约1213—1275存疑, note: 公田法；襄阳之战时误国之责争议}
 - {name: 谢太后谢道清, role: 恭帝朝垂帘, period: 1274—1276, note: 临安陷落前决策}
-</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre># 宋朝大事年表（至少12条；年份为传世纪年）
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((宋朝（北宋·南宋）·大事分期))
+    前期
+      陈桥兵变，赵匡胤建宋，定都开封
+        960
+      灭北汉，十国基本统一完成
+        979
+      澶渊之盟，宋辽议和纳岁币
+        1005
+      范仲淹庆历新政
+        1043
+      王安石熙宁变法开始
+        1069
+    中期
+      司马光《资治通鉴》传世称进呈（版本待考）
+        1084
+      女真建金；宋金海上之盟约夹攻辽
+        1115
+      靖康之变，北宋亡；赵构南渡
+        1127
+      钟相杨么起义（南方水乡起义，细节存疑）
+        1130
+      绍兴和议；岳飞遇害（官书与传说须区分）
+        1141
+    后期
+      采石之战，虞允文抗金
+        1161
+      韩侂胄开禧北伐
+        1206
+      宋蒙联合灭金；端平入洛
+        1234
+      元军陷临安
+        1276
+      崖山海战，南宋亡
+        1279
+</pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 宋朝大事年表（至少12条；年份为传世纪年）
 - {year: 960, event: 陈桥兵变，赵匡胤建宋，定都开封}
 - {year: 979, event: 灭北汉，十国基本统一完成}
 - {year: 1005, event: 澶渊之盟，宋辽议和纳岁币}
@@ -81,7 +191,8 @@ southern_song:
 - {year: 1234, event: 宋蒙联合灭金；端平入洛}
 - {year: 1276, event: 元军陷临安}
 - {year: 1279, event: 崖山海战，南宋亡}
-</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="420"><rect width="640" height="420" fill="#f7f3e8"/><text x="20" y="30" font-size="18">宋疆域文字示意（非精确地图）</text><rect x="120" y="120" width="300" height="150" fill="#d9e8c9" stroke="#333"/><text x="130" y="145" font-size="14">北宋：北至拒马河—雁门一线（示意）</text><text x="130" y="170" font-size="14">西至陇东 / 南至南海 / 东至海</text><rect x="150" y="290" width="200" height="70" fill="#cfe0f1" stroke="#333"/><text x="160" y="315" font-size="14">南宋：淮河—大散关以南（示意）</text><text x="20" y="400" font-size="12">示意而已，不表示精确疆界、比例与海岸线</text></svg></div><pre># 宋 maps 元数据
+</pre></details><h2>疆域示意图(图片)</h2><figure class="map-fig"><img src="maps/song-territory.svg" alt="宋疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure><details><summary>疆域图来源与许可(meta.yaml)</summary><pre># 宋 maps 元数据
 maps:
   - {file: northern-southern-song.svg, coverage: 北宋极盛与南宋绍兴和议后, claim: 文字示意，非精确疆界，不作比例与海岸线依据}
-</pre><h2>史料条目(官 4 / 民 2)</h2><ul><li><a href="entry-song-official-bianfa-002.html">庆历新政与熙宁变法</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-jingkang-003.html">靖康之变与北宋亡</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-tongyi-001.html">宋太祖陈桥建国与统一战争</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-yashan-004.html">崖山海战与南宋亡</a> <span class="badge">official</span> <span class="badge">song-southern</span></li><li><a href="entry-song-folk-yangjiajiang-001.html">杨家将传说</a> <span class="badge">folk</span> <span class="badge">song-northern</span></li><li><a href="entry-song-folk-yuefei-002.html">岳飞传说与《说岳全传》演绎</a> <span class="badge">folk</span> <span class="badge">song-southern</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+  - {file: territory.svg, coverage: 宋辽夏并立(约11世纪), claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}
+</pre></details><h2>史料条目(官 4 / 民 2)</h2><ul><li><a href="entry-song-official-bianfa-002.html">庆历新政与熙宁变法</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-jingkang-003.html">靖康之变与北宋亡</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-tongyi-001.html">宋太祖陈桥建国与统一战争</a> <span class="badge">official</span> <span class="badge">song-northern</span></li><li><a href="entry-song-official-yashan-004.html">崖山海战与南宋亡</a> <span class="badge">official</span> <span class="badge">song-southern</span></li><li><a href="entry-song-folk-yangjiajiang-001.html">杨家将传说</a> <span class="badge">folk</span> <span class="badge">song-northern</span></li><li><a href="entry-song-folk-yuefei-002.html">岳飞传说与《说岳全传》演绎</a> <span class="badge">folk</span> <span class="badge">song-southern</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

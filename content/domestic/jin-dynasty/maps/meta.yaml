@@ -1,3 +1,4 @@
 # 金 maps 元数据（自绘文字示意，非精确地图）
 maps:
   - {file: jin-territory.svg, coverage: 金极盛及绍兴和议后, claim: 文字示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 宋金西夏边界犬牙交错，此图不裁决争议, modern_boundary: 禁套现代国界省界}
+  - {file: territory.svg, coverage: 金宋对峙(绍兴和议后)三色, claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}

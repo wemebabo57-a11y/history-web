@@ -1,0 +1,5 @@
+# Three Kingdoms Overview: Wei, Shu, and Wu (220–280)
+After the fall of the Eastern Han, China divided into three rival states. Following the Battle of Red Cliffs 赤壁之战 in 208, Cao Pi 曹丕 deposed the Han and founded Wei 魏 in 220; Liu Bei 刘备 founded Han (Shu Han 蜀汉) in 221; and Sun Quan 孙权 founded Wu 吴 in 229. This tripartite balance lasted until Wei conquered Shu in 263, Sima Yan 司马炎 replaced Wei with Jin in 265, and Jin conquered Wu in 280.
+Cao Cao 曹操 had built the northern base later inherited by Wei, whose capitals centered on Luoyang and Xu. Shu Han, ruled by Liu Bei and his heir Liu Shan 刘禅, held the Sichuan basin, Hanzhong, and parts of the southwest from Chengdu. Wu, ruled by Sun Quan 孙权 and successors Sun Liang 孙亮, Sun Xiu 孙休, and Sun Hao 孙皓, held the lower Yangtze, the southeast coast, and eastern Jingzhou from Jianye 建业. Jingzhou, Hefei, and Hanzhong were repeatedly contested; boundaries shifted with campaigns and are given here only schematically.
+Wei is used as the representative period identifier for filing purposes; Shu and Wu details appear in their respective entries.
+Sources pending page verification, no internet verification.

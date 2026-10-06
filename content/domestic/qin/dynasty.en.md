@@ -1,0 +1,6 @@
+# Qin Dynasty Overview (221–207 BCE)
+The Qin dynasty (221–207 BCE) was the first unified imperial dynasty in Chinese history. Rising from a western frontier fief, Qin grew strong through the reforms of Shang Yang 商鞅, and Qin Shi Huang 嬴政 (circa 259–210 BCE, disputed) conquered the six rival states in 221 BCE, proclaiming himself emperor.
+The new regime abolished enfeoffment and imposed commanderies and counties directly appointed by the throne, with the Three Excellencies and Nine Ministers at court. It standardized writing, weights and measures, coinage, and axle widths, extended into the Ordos and the south, and built frontier walls. Territory is described here only schematically, not as a surveyed map.
+The short-lived dynasty ended after the death of the First Emperor: Qin Er Shi 胡亥 (circa 230–207 BCE, disputed) took the throne, the Chen Sheng–Wu Guang 陈胜吴广 uprising broke out, and after the Battle of Julu 巨鹿之战, Liu Bang 刘邦 entered the pass and Zi Ying 子婴 (identity disputed) surrendered in 207 BCE.
+The scope of the burning of books and burying of scholars, the identity of Zi Ying, and the causes of the rapid collapse remain disputed among transmitted accounts such as the Shi Ji 史记.
+Sources pending page verification, no internet verification.

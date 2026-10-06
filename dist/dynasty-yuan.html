@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>元 · 1206~1368 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>元 · 1206~1368</h1></header><h2>政权综述</h2><article class="entry">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>元 · 1206~1368 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>元 · 1206~1368</h1></header><h2>政权综述 · 中文 / English 独立切换</h2><div class="lang-switch"><button id="btnZh" class="on" onclick="showLang('zh')">中文</button><button id="btnEn" onclick="showLang('en')">English</button></div><article class="entry" id="zh-block">
 <h1>元朝（蒙古—大元）政权史</h1>
 
 <p><b>说明</b>：本文件为现代转述的政权概述，非史料原文。疆域描述为文字示意，不声称精确。人物生卒年凡不确定者标"约/存疑"。（页码待核，未能联网核验。）</p>
@@ -34,7 +34,45 @@
 <h2>疆域文字示意（非精确地图）</h2>
 
 <p>大元直辖东至海、西至吐蕃云南、南至南海声威所及、北至漠北岭北行省；四大汗国分立后仅为羁縻关系。以上仅为文字示意，不作比例、海岸线与现代边界依据。详见 maps/meta.yaml。</p>
-</article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 元朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
+</article><article class="entry" id="en-block" style="display:none"><h1>Yuan Dynasty Overview (1206–1368)</h1>
+<p>The Yuan dynasty grew from the Mongol polity founded when Temüjin 铁木真 (circa 1162–1227, disputed) was proclaimed Genghis Khan in 1206 at Karakorum. Ögedei 窝阔台 (circa 1186–1241, disputed) destroyed Jin in 1234 and extended western campaigns; Güyük and Möngke continued expansion, with Möngke reported to have died at Hezhou amid succession dispute. Figures for the Xia and Jin campaigns vary and are treated as disputed.</p>
+<p>Khubilai 忽必烈 (1215–1294) claimed the khanate in 1260, adopted the dynastic name Great Yuan in 1271, and fixed the capital at Dadu. Lin'an fell in 1276 and, after Yashan in 1279, Song resistance ended and Yuan rule was unified. Institutions included the Central Secretariat, branch secretariats, the Bureau of Buddhist and Tibetan Affairs for Tibet, myriarchies, postal relays, maritime grain transport, and paper currency; the four-category population theory reflects later generalization and is disputed.</p>
+<p>Later reigns from Chengzong through Wuzong, Renzong's restoration of examinations, Yingzong's assassination, the Two Capitals struggle, and the regencies of Bayan 伯颜 and Toqto'a 脱脱 under Huizong preceded the Red Turban rising of 1351 and the Ming entry into Dadu in 1368, when the last emperor withdrew north.</p>
+<p>Branch secretariats administered provinces, paper currency and maritime grain shipment sustained the capital economy, and Tibetan affairs passed through the Bureau of Buddhist and Tibetan Affairs, as detailed in the official entries. Sources pending page verification, no internet verification.</p>
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((元朝·君主世系))
+    其他15位
+      元太祖铁木真（成吉思汗）
+        ’1206-1227’
+      元太宗窝阔台
+        ’1229-1241’
+      元定宗贵由
+        ’1246-1248’
+      元宪宗蒙哥
+        ’1251-1259’
+      元世祖忽必烈
+        ’1260-1294’
+      元成宗铁穆耳
+        ’1294-1307’
+      元武宗海山
+        ’1307-1311’
+      元仁宗爱育黎拔力八达
+        ’1311-1320’
+      元英宗硕德八剌
+        ’1320-1323’
+      元泰定帝也孙铁木儿
+        ’1323-1328’
+      元天顺帝阿速吉八
+        ’1328在位月余’
+      元文宗图帖睦尔
+        ’1328-1332（两度）’
+      元明宗和世㻋
+        ’1329在位月余’
+      元宁宗懿璘质班
+        ’1332在位两月’
+      元惠宗妥懽帖睦尔（顺帝）
+        ’1333-1368’
+</pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 元朝皇帝简表（传世谱系；生卒年多据通行辞书，未能联网核验，一律视为约数/存疑）
 # period_id: yuan
 - {name: 元太祖铁木真（成吉思汗）, reign: '1206-1227', birth_death: 约1162—1227存疑, note: 统一蒙古诸部建大蒙古国}
 - {name: 元太宗窝阔台, reign: '1229-1241', birth_death: 约1186—1241存疑, note: 灭金；西征}
@@ -51,14 +89,50 @@
 - {name: 元明宗和世㻋, reign: '1329在位月余', birth_death: 约1300—1329存疑, note: 暴崩之谜存疑}
 - {name: 元宁宗懿璘质班, reign: '1332在位两月', birth_death: 约1326—1332存疑, note: 幼主}
 - {name: 元惠宗妥懽帖睦尔（顺帝）, reign: '1333-1368', birth_death: 约1320—1370存疑, note: 北走上都，元亡于中原}
-</pre><h2>实际掌权人表 power-holders.yaml</h2><pre># 元权臣与摄政简表（年份为传世纪年，未能联网核验）
+</pre></details><h2>实际掌权人思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((元朝·名义君主与实际掌权者))
+    窝阔台汗
+      耶律楚材
+        中书令
+    忽必烈（世祖）
+      伯颜
+        中书右丞相、统兵伐宋
+      阿合马
+        中书平章理财
+    惠宗妥懽帖睦尔（顺帝）
+      伯颜（秦王伯颜）
+        中书丞相专权
+      脱脱
+        中书右丞相、修史治河
+</pre></div><details><summary>掌权表明细(power-holders.yaml)</summary><pre># 元权臣与摄政简表（年份为传世纪年，未能联网核验）
 # period_id: yuan
 - {nominal_lord: 窝阔台汗, holder: 耶律楚材, role: 中书令, start_year: 1228, end_year: 1243, basis: 传世谱系称佐太宗行汉法、定赋税, event: 中书省建立, source: 《元史》传世本卷一百四十六·耶律楚材传（具体版本待考，页码待核）, dispute: 汉法施行范围与评价争议}
 - {nominal_lord: 忽必烈（世祖）, holder: 伯颜, role: 中书右丞相、统兵伐宋, start_year: 1274, end_year: 1279, basis: 传世谱系称统军灭宋, event: 襄阳崖山之战, source: 《元史》传世本卷一百二十七·伯颜传（具体版本待考，页码待核）, dispute: 屠城与招降数字诸书记述悬殊存疑}
 - {nominal_lord: 忽必烈（世祖）, holder: 阿合马, role: 中书平章理财, start_year: 1264, end_year: 1282, basis: 传世谱系称专理财被杀, event: 阿合马遇害, source: 《元史》传世本卷二百五·奸臣传（具体版本待考，页码待核）, dispute: 贪暴数字多出政敌记述存疑}
 - {nominal_lord: 惠宗妥懽帖睦尔（顺帝）, holder: 伯颜（秦王伯颜）, role: 中书丞相专权, start_year: 1333, end_year: 1340, basis: 传世谱系称罢黜后流放, event: 伯颜罢相, source: 《元史》传世本卷一百三十八·伯颜传具体版本待考，页码待核）, dispute: 废科举与种族政策细节争议}
 - {nominal_lord: 惠宗妥懽帖睦尔（顺帝）, holder: 脱脱, role: 中书右丞相、修史治河, start_year: 1341, end_year: 1355, basis: 传世谱系称主持修辽宋金三史、治黄河, event: 修三史与徐州治河, source: 《元史》传世本卷一百三十八·脱脱传（具体版本待考，页码待核）, dispute: 治河与致乱因果评价争议}
-</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre># 元大事年表（传世纪年，未能联网核验）
+</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((元朝·大事分期))
+    大事编年
+      铁木真称成吉思汗建大蒙古国
+        丙寅年（1206）
+      蒙宋联合灭金于蔡州
+        甲午年（1234）
+      忽必烈称汗与阿里不哥之争
+        庚申年（1260）
+      建国号大元
+        至元八年（1271）
+      元军陷临安，南宋恭帝降
+        至元十三年（1276）
+      崖山海战，宋亡元统一
+        至元十六年（1279）
+      仁宗延祐复科举
+        延祐二年（1315）
+      颍州红巾起义爆发
+        至正十一年（1351）
+      明军入大都，顺帝北走，元亡于中原
+        至正二十八年（1368）
+</pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 元大事年表（传世纪年，未能联网核验）
 - {year_label: 丙寅年（1206）, year: 1206, period_id: yuan, title: 铁木真称成吉思汗建大蒙古国, confidence: medium, source: 《元史·太祖本纪》传世本（版本待考，页码待核）}
 - {year_label: 甲午年（1234）, year: 1234, period_id: yuan, title: 蒙宋联合灭金于蔡州, confidence: high, source: 《元史·太宗本纪》传世本（版本待考，页码待核）}
 - {year_label: 庚申年（1260）, year: 1260, period_id: yuan, title: 忽必烈称汗与阿里不哥之争, confidence: medium, source: 《元史·世祖本纪》传世本（版本待考，页码待核）}
@@ -68,7 +142,8 @@
 - {year_label: 延祐二年（1315）, year: 1315, period_id: yuan, title: 仁宗延祐复科举, confidence: medium, source: 《元史·仁宗本纪》传世本（版本待考，页码待核）}
 - {year_label: 至正十一年（1351）, year: 1351, period_id: yuan, title: 颍州红巾起义爆发, confidence: high, source: 《元史·顺帝本纪》传世本（版本待考，页码待核）}
 - {year_label: 至正二十八年（1368）, year: 1368, period_id: yuan, title: 明军入大都，顺帝北走，元亡于中原, confidence: high, source: 《元史·顺帝本纪》传世本（版本待考，页码待核）}
-</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="640" height="400"><rect width="640" height="400" fill="#f7f3e8"/><text x="20" y="30" font-size="18">元疆域文字示意（非精确地图）</text><rect x="90" y="70" width="460" height="240" fill="#d9d3b8" stroke="#333"/><text x="100" y="110" font-size="14">东至海 / 北至漠北岭北行省（示意）</text><text x="100" y="140" font-size="14">西至吐蕃、云南（宣政院辖为示意）</text><text x="100" y="170" font-size="14">南至南海为声威所及（示意）</text><text x="100" y="200" font-size="14">大都 / 上都 / 诸行省分置（示意）</text><text x="20" y="360" font-size="12">自绘示意，不表示精确疆界、比例与海岸线</text><text x="20" y="380" font-size="12">禁套现代国界省界；CC0</text></svg></div><pre># 元 maps 元数据（自绘文字示意，非精确地图）
+</pre></details><h2>疆域示意图(图片)</h2><figure class="map-fig"><img src="maps/yuan-territory.svg" alt="元疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure><details><summary>疆域图来源与许可(meta.yaml)</summary><pre># 元 maps 元数据（自绘文字示意，非精确地图）
 maps:
   - {file: yuan-territory.svg, coverage: 大元时期行省与宣政院辖区示意, claim: 文字示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 蒙元极盛与大元直辖范围历来争议，此图不裁决, modern_boundary: 禁套现代国界省界}
-</pre><h2>史料条目(官 6 / 民 2)</h2><ul><li><a href="entry-yuan-official-haiyun-002.html">海运漕粮与大都供给</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-hongjin-003.html">红巾起义与元亡</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-jianyuan-001.html">忽必烈建元与行省制度</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-miejin-001.html">蒙宋联合灭金蔡州之战</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-xiangya-002.html">襄阳之战与崖山灭宋</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-xingsheng-003.html">行省制与宣政院辖吐蕃</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-folk-hongjin-001.html">月饼传信与红巾传说</a> <span class="badge">folk</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-folk-sadao-001.html">一代天骄成吉思汗后世演绎与斡难河传说</a> <span class="badge">folk</span> <span class="badge">yuan</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+  - {file: territory.svg, coverage: 大元时期行省与宣政院辖区, claim: 自绘疆域示意，非精确疆界，不作比例与海岸线依据, drawn: 自绘示意, license: CC0, dispute: 边界犬牙交错与极盛范围历来争议，此图不裁决争议, modern_boundary: 禁套现代国界省界}
+</pre></details><h2>史料条目(官 6 / 民 2)</h2><ul><li><a href="entry-yuan-official-haiyun-002.html">海运漕粮与大都供给</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-hongjin-003.html">红巾起义与元亡</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-jianyuan-001.html">忽必烈建元与行省制度</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-miejin-001.html">蒙宋联合灭金蔡州之战</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-xiangya-002.html">襄阳之战与崖山灭宋</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-official-xingsheng-003.html">行省制与宣政院辖吐蕃</a> <span class="badge">official</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-folk-hongjin-001.html">月饼传信与红巾传说</a> <span class="badge">folk</span> <span class="badge">yuan</span></li><li><a href="entry-yuan-folk-sadao-001.html">一代天骄成吉思汗后世演绎与斡难河传说</a> <span class="badge">folk</span> <span class="badge">yuan</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隋 · 581~618 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>隋 · 581~618</h1></header><h2>政权综述</h2><article class="entry">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隋 · 581~618 | 历史全集</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script></head><body><div class="wrap"><header class="top"><div class="crumb"><a href="index.html">首页</a> / 国内</div><h1>隋 · 581~618</h1></header><h2>政权综述 · 中文 / English 独立切换</h2><div class="lang-switch"><button id="btnZh" class="on" onclick="showLang('zh')">中文</button><button id="btnEn" onclick="showLang('en')">English</button></div><article class="entry" id="zh-block">
 
 <h1>隋朝综述(581-618)</h1>
 
@@ -31,7 +31,24 @@
 <li>official/sui-official-tongyi-001.md</li>
 <li>official/sui-official-kaihuang-002.md</li>
 <li>folk/sui-folk-yangdi-001.md</li>
-</ul></article><h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p><h2>帝系表 emperors.yaml</h2><pre># 隋朝皇帝(3帝加追尊).生卒不确定者标约或存疑.
+</ul></article><article class="entry" id="en-block" style="display:none"><h1>Sui Dynasty Overview (581–618)</h1>
+<p>The Sui dynasty (581–618) reunified north and south after centuries of division. Yang Jian 杨坚 (circa 541–604, disputed), Emperor Wen, replaced Northern Zhou in 581 and destroyed Chen in 589, completing reunification. His Kaihuang 开皇 administration lightened taxes, maintained the equal-field and militia systems, compiled the Kaihuang Code, and developed the Three Departments and Six Ministries in embryo.</p>
+<p>Emperor Yang 杨广 (circa 569–618, disputed) moved to Luoyang, opened the Grand Canal by linking channels including the Tongji Canal from 605, and projected power toward Liaodong. Three campaigns against Goguryeo in 612–614 exhausted the state; the Yang Xuangan 杨玄感 revolt of 613, the Yanmen encirclement of 615, and the Li Yuan 李渊 rising of 617 followed. Yang Guang was killed at Jiangdu in 618, and the puppet child emperor Yang You 杨侑 (circa 605–619, disputed) yielded to the Tang.</p>
+<p>The founding year of the presented-scholar examination, judgments on Emperor Yang shaped by early Tang historians, and responsibility for the Chen campaign remain disputed. Territorial extent is schematic and the Liaodong and Hexi limits are uncertain.</p>
+<p>The equal-field, rented-labor modulation, fubing militia, Kaihuang legal code, and courier relay network are treated in the official entries, and the Sui–Tang transition is cross-referenced under Tang. Sources pending page verification, no internet verification.</p>
+</article><script>function showLang(l){var z=document.getElementById('zh-block');var e=document.getElementById('en-block');var bz=document.getElementById('btnZh');var be=document.getElementById('btnEn');if(l==='en'){z.style.display='none';e.style.display='block';bz.className='';be.className='on';}else{e.style.display='none';z.style.display='block';be.className='';bz.className='on';}}</script><h2>皇帝传承思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((隋朝·君主世系))
+    皇帝5位
+      杨忠
+        未即位,文帝追尊
+      杨坚
+        高祖文皇帝
+      杨广
+        炀皇帝
+      杨侑
+        恭皇帝
+      杨浩
+</pre></div><details><summary>帝系表明细(emperors.yaml)</summary><pre># 隋朝皇帝(3帝加追尊).生卒不确定者标约或存疑.
 period_id: sui
 emperors:
   - name: 杨忠
@@ -65,7 +82,26 @@ emperors:
     birth_death: 生卒年待考至618
     reign_start: 618
     reign_end: 618
-    note: 宇文化及所立傀儡,旋被杀,不计正统,附列存考.</pre><h2>实际掌权人表 power-holders.yaml</h2><pre># 隋朝权臣与实力人物.
+    note: 宇文化及所立傀儡,旋被杀,不计正统,附列存考.</pre></details><h2>实际掌权人思维导图</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((隋朝·名义君主与实际掌权者))
+    权臣与实力人物（8人）
+      高熲
+        开皇宰相
+      杨素
+        宰相行军元帅
+      苏威
+        宰相参定章程
+      宇文述
+        重臣将领
+      宇文化及
+        骁果军将领
+      来护儿
+        水军将领
+      杨玄感
+        反隋首领
+      李渊
+        唐国公太原留守
+</pre></div><details><summary>掌权表明细(power-holders.yaml)</summary><pre># 隋朝权臣与实力人物.
 period_id: sui
 power_holders:
   - name: 高熲
@@ -99,7 +135,32 @@ power_holders:
   - name: 李渊
     birth_death: 约566-635,生年存疑
     role: 唐国公太原留守
-    note: 617年太原起兵,入长安立恭帝,次年建唐.</pre><h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre># 隋朝大事年表.
+    note: 617年太原起兵,入长安立恭帝,次年建唐.</pre></details><h2>独立时间线思维导图(本朝代隔离展示)</h2><div class="mm-wrap"><pre class="mermaid">mindmap
+  root((隋朝·大事分期))
+    前期
+      杨坚代周建隋,改元开皇
+        581
+      隋灭陈南北统一
+        589
+      开皇制度推行
+        590
+      营东都洛阳开凿通济渠
+        605
+    中期
+      筑长城通西域张掖置郡存疑待考
+        607
+      一征辽东无功
+        612
+      杨玄感黎阳起兵
+        613
+    后期
+      雁门之围
+        615
+      李渊太原起兵入长安立代王侑
+        617
+      江都之变炀帝被弑,恭帝禅唐隋亡
+        618
+</pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 隋朝大事年表.
 period_id: sui
 timeline:
   - year: 581
@@ -133,18 +194,13 @@ timeline:
     note: 改元义宁,隋名存实亡.
   - year: 618
     event: 江都之变炀帝被弑,恭帝禅唐隋亡
-    note: 宇文化及弑帝,李渊受禅建唐.</pre><h2>疆域图(文字示意,非精确)</h2><div><svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
-<rect width="600" height="400" fill="#f7f3e8"/>
-<text x="20" y="30" font-size="16">Sui疆域文字示意图(示意非精确)</text>
-<rect x="120" y="80" width="360" height="200" fill="#e3d9bd" stroke="#8a7a4d"/>
-<text x="200" y="170" font-size="14">中原核心区(示意)</text>
-<text x="150" y="110" font-size="12">北:雁门长城一线(示意)</text>
-<text x="150" y="260" font-size="12">南:交趾(示意)</text>
-<text x="430" y="150" font-size="12">东:辽东存争议</text>
-<text x="130" y="150" font-size="12">西:敦煌张掖待考</text>
-<text x="20" y="370" font-size="12">注:仅文字示意,不代表精确疆界.</text>
-</svg></div><pre># Sui示意地图元数据
+    note: 宇文化及弑帝,李渊受禅建唐.</pre></details><h2>疆域示意图(图片)</h2><figure class="map-fig"><img src="maps/sui-territory.svg" alt="隋疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure><details><summary>疆域图来源与许可(meta.yaml)</summary><pre># Sui示意地图元数据
 period_id: sui
 map_file: maps/map.svg
-disclaimer: 仅文字示意,不声称精确疆界,辽东西域交趾方位均为示意,存疑待考.
-source: 基于隋书地理志文字描述绘制示意,传世本,具体版本待考,页码待核,未能联网核验.</pre><h2>史料条目(官 2 / 民 1)</h2><ul><li><a href="entry-sui-official-kaihuang-002.html">开皇制度均田租庸调府兵与科举滥觞</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-tongyi-001.html">隋灭陈与南北统一(589)</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-folk-yangdi-001.html">隋炀帝奢靡传闻考辨</a> <span class="badge">folk</span> <span class="badge">sui</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>
+territory_file: maps/territory.svg
+license: CC0自绘示意
+precision: 640x460示意多边形不声称精确疆界河流海岸线省略
+source: 基于隋书地理志文字描述绘制示意,传世本,具体版本待考,页码待核,未能联网核验.
+disclaimer: 仅示意不声称精确疆界,辽东西域交趾方位均为示意虚线争议区禁套用,存疑待考.
+note: 旧maps/map.svg保留兼容,新maps/territory.svg为CC0疆域示意,争议禁套.
+</pre></details><h2>史料条目(官 2 / 民 1)</h2><ul><li><a href="entry-sui-official-kaihuang-002.html">开皇制度均田租庸调府兵与科举滥觞</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-official-tongyi-001.html">隋灭陈与南北统一(589)</a> <span class="badge">official</span> <span class="badge">sui</span></li><li><a href="entry-sui-folk-yangdi-001.html">隋炀帝奢靡传闻考辨</a> <span class="badge">folk</span> <span class="badge">sui</span></li></ul><p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p><footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer><script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script></div></body></html>

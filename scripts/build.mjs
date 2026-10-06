@@ -21,7 +21,7 @@ const GROUPS = [
   ['ming','明','1368~1644'],
   ['qing','清','1616~1912']
 ];
-function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function parseFM(t){
   const m = t.match(/^---\s*\n([\s\S]*?)\n---/);
   if(!m) return { fm:{}, body:t };
@@ -39,8 +39,8 @@ function mdBody(h){
   s = s.replace(/^##\s?(.*)$/gm, '<h2>$1</h2>');
   s = s.replace(/^#\s?(.*)$/gm, '<h1>$1</h1>');
   s = s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
-  const lines = s.split('\n'); let o = []; let inul = false;
-  for(const ln of lines){
+  const ls = s.split('\n'); let o = []; let inul = false;
+  for(const ln of ls){
     if(/^\s*[-*]\s+/.test(ln)){ if(!inul){ o.push('<ul>'); inul = true; } o.push('<li>' + ln.replace(/^\s*[-*]\s+/, '') + '</li>'); }
     else { if(inul){ o.push('</ul>'); inul = false; }
       if(/^<h[123]>/.test(ln) || /^<pre/.test(ln) || ln.trim()==='') o.push(ln);
@@ -58,9 +58,53 @@ function page(title, crumb, body){
     '</head><body><div class="wrap">' +
     '<header class="top"><div class="crumb">' + crumb + '</div><h1>' + esc(title) + '</h1></header>' +
     body +
-    '<footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为文字示意非精确测绘。</footer>' +
+    '<footer>历史全集静态站 · 零依赖构建 · 史料均注来源版本定位，未核验处标“页码待核/未能联网核验”；演绎与史料严格区分；疆域图为自绘示意非精确测绘，禁套现代边界；官方图待用户提供后替换。</footer>' +
     '<script>if(window.mermaid){mermaid.initialize({startOnLoad:true});}</script>' +
     '</div></body></html>';
+}
+function cleanLabel(s){
+  let t = String(s || '').replace(/[\(\)\[\]\{\}#:\"'`]/g, '').replace(/\|/g, ' ');
+  t = t.replace(/\s+/g, ' ').trim();
+  if(t.length > 22) t = t.slice(0, 22);
+  return t || '未命名';
+}
+function parseMindmap(t){
+  const out = {};
+  let sec = null; let branch = null;
+  let lastNode = null;
+  for(const raw of t.split('\n')){
+    const ln = raw.replace(/\r$/, '');
+    const secM = ln.match(/^(emperors_mindmap|power_mindmap|timeline_mindmap):/);
+    if(secM){ sec = secM[1]; out[sec] = { root:'', branches:[] }; branch = null; lastNode = null; continue; }
+    if(!sec) continue;
+    const rootM = ln.match(/^\s*root:\s*"?(.*?)"?\s*$/);
+    if(rootM && !out[sec].root){ out[sec].root = rootM[1]; continue; }
+    const labM = ln.match(/^(\s*)- label:\s*"?(.*?)"?\s*$/);
+    if(labM){
+      const indent = labM[1].length;
+      const label = labM[2];
+      if(indent <= 5){ branch = { label:label, nodes:[] }; out[sec].branches.push(branch); lastNode = null; }
+      else { if(!branch){ branch = { label:'分组', nodes:[] }; out[sec].branches.push(branch); } lastNode = { label:label, extra:'' }; branch.nodes.push(lastNode); }
+      continue;
+    }
+    const rM = ln.match(/^\s*(reign|year|role|extra):\s*"?(.*?)"?\s*$/);
+    if(rM && lastNode){ const v = rM[2]; if(v) lastNode.extra = (lastNode.extra ? lastNode.extra + ' ' : '') + v; }
+  }
+  return out;
+}
+function mmMermaid(root, branches){
+  let s = 'mindmap\n  root((' + cleanLabel(root) + '))\n';
+  const bs = branches.slice(0, 16);
+  for(const b of bs){
+    s += '    ' + cleanLabel(b.label) + '\n';
+    const ns = b.nodes.slice(0, 16);
+    for(const n of ns){
+      let lab = cleanLabel(n.label);
+      s += '      ' + lab + '\n';
+      if(n.extra){ s += '        ' + cleanLabel(n.extra).slice(0, 18) + '\n'; }
+    }
+  }
+  return s;
 }
 function readEntries(group){
   const out = [];
@@ -86,22 +130,34 @@ for(const g of GROUPS){
   const gd = path.join(DOM, gid);
   let dynFM = {}, dynBody = '综述缺失';
   try{ const r = parseFM(fs.readFileSync(path.join(gd,'dynasty.md'),'utf8')); dynFM = r.fm; dynBody = r.body; }catch(e){}
+  let enBody = '';
+  try{ enBody = fs.readFileSync(path.join(gd,'dynasty.en.md'),'utf8'); }catch(e){ enBody = 'English version pending.'; }
   const entries = readEntries(gid);
   const nOff = entries.filter(function(e){return e.sub==='official';}).length;
   const nFolk = entries.filter(function(e){return e.sub==='folk';}).length;
-  let empRaw = '', powRaw = '', tlRaw = '', mapMeta = '', mapSvg = '', mapFile = '';
+  let empRaw = '', powRaw = '', tlRaw = '', mapMeta = '', mapFile = '';
   try{ empRaw = fs.readFileSync(path.join(gd,'emperors.yaml'),'utf8'); }catch(e){}
   try{ powRaw = fs.readFileSync(path.join(gd,'power-holders.yaml'),'utf8'); }catch(e){}
   try{ tlRaw = fs.readFileSync(path.join(gd,'timeline.yaml'),'utf8'); }catch(e){}
+  let mmRaw = '';
+  try{ mmRaw = fs.readFileSync(path.join(gd,'mindmap.yaml'),'utf8'); }catch(e){}
+  const mm = mmRaw ? parseMindmap(mmRaw) : {};
+  function mmBlock(key, title, fallback){
+    const sec = mm[key];
+    if(!sec || !sec.branches || !sec.branches.length) return '<h2>' + title + '</h2><p>思维导图数据缺失，见下方yaml明细。</p>';
+    const code = mmMermaid(sec.root || title, sec.branches);
+    return '<h2>' + title + '</h2>' + '<div class="mm-wrap"><pre class="mermaid">' + esc(code) + '</pre></div>';
+  }
   try{
     const md = path.join(gd,'maps');
     if(fs.existsSync(md)){
-      for(const f of fs.readdirSync(md)){ if(f.endsWith('.svg') && !mapFile) mapFile = f; }
+      const files = fs.readdirSync(md);
+      if(files.includes('territory.svg')) mapFile = 'territory.svg';
+      else { for(const f of files){ if(f.endsWith('.svg') && !mapFile) mapFile = f; } }
       if(fs.existsSync(path.join(md,'meta.yaml'))) mapMeta = fs.readFileSync(path.join(md,'meta.yaml'),'utf8');
       if(mapFile){
         fs.mkdirSync(path.join(DIST,'maps'), { recursive:true });
-        fs.copyFileSync(path.join(md,mapFile), path.join(DIST,'maps',gid+'-'+mapFile));
-        mapSvg = fs.readFileSync(path.join(md,mapFile),'utf8');
+        fs.copyFileSync(path.join(md,mapFile), path.join(DIST,'maps',gid+'-territory.svg'));
       }
     }
   }catch(e){}
@@ -119,13 +175,17 @@ for(const g of GROUPS){
       '<p><a href="dynasty-'+gid+'.html">返回'+esc(gname)+'</a> · <a href="index.html">首页</a></p>');
     fs.writeFileSync(path.join(DIST,'entry-'+eid+'.html'), ehtml, 'utf8');
   }
+  const langSwitch = '<div class="lang-switch"><button id="btnZh" class="on" onclick="showLang(\'zh\')">中文</button><button id="btnEn" onclick="showLang(\'en\')">English</button></div>';
+  const zhBlock = '<article class="entry" id="zh-block">' + mdBody(dynBody) + '</article>';
+  const enBlock = '<article class="entry" id="en-block" style="display:none">' + mdBody(enBody) + '</article>';
+  const langScript = '<script>function showLang(l){var z=document.getElementById(\'zh-block\');var e=document.getElementById(\'en-block\');var bz=document.getElementById(\'btnZh\');var be=document.getElementById(\'btnEn\');if(l===\'en\'){z.style.display=\'none\';e.style.display=\'block\';bz.className=\'\';be.className=\'on\';}else{e.style.display=\'none\';z.style.display=\'block\';be.className=\'\';bz.className=\'on\';}}</script>';
+  const mapHtml = '<h2>疆域示意图(图片)</h2>' + (mapFile ? '<figure class="map-fig"><img src="maps/'+gid+'-territory.svg" alt="'+esc(gname)+'疆域示意图" loading="lazy"><figcaption>自绘示意非精确测绘，禁套现代边界。来源许可见下方meta。</figcaption></figure>' : '<p>暂缺图片，见文字描述</p>') + '<details><summary>疆域图来源与许可(meta.yaml)</summary><pre>' + esc(mapMeta) + '</pre></details>';
   const dhtml = page(gname+' · '+grange, '<a href="index.html">首页</a> / 国内',
-    '<h2>政权综述</h2><article class="entry">' + mdBody(dynBody) + '</article>' +
-    '<h2>皇帝传承图(Mermaid 示意)</h2><p>名义君主/实际掌权/追尊与割据在 emperors.yaml 与正文中区分标注。</p>' +
-    '<h2>帝系表 emperors.yaml</h2><pre>' + esc(empRaw) + '</pre>' +
-    '<h2>实际掌权人表 power-holders.yaml</h2><pre>' + esc(powRaw) + '</pre>' +
-    '<h2>独立时间线 timeline.yaml(本朝代隔离展示)</h2><pre>' + esc(tlRaw) + '</pre>' +
-    '<h2>疆域图(文字示意,非精确)</h2>' + (mapFile ? '<div>' + mapSvg + '</div>' : '<p>暂缺 svg,见文字描述</p>') + '<pre>' + esc(mapMeta) + '</pre>' +
+    '<h2>政权综述 · 中文 / English 独立切换</h2>' + langSwitch + zhBlock + enBlock + langScript +
+    mmBlock('emperors_mindmap','皇帝传承思维导图') + '<details><summary>帝系表明细(emperors.yaml)</summary><pre>' + esc(empRaw) + '</pre></details>' +
+    mmBlock('power_mindmap','实际掌权人思维导图') + '<details><summary>掌权表明细(power-holders.yaml)</summary><pre>' + esc(powRaw) + '</pre></details>' +
+    mmBlock('timeline_mindmap','独立时间线思维导图(本朝代隔离展示)') + '<details><summary>时间线明细(timeline.yaml)</summary><pre>' + esc(tlRaw) + '</pre></details>' +
+    mapHtml +
     '<h2>史料条目(官 '+nOff+' / 民 '+nFolk+')</h2><ul>' + listHtml + '</ul>' +
     '<p><a href="timelines.html">全局时间线(分组聚合)</a> · <a href="index.html">首页</a> · <a href="search.html">搜索</a></p>');
   fs.writeFileSync(path.join(DIST,'dynasty-'+gid+'.html'), dhtml, 'utf8');
@@ -134,9 +194,9 @@ for(const g of GROUPS){
 }
 let cards = '';
 for(const c of dynCards){
-  cards += '<div class="card"><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>';
+  cards += '<div class="card"><div class="map-thumb"><img src="maps/'+c.gid+'-territory.svg" alt="'+esc(c.gname)+'疆域图" loading="lazy"></div><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>';
 }
-const homeBody = '<nav class="filters">' +
+const homeBody = '<p class="lang-note">全站中英文独立切换：各朝代页顶部设 中文 / English 按钮，中英分开展示不混排。英文版为综述译介，史料原文以中文页为准。</p>' + '<nav class="filters">' +
   '<select id="fGroup"><option value="">全部朝代</option>' + dynCards.map(function(c){ return '<option value="'+c.gid+'">'+esc(c.gname)+'</option>'; }).join('') + '</select>' +
   '<select id="fType"><option value="">官方/民间/混合</option><option value="official">官方</option><option value="folk">民间</option><option value="mixed">混合</option></select>' +
   '<input id="fYear" placeholder="年份过滤,如 960" style="width:140px">' +
@@ -168,7 +228,6 @@ const sbody = '<input id="q" placeholder="输入关键词" style="width:260px;pa
 fs.writeFileSync(path.join(DIST,'search.html'), page('搜索','<a href="index.html">首页</a> / 搜索', sbody), 'utf8');
 try{
   execSync('node scripts/coverage.mjs .', { cwd:ROOT, stdio:'inherit' });
-  fs.copyFileSync(path.join(ROOT,'data','coverage-report.md'), path.join(DIST,'coverage-src.md'));
   const cov = fs.readFileSync(path.join(ROOT,'data','coverage-report.md'),'utf8');
   fs.writeFileSync(path.join(DIST,'coverage.html'), page('覆盖率报告','<a href="index.html">首页</a> / 覆盖', '<pre>'+esc(cov)+'</pre>'), 'utf8');
 }catch(e){ console.log('coverage step warn ' + e.message); }

@@ -1,0 +1,5 @@
+# Western and Eastern Jin Overview (265–420)
+The Jin dynasty reunified China briefly before losing the north. Sima Yan 司马炎 founded Western Jin in 265 after replacing Wei, conquered Wu in 280, and presided over the Taikang 太康 peace. Large enfeoffments, Empress Jia's 贾后 interference, and the War of the Eight Princes 八王之乱 (291–306) exhausted the state; Luoyang fell in the Yongjia disaster 永嘉之乱 of 311 and Chang'an in 316, ending the Western Jin.
+Sima Rui 司马睿 established a southern regime at Jianye in 317 and proclaimed himself emperor in 318, known as Eastern Jin. Guided by Wang Dao 王导 under the saying of joint rule by the Wang clan and the Sima house, great families such as the Wang, Xie, Huan, and Yu clans shared power with the throne. Northern expeditions by Zu Ti 祖逖 and Huan Wen 桓温 and the defense at the Battle of Fei River 淝水之战 (383) preserved the south until Liu Yu 刘裕 replaced Jin with Song in 420.
+Territory is schematic only: the early Western Jin broadly inherited Han domains from Luoyang, while Eastern Jin held the south of the Yangtze from Jiankang, with a fluid north-south frontier.
+Sources pending page verification, no internet verification.
