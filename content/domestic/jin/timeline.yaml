@@ -1,5 +1,5 @@
 - {date: 265, event: 司马炎代魏建晋, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
-- {date: 280, event: 晋灭吴统一, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》"}
+- {date: 280, event: 晋灭吴统一,太康之治始, period_id: jin-western, confidence: high, source: "《晋书·武帝纪》;太康之治为后世追称"}
 - {date: 291, event: 八王之乱起, period_id: jin-western, confidence: high, source: "《晋书·八王传》《后妃传》"}
 - {date: 311, event: 永嘉之乱/洛阳陷, period_id: jin-western, confidence: high, source: "《晋书·怀帝纪》;《资治通鉴·晋纪》"}
 - {date: 316, event: 长安陷,西晋亡, period_id: jin-western, confidence: high, source: "《晋书·愍帝纪》"}

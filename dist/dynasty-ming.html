@@ -127,10 +127,12 @@ holders:
     P0N0 --&gt; P0N1
     P0N2["靖难之役 1399-1402"]
     P0N1 --&gt; P0N2
-    P0N3["郑和首下西洋 1405"]
+    P0N3["永乐盛世 1403-1424"]
     P0N2 --&gt; P0N3
-    P0N4["永乐迁都北京 1421"]
+    P0N4["郑和首下西洋 1405"]
     P0N3 --&gt; P0N4
+    P0N5["永乐迁都北京 1421"]
+    P0N4 --&gt; P0N5
   end
   subgraph P1["中期"]
   direction LR
@@ -139,12 +141,14 @@ holders:
     P1N0 --&gt; P1N1
     P1N2["北京保卫战与夺门之变 1450-1457"]
     P1N1 --&gt; P1N2
-    P1N3["隆庆开关 1567"]
+    P1N3["弘治中兴 1488-1505"]
     P1N2 --&gt; P1N3
-    P1N4["一条鞭法推行 1581"]
+    P1N4["隆庆开关 1567"]
     P1N3 --&gt; P1N4
+    P1N5["一条鞭法推行 1581"]
+    P1N4 --&gt; P1N5
   end
-  P0N4 --&gt; P1N0
+  P0N5 --&gt; P1N0
   subgraph P2["后期"]
   direction LR
     P2N0["万历援朝之役 1592-1598"]
@@ -155,7 +159,7 @@ holders:
     P2N3["明亡 1644"]
     P2N2 --&gt; P2N3
   end
-  P1N4 --&gt; P2N0
+  P1N5 --&gt; P2N0
 </pre></div><details><summary>时间线明细(timeline.yaml)</summary><pre># 明朝大事年表(14条以上)
 period_id: ming
 source_note: 主据《明史》《明实录》(传世本,具体版本待考;页码待核,未能联网核验)
@@ -168,6 +172,7 @@ events:
   - { year: 1424-1435, event: 仁宣之治, note: 守成之说,评价有争议 }
   - { year: 1449, event: 土木堡之变, note: 英宗被俘,王振之死,责任归属争议 }
   - { year: 1450-1457, event: 北京保卫战与夺门之变, note: 于谦主守,英宗复辟 }
+  - { year: 1488-1505, event: 弘治中兴, note: 孝宗勤政,盛世之说评价有争议,详��official仁宣弘治篇 }
   - { year: 1567, event: 隆庆开关, note: 月港开海之说,海禁松弛程度有争议 }
   - { year: 1581, event: 一条鞭法推行, note: 张居正改革核心,成效评价不一 }
   - { year: 1592-1598, event: 万历援朝之役, note: 壬辰倭乱,明军入朝作战 }

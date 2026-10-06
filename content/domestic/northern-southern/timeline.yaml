@@ -2,6 +2,7 @@
 - {date: 383, event: 淝水之战, period_id: sixteen-kingdoms, confidence: high, source: "《晋书·苻坚载记》《谢安传》;《资治通鉴》"}
 - {date: 386, event: 北魏建国(拓跋珪), period_id: northern-southern, confidence: high, source: "魏收《魏书·太祖纪》"}
 - {date: 420, event: 刘裕代晋建宋, period_id: northern-southern, confidence: high, source: "沈约《宋书·武帝纪》"}
+- {date: 424, event: 元嘉之治始(刘义隆即位), period_id: northern-southern, confidence: medium, source: "沈约《宋书·文帝纪》,传世本待考;元嘉之治为后世追称"}
 - {date: 439, event: 北魏统一北方, period_id: northern-southern, confidence: high, source: "魏收《魏书·太武帝纪》"}
 - {date: 471, event: 孝文帝即位/改革启动, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
 - {date: 494, event: 迁都洛阳, period_id: northern-southern, confidence: high, source: "魏收《魏书·高祖纪》"}
