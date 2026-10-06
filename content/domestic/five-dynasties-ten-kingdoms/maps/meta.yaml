@@ -16,4 +16,9 @@ confidence: low
 disclaimer: 仅示意不声称精确疆界十国名目与北汉归属燕云界线争议禁套用存疑待考
 note: 旧maps/map.svg与maps/five-ten-sketch.svg保留兼容,新maps/territory.svg为CC0疆域示意,争议禁套.本目录示意图共用元数据ten-kingdoms方位见official十国条目period_id按文件单值计本meta归five-dynasties
 
-note_real: 本地地图包无五代分册，本组暂保留自绘territory.svg；待用户补五代图后替换
+real_maps:
+  - file: maps/five-quantu-1.jpg
+    label: 五代十国时期全图（用户提供本地图）
+    origin: 用户本地提供（05-82五代十国时期全图.jpg；制图者/原书/许可待考；仅本地展示，勿再分发）
+    license: 原图未声明（待考；仅本地展示，勿再分发）
+note_real: 本组疆域图已替换为真实地图图片（用户提供本地全图jpg）；页面优先展示real_maps；territory.svg等仅保留兼容
