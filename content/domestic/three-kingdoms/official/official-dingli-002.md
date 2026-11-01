@@ -5,6 +5,7 @@ period_id: wei
 dynasty: 三国
 polity: 魏蜀吴
 source_type: official
+phase: founding
 source_title: 三国志
 source_author: 陈寿(裴松之注补)
 source_version: 传世本,具体版本待考

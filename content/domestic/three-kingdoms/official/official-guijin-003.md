@@ -5,6 +5,7 @@ period_id: wei
 dynasty: 三国—西晋
 polity: 西晋
 source_type: official
+phase: fall
 source_title: 晋书
 source_author: 房玄龄等奉敕撰
 source_version: 传世本,具体版本待考

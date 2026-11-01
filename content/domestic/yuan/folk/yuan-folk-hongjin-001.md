@@ -5,6 +5,7 @@ period_id: yuan
 dynasty: 元
 polity: 元末民间
 source_type: folk
+phase: fall
 source_title: 明清笔记小说及民间传说
 source_author: 民间层累，原创者待考
 source_version: 传世本，具体版本待考

@@ -5,6 +5,7 @@ period_id: western-xia
 dynasty: 西夏
 polity: 西夏—唐宋边地
 source_type: folk
+phase: golden
 source_title: 唐宋边塞诗及后世民间传说
 source_author: 王之涣等传世诗歌与民间层累
 source_version: 传世本，具体版本待考

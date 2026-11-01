@@ -5,6 +5,7 @@ period_id: yuan
 dynasty: 元
 polity: 大蒙古国
 source_type: folk
+phase: founding
 source_title: 后世演义戏曲及民间传说层累
 source_author: 民间层累，具体作者待考
 source_version: 传世本，具体版本待考
