@@ -5,6 +5,7 @@ period_id: jin-western
 dynasty: 西晋
 polity: 西晋
 source_type: folk
+phase: golden
 source_title: 世说新语
 source_author: 刘义庆(刘孝标注补)
 source_version: 传世本,具体版本待考

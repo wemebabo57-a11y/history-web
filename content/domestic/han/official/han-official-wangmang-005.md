@@ -5,6 +5,7 @@ period_id: xin
 dynasty: 汉
 polity: 新朝
 source_type: official
+phase: decline
 source_title: 汉书
 source_author: 班固
 source_version: 传世本，具体版本待考

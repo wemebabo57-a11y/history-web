@@ -5,6 +5,7 @@ period_id: jin-eastern
 dynasty: 晋
 polity: 东晋
 source_type: official
+phase: decline
 source_title: 晋书
 source_author: 房玄龄等
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: sixteen-kingdoms
 dynasty: 前秦—东晋
 polity: 前秦/东晋
 source_type: official
+phase: founding
 source_title: 晋书
 source_author: 房玄龄等奉敕撰
 source_version: 传世本,具体版本待考

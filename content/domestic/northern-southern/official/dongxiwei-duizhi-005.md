@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 南北朝
 polity: 东魏/西魏/北齐/北周
 source_type: official
+phase: decline
 source_title: 北齐书
 source_author: 李百药
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 北魏
 polity: 北魏
 source_type: official
+phase: golden
 source_title: 魏书
 source_author: 魏收
 source_version: 传世本,具体版本待考

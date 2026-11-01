@@ -5,6 +5,7 @@ period_id: qin
 dynasty: 秦
 polity: 秦朝
 source_type: folk
+phase: decline
 source_title: 后世民间传说辑录（非正史）
 source_author: 佚名民间流传
 source_version: 传世本，具体版本待考

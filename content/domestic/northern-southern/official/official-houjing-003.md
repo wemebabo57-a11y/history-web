@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 南梁
 polity: 南梁
 source_type: official
+phase: decline
 source_title: 梁书
 source_author: 姚思廉
 source_version: 传世本,具体版本待考
