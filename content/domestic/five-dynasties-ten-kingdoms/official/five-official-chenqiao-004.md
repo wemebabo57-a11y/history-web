@@ -5,6 +5,7 @@ period_id: five-dynasties
 dynasty: 后周/北宋之交
 polity: 后周/宋
 source_type: official
+phase: fall
 source_title: 宋史
 source_author: 脱脱等奉敕撰
 source_version: 传世本,具体版本待考

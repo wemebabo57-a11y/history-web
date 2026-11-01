@@ -58,6 +58,7 @@ function walk(d, group) {
       else if (group && GROUPS[group] && !GROUPS[group].includes(pv)) errors.push(rel + ': period_id ' + pv + ' 不属于分组 ' + group);
     }
     if ('source_type' in fm && !['official','folk','mixed'].includes(String(fm.source_type))) errors.push(rel + ': source_type 非法: ' + fm.source_type);
+    if (rel.startsWith('content/domestic/') && (rel.includes('/official/') || rel.includes('/folk/'))) { if (!('phase' in fm) || String(fm.phase)==='') warns.push(rel + ': 缺 phase 标签'); else if (!['founding','golden','decline','fall'].includes(String(fm.phase))) errors.push(rel + ': phase 非法: ' + fm.phase); }
     if ('confidence' in fm && !['high','medium','low','disputed'].includes(String(fm.confidence))) errors.push(rel + ': confidence 非法: ' + fm.confidence);
     if ('id' in fm) { if (seen[fm.id]) errors.push(rel + ': id 重复 ' + fm.id + ' (见 ' + seen[fm.id] + ')'); else seen[fm.id] = rel; }
     if (rel.includes('/official/') || rel.includes('/folk/')) {

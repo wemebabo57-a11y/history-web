@@ -5,6 +5,7 @@ period_id: tang
 dynasty: 唐朝
 polity: 唐
 source_type: folk
+phase: founding
 source_title: 大唐创业起居注及旧唐书辅以坊间演义
 source_author: 温大雅记旧唐书刘昫等撰演义部分作者存疑
 source_version: 传世本,具体版本待考

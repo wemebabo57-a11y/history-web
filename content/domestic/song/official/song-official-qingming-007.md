@@ -5,6 +5,7 @@ period_id: song-northern
 dynasty: 北宋
 polity: 宋
 source_type: official
+phase: golden
 source_title: 东京梦华录
 source_author: 孟元老传世称撰
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: han-western
 dynasty: 汉
 polity: 西汉
 source_type: official
+phase: golden
 source_title: 史记
 source_author: 司马迁
 source_version: 传世本，具体版本待考

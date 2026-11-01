@@ -5,6 +5,7 @@ period_id: wu
 dynasty: 三国
 polity: 孙吴
 source_type: official
+phase: golden
 source_title: 三国志
 source_author: 陈寿(裴松之注补)
 source_version: 传世本,具体版本待考

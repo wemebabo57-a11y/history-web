@@ -5,6 +5,7 @@ period_id: tang
 dynasty: 唐朝
 polity: 唐
 source_type: official
+phase: decline
 source_title: 资治通鉴
 source_author: 司马光等奉敕撰
 source_version: 传世本,具体版本待考

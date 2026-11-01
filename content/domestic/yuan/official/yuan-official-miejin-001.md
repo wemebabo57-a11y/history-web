@@ -5,6 +5,7 @@ period_id: yuan
 dynasty: 元
 polity: 大蒙古国—南宋—金
 source_type: official
+phase: founding
 source_title: 《元史》
 source_author: 宋濂等奉敕撰
 source_version: 传世本，具体版本待考

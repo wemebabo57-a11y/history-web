@@ -5,6 +5,7 @@ period_id: jin-jurchen
 dynasty: 金
 polity: 金
 source_type: folk
+phase: golden
 source_title: 《说岳全传》及民间戏曲
 source_author: 钱彩等编述（民间层累）
 source_version: 传世本，具体版本待考

@@ -5,6 +5,7 @@ period_id: shu
 dynasty: 三国(演绎)
 polity: 蜀汉(演绎)
 source_type: folk
+phase: golden
 source_title: 三国演义
 source_author: 罗贯中
 source_version: 传世本,具体版本待考(小说)

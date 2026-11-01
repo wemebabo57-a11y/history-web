@@ -5,6 +5,7 @@ period_id: liao
 dynasty: 辽
 polity: 辽
 source_type: folk
+phase: golden
 source_title: 明清杨家将话本戏曲及民间传说
 source_author: 民间层累，原创者待考
 source_version: 传世本，具体版本待考

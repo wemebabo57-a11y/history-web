@@ -21,6 +21,64 @@ const GROUPS = [
   ['ming','明','1368~1644'],
   ['qing','清','1616~1912']
 ];
+
+const PHASE_ORDER = ['founding','golden','decline','fall'];
+const PHASE_LABELS = {founding:'开国',golden:'盛世',decline:'衰败',fall:'灭亡'};
+function parsePhases(t){
+  const out = [];
+  let cur = null;
+  for(const raw of String(t||'').split('\n')){
+    const ln = raw.replace(/\r$/,'');
+    const idM = ln.match(/^\s*- id:\s*(.+?)\s*$/);
+    if(idM){ cur = {id:idM[1].trim(), label:PHASE_LABELS[idM[1].trim()]||idM[1].trim(), years:'', intro:'', note:''}; out.push(cur); continue; }
+    if(!cur) continue;
+    const kv = ln.match(/^\s*(label|years|intro|note):\s*(.*)$/);
+    if(kv){ cur[kv[1]] = kv[2].trim(); }
+  }
+  const byId = {}; out.forEach(function(p){byId[p.id]=p;});
+  return PHASE_ORDER.map(function(id){ return byId[id] || {id:id, label:PHASE_LABELS[id], years:'', intro:'导读待补。', note:''}; });
+}
+function buildReadPage(gid,gname,phases,entries){
+  function yr(e){ const y=parseInt(e.fm.start_year,10); return isNaN(y)?0:y; }
+  function eidOf(e){ return e.fm.id || (gid+'-'+e.file.replace(/\.md$/,'')); }
+  let totalChars=0, nOff=0, nFolk=0; const phaseCounts={};
+  const sections = PHASE_ORDER.map(function(pid, idx){
+    const ph = phases.filter(function(p){return p.id===pid;})[0] || {id:pid,label:PHASE_LABELS[pid],years:'',intro:'',note:''};
+    const off = entries.filter(function(e){return e.sub==='official' && e.fm.phase===pid;}).sort(function(a,b){return yr(a)-yr(b);});
+    const folk = entries.filter(function(e){return e.sub==='folk' && e.fm.phase===pid;}).sort(function(a,b){return yr(a)-yr(b);});
+    phaseCounts[pid]={off:off.length,folk:folk.length};
+    nOff+=off.length; nFolk+=folk.length;
+    off.forEach(function(e){totalChars+=e.body.length;}); folk.forEach(function(e){totalChars+=e.body.length;});
+    let h = '<section class="phase" id="phase-'+pid+'"><h2>'+esc(ph.label)+' · '+esc(ph.years)+'</h2><p class="phase-intro">'+esc(ph.intro)+'</p>';
+    if(ph.note) h += '<p class="phase-note">注：'+esc(ph.note)+'</p>';
+    if(!off.length) h += '<p class="phase-empty">本阶段暂无官方条目，见覆盖率报告的补史料方向。</p>';
+    for(const e of off){
+      h += '<article class="entry"><h3>'+esc(e.fm.title||e.file)+'</h3><p><span class="badge">官方</span><span class="badge">'+esc(e.fm.period_id||'')+'</span><span class="badge">'+esc(e.fm.start_year||'')+'~'+esc(e.fm.end_year||'')+'</span></p>'+mdBody(e.body)+'<p><a href="entry-'+eidOf(e)+'.html">查看单条史料页（含来源与定位表）→</a></p></article>';
+    }
+    if(folk.length){
+      h += '<h3>民间 / 演绎对照（不当史料）</h3><p class="folk-note">以下条目为民间传说或后世演绎，只作对照，不当史料读。</p>';
+      for(const e of folk){
+        h += '<article class="entry folk-entry"><h3>'+esc(e.fm.title||e.file)+'</h3><p><span class="badge">民间</span><span class="badge">'+esc(e.fm.period_id||'')+'</span><span class="badge">'+esc(e.fm.start_year||'')+'~'+esc(e.fm.end_year||'')+'</span></p>'+mdBody(e.body)+'<p><a href="entry-'+eidOf(e)+'.html">查看单条史料页（含来源与定位表）→</a></p></article>';
+      }
+    }
+    if(idx<3){ const npid=PHASE_ORDER[idx+1]; const nph=phases.filter(function(p){return p.id===npid;})[0]; h += '<p class="next-phase"><a href="#phase-'+npid+'">下一章：'+esc(nph?nph.label:PHASE_LABELS[npid])+' →</a></p>'; }
+    h += '</section>';
+    return h;
+  });
+  const unphased = entries.filter(function(e){ return PHASE_ORDER.indexOf(e.fm.phase)<0; });
+  if(unphased.length){
+    let h = '<section class="phase" id="phase-unphased"><h2>未分区条目</h2><p class="phase-note">以下条目尚未打 phase 标签，暂列于此，不丢失。</p>';
+    for(const e of unphased){ h += '<article class="entry"><h3>'+esc(e.fm.title||e.file)+'</h3><p><a href="entry-'+eidOf(e)+'.html">查看单条史料页 →</a></p></article>'; }
+    sections.push(h+'</section>');
+  }
+  const mins = Math.max(1, Math.ceil(totalChars/400));
+  const nav = '<nav class="phase-nav">' + PHASE_ORDER.map(function(pid){ const ph=phases.filter(function(p){return p.id===pid;})[0]; return '<a href="#phase-'+pid+'">'+esc(ph?ph.label:PHASE_LABELS[pid])+'（'+phaseCounts[pid].off+'）</a>'; }).join('') + '</nav>';
+  const body = '<div class="read-progress"><div class="read-progress-bar" id="readBar"></div></div>' +
+    '<p class="read-stats">一键通读：从开国到灭亡，一页读完。官方 '+nOff+' 条 / 民间对照 '+nFolk+' 条 / 全文约 '+totalChars+' 字，约 '+mins+' 分钟。</p>' + nav + sections.join('') +
+    '<p><a href="dynasty-'+gid+'.html">返回'+esc(gname)+'朝代页（综述 / 地图 / 思维导图）</a> · <a href="reads.html">全部朝代通读总览</a> · <a href="index.html">首页</a></p>' +
+    '<script>window.addEventListener("scroll",function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);document.getElementById("readBar").style.width=(p*100)+"%";});</script>';
+  return {html: page(gname+' 一键通读 · 开国—盛世—衰败—灭亡', '<a href="index.html">首页</a> / <a href="dynasty-'+gid+'.html">'+esc(gname)+'</a> / 一键通读', body), nOff:nOff, nFolk:nFolk, mins:mins, chars:totalChars, phaseCounts:phaseCounts};
+}
 function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function parseFM(t){
   const m = t.match(/^---\s*\n([\s\S]*?)\n---/);
@@ -164,6 +222,7 @@ fs.mkdirSync(DIST, { recursive:true });
 try{ fs.copyFileSync(path.join(ROOT,'assets','style.css'), path.join(DIST,'style.css')); }catch(e){}
 const index = []; const searchIdx = [];
 const dynCards = [];
+const readStats = [];
 for(const g of GROUPS){
   const gid = g[0], gname = g[1], grange = g[2];
   const gd = path.join(DOM, gid);
@@ -219,6 +278,12 @@ for(const g of GROUPS){
       '<p><a href="dynasty-'+gid+'.html">返回'+esc(gname)+'</a> · <a href="index.html">首页</a></p>');
     fs.writeFileSync(path.join(DIST,'entry-'+eid+'.html'), ehtml, 'utf8');
   }
+  let phasesRaw = '';
+  try{ phasesRaw = fs.readFileSync(path.join(gd,'phases.yaml'),'utf8'); }catch(e){}
+  const phases = parsePhases(phasesRaw);
+  const read = buildReadPage(gid,gname,phases,entries);
+  fs.writeFileSync(path.join(DIST,'read-'+gid+'.html'), read.html, 'utf8');
+  readStats.push({gid:gid,gname:gname,grange:grange,nOff:read.nOff,nFolk:read.nFolk,mins:read.mins,chars:read.chars,phaseCounts:read.phaseCounts});
   const langSwitch = '<div class="lang-switch"><button id="btnZh" class="on" onclick="showLang(\'zh\')">中文</button><button id="btnEn" onclick="showLang(\'en\')">English</button></div>';
   const zhBlock = '<article class="entry" id="zh-block">' + mdBody(dynBody) + '</article>';
   const enBlock = '<article class="entry" id="en-block" style="display:none">' + mdBody(enBody) + '</article>';
@@ -228,8 +293,9 @@ for(const g of GROUPS){
   for(const f of realMaps){ const cap = CAP[f] || f; realHtml += '<figure class="map-fig"><img src="maps/'+gid+'-'+f+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'; }
   if(gid==='five-dynasties-ten-kingdoms'){ realHtml += '<p class="map-src">地图图片来源：用户本地提供（05-82五代十国时期全图.jpg；制图者/原书/许可待考；仅本地展示，勿再分发）</p>'; } else { realHtml += '<p class="map-src">地图图片来源：<a href="https://gitcode.com/open-source-toolkit/2fba6">gitcode.com/open-source-toolkit/2fba6</a>（用户提供下载地址；原包未声明制图者/原书/许可，仅本地展示，勿再分发）</p>'; }
   const mapHtml = '<h2>疆域图(真实地图图片)</h2>' + (realHtml ? realHtml : (mapFile ? '<figure class="map-fig"><img src="maps/'+gid+'-territory.svg" loading="lazy"></figure>' : '<p>暂缺图片</p>')) + '<details><summary>疆域图来源与许可(meta.yaml)</summary><pre>' + esc(mapMeta) + '</pre></details>';
+  const readCta = '<p class="read-cta"><a href="read-'+gid+'.html">一键通读' + esc(gname) + '：开国 → 盛世 → 衰败 → 灭亡（官方 '+read.nOff+' 条 / 民间对照 '+read.nFolk+' 条，约 '+read.mins+' 分钟）</a></p>';
   const dhtml = page(gname+' · '+grange, '<a href="index.html">首页</a> / 国内',
-    '<h2>政权综述 · 中文 / English 独立切换</h2>' + langSwitch + zhBlock + enBlock + langScript +
+    readCta + '<h2>政权综述 · 中文 / English 独立切换</h2>' + langSwitch + zhBlock + enBlock + langScript +
     mmBlock('emperors_mindmap','皇帝传承思维导图') + '<details><summary>帝系表明细(emperors.yaml)</summary><pre>' + esc(empRaw) + '</pre></details>' +
     mmBlock('power_mindmap','实际掌权人思维导图') + '<details><summary>掌权表明细(power-holders.yaml)</summary><pre>' + esc(powRaw) + '</pre></details>' +
     mmBlock('timeline_mindmap','独立时间线思维导图(本朝代隔离展示)') + '<details><summary>时间线明细(timeline.yaml)</summary><pre>' + esc(tlRaw) + '</pre></details>' +
@@ -239,12 +305,12 @@ for(const g of GROUPS){
   fs.writeFileSync(path.join(DIST,'dynasty-'+gid+'.html'), dhtml, 'utf8');
   let thumb = 'territory.svg';
   try{ const mdf = fs.readdirSync(path.join(gd,'maps')); const jp = mdf.filter(function(f){ return /\.(jpg|jpeg|png)$/i.test(f); }).sort(); if(jp.length) thumb = jp[0]; }catch(e){}
-  dynCards.push({ gid:gid, gname:gname, grange:grange, nOff:nOff, nFolk:nFolk, thumb:thumb });
+  dynCards.push({ gid:gid, gname:gname, grange:grange, nOff:nOff, nFolk:nFolk, thumb:thumb, readMin:read.mins, readOff:read.nOff, readFolk:read.nFolk });
   index.push({ gid:gid, gname:gname, tl:tlRaw });
 }
 let cards = '';
 for(const c of dynCards){
-  cards += '<div class="card"><div class="map-thumb"><img src="maps/'+c.gid+'-'+(c.thumb||'territory.svg')+'" alt="'+esc(c.gname)+'疆域图" loading="lazy"></div><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a></p></div>';
+  cards += '<div class="card"><div class="map-thumb"><img src="maps/'+c.gid+'-'+(c.thumb||'territory.svg')+'" alt="'+esc(c.gname)+'疆域图" loading="lazy"></div><h3><a href="dynasty-'+c.gid+'.html">'+esc(c.gname)+'</a></h3><p>'+esc(c.grange)+' · 官方'+c.nOff+' / 民间'+c.nFolk+'</p><p><a href="dynasty-'+c.gid+'.html">进入 '+esc(c.gname)+'</a> · <a href="read-'+c.gid+'.html">一键通读（约'+c.readMin+'分钟）</a></p></div>';
 }
 const homeBody = '<p class="lang-note">全站中英文独立切换：各朝代页顶部设 中文 / English 按钮，中英分开展示不混排。英文版为综述译介，史料原文以中文页为准。</p>' + '<nav class="filters">' +
   '<select id="fGroup"><option value="">全部朝代</option>' + dynCards.map(function(c){ return '<option value="'+c.gid+'">'+esc(c.gname)+'</option>'; }).join('') + '</select>' +
@@ -252,7 +318,7 @@ const homeBody = '<p class="lang-note">全站中英文独立切换：各朝代�
   '<input id="fYear" placeholder="年份过滤,如 960" style="width:140px">' +
   '<input id="fQ" placeholder="关键词搜索" style="width:200px">' +
   '</nav><div class="grid" id="dynGrid">' + cards + '</div>' +
-  '<h2>条目检索</h2><div id="res"></div>' +
+  '<h2>分区一键通读</h2><p>每个朝代一页读完开国、盛世、衰败、灭亡四章，章内按年份排序，民间条目只作对照、不混入正史主线。</p><div class="grid">' + dynCards.map(function(c){ return '<div class="card"><h3><a href="read-'+c.gid+'.html">'+esc(c.gname)+' 一键通读</a></h3><p>'+esc(c.grange)+' · 官方'+c.readOff+' / 民间对照'+c.readFolk+' · 约'+c.readMin+'分钟</p><p><a href="read-'+c.gid+'.html">开始通读 →</a></p></div>'; }).join('') + '</div>' + '<h2>条目检索</h2><div id="res"></div>' +
   '<p><a href="timelines.html">时间线视图</a> · <a href="search.html">搜索页</a> · <a href="foreign.html">国外占位框架</a> · <a href="coverage.html">覆盖率报告</a></p>' +
   '<script>' +
   'var IDX=' + JSON.stringify(searchIdx).replace(/</g, '\\u003c') + ';' +
@@ -349,6 +415,14 @@ if(fCards.length){
 } else { fhub += '<p>国外七组内容补齐中（埃及/两河/希腊罗马/印度/伊斯兰/中���纪/近代），待子代理交稿后展示。</p>'; }
 fs.writeFileSync(path.join(DIST,'foreign.html'), page('国外 · 总览','<a href="index.html">首页</a> / 国外', fhub), 'utf8');
 fs.writeFileSync(path.join(DIST,'timelines.html'), page('全局时间线(按朝代分组聚合展示)','<a href="index.html">首页</a> / 时间线', '<p>各朝代时间线独立成段,仅聚合展示,不混写正文；国外七组附后。</p>'+tlAll), 'utf8');
+let readsRows = '';
+for(const r of readStats){
+  const pc = r.phaseCounts;
+  readsRows += '<tr><td><a href="read-'+r.gid+'.html">'+esc(r.gname)+'</a></td><td>'+esc(r.grange)+'</td><td>'+pc.founding.off+'</td><td>'+pc.golden.off+'</td><td>'+pc.decline.off+'</td><td>'+pc.fall.off+'</td><td>'+r.nOff+' / '+r.nFolk+'</td><td>约'+r.mins+'分钟</td></tr>';
+}
+const readsBody = '<p>每个朝代一页读完开国、盛世、衰败、灭亡四章。表中数字为各章官方条目数，民间条目只作对照、不计入主线。</p><table><tr><th>朝代</th><th>年代</th><th>开国</th><th>盛世</th><th>衰败</th><th>灭亡</th><th>官方 / 民间</th><th>通读时长</th></tr>' + readsRows + '</table><p><a href="index.html">首页</a> · <a href="timelines.html">全局时间线</a></p>';
+fs.writeFileSync(path.join(DIST,'reads.html'), page('分区一键通读 · 全部朝代','<a href="index.html">首页</a> / 通读', readsBody), 'utf8');
+
 fs.writeFileSync(path.join(DIST,'search-index.json'), JSON.stringify(searchIdx, null, 1), 'utf8');
 const sbody = '<input id="q" placeholder="输入关键词" style="width:260px;padding:8px"> <div id="r"></div>' +
   '<script>fetch(\'search-index.json\').then(function(x){return x.json();}).then(function(IDX){' +

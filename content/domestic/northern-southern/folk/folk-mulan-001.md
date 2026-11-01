@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 南北朝(传说背景)
 polity: 民间传说
 source_type: folk
+phase: decline
 source_title: 乐府诗集
 source_author: 郭茂倩编(木兰辞原作者待考)
 source_version: 传世本,具体版本待考

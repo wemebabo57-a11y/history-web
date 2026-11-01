@@ -5,6 +5,7 @@ period_id: ten-kingdoms
 dynasty: 后蜀
 polity: 后蜀孟昶朝附会传说
 source_type: folk
+phase: decline
 source_title: 后世诗话笔记归纳
 source_author: 后世文人辑录具体作者待考
 source_version: 传世笔记诗话题材版本待考

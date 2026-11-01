@@ -5,6 +5,7 @@ period_id: western-xia
 dynasty: 西夏
 polity: 西夏
 source_type: official
+phase: founding
 source_title: 《宋史》
 source_author: 脱脱等奉敕撰
 source_version: 传世本，具体版本待考

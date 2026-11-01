@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 南北朝
 polity: 刘宋
 source_type: official
+phase: golden
 source_title: 宋书
 source_author: 沈约
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: northern-southern
 dynasty: 隋
 polity: 隋/陈
 source_type: official
+phase: fall
 source_title: 陈书
 source_author: 姚思廉
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: sui
 dynasty: 隋朝
 polity: 隋
 source_type: folk
+phase: decline
 source_title: 隋炀帝艳史及大业拾遗记等野史笔记
 source_author: 明清坊间传本托名,作者存疑
 source_version: 传世本,具体版本待考

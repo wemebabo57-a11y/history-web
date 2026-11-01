@@ -34,3 +34,19 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}
 .tl li{margin:8px 0}
 footer{margin-top:40px;color:var(--mut);font-size:13px}
 @media(max-width:640px){.wrap{padding:16px 12px 50px}article.entry{padding:18px 16px;font-size:16px}header.top{position:static}}
+/* 分区一键通读 read-<dynasty>.html */
+.read-cta{background:#fff;border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 16px;font-size:16px}
+.read-cta a{color:var(--acc);font-weight:700;text-decoration:none}
+.read-progress{position:sticky;top:0;height:6px;background:var(--line);border-radius:3px;overflow:hidden;z-index:6}
+.read-progress-bar{height:100%;width:0;background:var(--acc)}
+.read-stats{font-size:14px;color:var(--mut)}
+.phase-nav{position:sticky;top:6px;background:var(--bg);padding:10px 0;display:flex;flex-wrap:wrap;gap:8px;z-index:5}
+.phase-nav a{border:1px solid var(--line);background:#fff;border-radius:20px;padding:4px 14px;font-size:14px;color:var(--acc);text-decoration:none}
+.phase{border-top:2px solid var(--acc);margin-top:28px;padding-top:8px}
+.phase-intro{font-size:17px}
+.phase-note{font-size:14px;color:var(--mut);border-left:3px solid var(--acc2);padding-left:10px}
+.phase-empty{color:var(--acc);font-weight:700}
+.folk-note{font-size:14px;color:var(--mut)}
+.folk-entry{border-style:dashed}
+.next-phase{text-align:right;font-size:15px}
+.next-phase a{color:var(--acc);font-weight:700}

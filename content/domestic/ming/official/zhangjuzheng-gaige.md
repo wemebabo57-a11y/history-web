@@ -5,6 +5,7 @@ period_id: ming
 dynasty: 明朝
 polity: 明
 source_type: official
+phase: decline
 source_title: 明史
 source_author: 张廷玉等奉敕撰
 source_version: 传世本,具体版本待考

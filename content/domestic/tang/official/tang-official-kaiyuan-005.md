@@ -5,6 +5,7 @@ period_id: tang
 dynasty: 唐朝
 polity: 唐
 source_type: official
+phase: golden
 source_title: 旧唐书
 source_author: 刘昫等奉敕撰
 source_version: 传世本,具体版本待考

@@ -5,6 +5,7 @@ period_id: five-dynasties
 dynasty: 五代
 polity: 后唐至后晋与契丹
 source_type: official
+phase: decline
 source_title: 旧五代史
 source_author: 薛居正等奉敕撰
 source_version: 传世本辑本,具体版本待考

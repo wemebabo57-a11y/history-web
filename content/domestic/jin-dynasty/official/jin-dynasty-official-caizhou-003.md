@@ -5,6 +5,7 @@ period_id: jin-jurchen
 dynasty: 金
 polity: 金—蒙古—南宋
 source_type: official
+phase: fall
 source_title: 《金史》
 source_author: 脱脱等奉敕撰
 source_version: 传世本，具体版本待考

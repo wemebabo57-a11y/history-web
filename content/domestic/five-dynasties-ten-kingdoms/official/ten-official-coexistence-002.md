@@ -5,6 +5,7 @@ period_id: ten-kingdoms
 dynasty: 十国
 polity: 吴南唐吴越闽楚荆南前蜀后蜀南汉北汉
 source_type: official
+phase: decline
 source_title: 新五代史十国世家资治通鉴宋史
 source_author: 欧阳修司马光脱脱等
 source_version: 传世本具体版本待考

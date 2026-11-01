@@ -5,6 +5,7 @@ period_id: liao
 dynasty: 辽
 polity: 辽
 source_type: official
+phase: founding
 source_title: 《辽史》
 source_author: 脱脱等奉敕撰
 source_version: 传世本，具体版本待考

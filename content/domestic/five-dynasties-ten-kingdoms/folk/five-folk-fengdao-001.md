@@ -5,6 +5,7 @@ period_id: five-dynasties
 dynasty: 五代
 polity: 后唐后晋后汉后周兼辽
 source_type: folk
+phase: decline
 source_title: 旧五代史冯道传附野史笔记演义
 source_author: 薛居正等撰演义部分作者存疑
 source_version: 传世本辑本,具体版本待考
