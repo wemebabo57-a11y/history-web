@@ -21,6 +21,26 @@ for(const g of GROUPS){
   if(!ok) TODO.push('- [ ] ' + g + ': 补齐缺失模块(目标: 官方>=3/民间>=1/时间线>=8条/传承图掌权表疆域图齐备)');
   else if(c.off<3) TODO.push('- [ ] ' + g + ': 官方条目仅' + c.off + '条,向3条以上扩展');
 }
+L.push('', '合计: 官方条目 ' + totOff + ' / 民间条目 ' + totFolk, '', '## 分区通读(每章官方条目数)', '', '| 分组 | 开国 | 盛世 | 衰败 | 灭亡 | 未分区 |', '|---|---|---|---|---|---|');
+for(const g of GROUPS){
+  const gd = path.join(DOM, g);
+  const cnt = {founding:0,golden:0,decline:0,fall:0,none:0};
+  if(fs.existsSync(gd)){
+    for(const sub of ['official']){
+      const pd = path.join(gd, sub);
+      if(!fs.existsSync(pd)) continue;
+      for(const f of fs.readdirSync(pd)){
+        if(!f.endsWith('.md')) continue;
+        const t = fs.readFileSync(path.join(pd, f), 'utf8');
+        const m = t.match(/^---\s*\n([\s\S]*?)\n---/);
+        let ph = '';
+        if(m){ const mm = m[1].match(/^phase:\s*(.+?)\s*$/m); if(mm) ph = mm[1].trim(); }
+        if(ph in cnt) cnt[ph]++; else cnt.none++;
+      }
+    }
+  }
+  L.push('| ' + g + ' | ' + cnt.founding + ' | ' + cnt.golden + ' | ' + cnt.decline + ' | ' + cnt.fall + ' | ' + cnt.none + ' |');
+}
 L.push('', '合计: 官方条目 ' + totOff + ' / 民间条目 ' + totFolk, '', '## TODO(增量扩展,不追求一次穷尽)', '');
 for(const t of TODO) L.push(t);
 L.push('', '## 史料清单与方法', '', '- 正史: 史记/汉书/后汉书/三国志/晋书/宋书/魏书/隋书/旧唐书/新唐书/旧五代史/新五代史/资治通鉴/宋史/辽史/金史/元史/明史/清实录(传世本,具体版本待考,页码待核,未能联网核验)', '- 民间: 野史笔记/口头传说/碑刻诗话等,凡演绎一律标folk/low后世演绎,不作史料', '- 图片: 自绘文字示意SVG(CC0),不下载外网图,不套现代边界', '- 时间线隔离: 每文件单period_id;全局页仅分组聚合展示', '');

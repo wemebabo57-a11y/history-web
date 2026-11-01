@@ -5,6 +5,7 @@ period_id: han-eastern
 dynasty: 汉
 polity: 东汉
 source_type: official
+phase: fall
 source_title: 后汉书
 source_author: 范晔
 source_version: 传世本，具体版本待考

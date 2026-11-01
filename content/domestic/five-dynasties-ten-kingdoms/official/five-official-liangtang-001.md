@@ -5,6 +5,7 @@ period_id: five-dynasties
 dynasty: 五代
 polity: 后梁至后唐
 source_type: official
+phase: founding
 source_title: 旧五代史
 source_author: 薛居正等奉敕撰
 source_version: 传世本辑本,具体版本待考

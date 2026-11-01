@@ -5,6 +5,7 @@ period_id: han-western
 dynasty: 汉
 polity: 西汉
 source_type: folk
+phase: golden
 source_title: 后世民间传说与诗话（非正史）
 source_author: 佚名流传
 source_version: 传世本，具体版本待考

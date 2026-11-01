@@ -5,6 +5,7 @@ period_id: five-dynasties
 dynasty: 五代
 polity: 后梁后唐后晋后汉后周
 source_type: official
+phase: founding
 source_title: 旧五代史新五代史资治通鉴
 source_author: 薛居正等欧阳修司马光
 source_version: 传世本具体版本待考
