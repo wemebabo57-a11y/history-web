@@ -5,6 +5,7 @@ period_id: qing
 dynasty: 清朝
 polity: 清
 source_type: folk
+phase: founding
 source_title: 清史稿
 source_author: 赵尔巽等奉撰
 source_version: 传世本,具体版本待考

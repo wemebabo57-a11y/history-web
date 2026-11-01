@@ -5,6 +5,7 @@ period_id: tang
 dynasty: 唐朝
 polity: 唐
 source_type: folk
+phase: decline
 source_title: 旧唐书杨贵妃传附长恨歌等诗文演绎
 source_author: 刘昫等撰白居易诗为后世演绎
 source_version: 传世本,具体版本待考

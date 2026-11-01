@@ -5,6 +5,7 @@ period_id: song-southern
 dynasty: 宋
 polity: 南宋—元
 source_type: official
+phase: fall
 source_title: 《宋史》
 source_author: 脱脱等奉敕撰
 source_version: 传世本，具体版本待考

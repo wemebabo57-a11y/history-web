@@ -5,6 +5,7 @@ period_id: song-northern
 dynasty: 宋
 polity: 北宋
 source_type: official
+phase: golden
 source_title: 《续资治通鉴长编》
 source_author: 李焘
 source_version: 传世本，具体版本待考

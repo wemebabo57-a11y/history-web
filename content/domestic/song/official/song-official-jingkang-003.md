@@ -5,6 +5,7 @@ period_id: song-northern
 dynasty: 宋
 polity: 北宋—金
 source_type: official
+phase: decline
 source_title: 《宋史》
 source_author: 脱脱等奉敕撰
 source_version: 传世本，具体版本待考

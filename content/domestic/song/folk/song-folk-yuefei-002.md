@@ -5,6 +5,7 @@ period_id: song-southern
 dynasty: 宋
 polity: 南宋
 source_type: folk
+phase: decline
 source_title: 《说岳全传》等清代演义及民间传说
 source_author: 钱彩等编述（民间层累）
 source_version: 传世本，具体版本待考

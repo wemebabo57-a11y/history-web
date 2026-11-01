@@ -5,6 +5,7 @@ period_id: sui
 dynasty: 隋朝
 polity: 隋
 source_type: official
+phase: golden
 source_title: 隋书
 source_author: 魏徵等奉敕撰
 source_version: 传世本,具体版本待考

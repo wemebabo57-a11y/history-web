@@ -5,6 +5,7 @@ period_id: song-northern
 dynasty: 宋
 polity: 北宋
 source_type: folk
+phase: golden
 source_title: 《杨家府演义》等明清话本戏曲
 source_author: 民间艺人层累编述，原创者待考
 source_version: 传世本，具体版本待考
